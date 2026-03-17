@@ -1,0 +1,28 @@
+services:
+  mesh-api:
+    image: heuristdotai/mesh:${COMMIT_SHA:-latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python -m mesh.mesh_api
+    ports:
+      - "8800:8000"
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - INFLOW_CONTEXT_DB_PATH=/data/mesh/inflow_contexts.db
+    volumes:
+      - /data/mesh:/data/mesh
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8000/mesh_health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+    deploy:
+      replicas: 2
+      update_config:
+        order: start-first
+        failure_action: rollback
+        delay: 5s

@@ -1,0 +1,983 @@
+metadata:
+  agent: TruthSocialAgent
+  test_file: truth_social_agent.py
+  timestamp: '2025-09-16T17:16:29.955023'
+  total_tests: 3
+  passed: 3
+  failed: 0
+results:
+  trump_posts_query:
+    input:
+      query: What has Donald Trump posted recently on Truth Social?
+    output:
+      response: 'Donald Trump has recently posted about a variety of topics on Truth
+        Social. Here''s a summary of his posts:
+
+
+        **Legal Actions & Media:**
+
+        *   He announced a $15 billion defamation and libel lawsuit against The New
+        York Times, accusing them of lying about him, his family, and the America
+        First Movement. He also referenced successful litigation against ABC/Disney
+        and CBS/Paramount for similar reasons.
+
+
+        **Crime & Public Safety:**
+
+        *   He claimed that crime is down in Memphis, Chicago, Los Angeles, and Washington
+        D.C. due to federal intervention under his direction. He stated that in Washington
+        D.C., crime has become "virtually NO CRIME" in a few weeks due to federal
+        involvement.
+
+        *   He signed a Presidential Memorandum to establish the Memphis Safe Task
+        Force at the request of Governor Bill Lee of Tennessee.
+
+        *   He stated that he will not allow Washington D.C. Mayor Muriel Bowser to
+        stop cooperation with ICE in removing illegal aliens, threatening a National
+        Emergency and federalization if necessary to prevent crime from returning.
+
+        *   He reported on a brutal murder in Dallas, Texas, where an illegal alien
+        from Cuba allegedly beheaded a man. He vowed to be tough on illegal immigrant
+        criminals and stated that the individual will be prosecuted for first-degree
+        murder.
+
+        *   He announced a second kinetic strike by U.S. Military Forces against drug
+        trafficking cartels and narcoterrorists from Venezuela in international waters,
+        resulting in 3 deaths. He warned that anyone transporting drugs that can kill
+        Americans will be hunted.
+
+
+        **Economy & Trade:**
+
+        *   He advocated for foreign companies making complex products to bring their
+        experts to the U.S. to teach American workers, arguing this incentivizes investment
+        and helps the U.S. relearn manufacturing skills.
+
+        *   He suggested that companies should report on a six-month basis instead
+        of quarterly to save money and allow managers to focus on running their companies.
+
+        *   He indicated that a trade meeting in Europe between the U.S. and China
+        went "VERY WELL" and a deal was reached on a "certain" company that young
+        people wanted to save. He plans to speak with President Xi on Friday.
+
+        *   He urged for immediate and significant interest rate cuts to boost housing.
+
+
+        **Politics & Government:**
+
+        *   He called on Congressional Republicans to stick together and vote "YES"
+        on a short-term "CLEAN" extension of Government Funding to prevent a shutdown.
+
+        *   He criticized New York Governor Kathy Hochul for endorsing "Liddle'' Communist,"
+        Zohran Mamdani, for Mayor of New York, calling it a "shocking development."
+
+
+        **Social & Cultural Commentary:**
+
+        *   He expressed strong disapproval of the new NFL Kickoff Rule, calling it
+        "ridiculous," "dangerous," and "sissy" football, and hoped college football
+        rules would remain unchanged.
+
+        *   He honored Retired U.S. Army Sergeant Michael Verardo, a wounded veteran,
+        and his wife Sarah, for their service and advocacy.
+
+        *   He promoted his son Eric''s new book, "UNDER SIEGE," which immediately
+        became a #1 bestseller on Amazon.
+
+        *   He wrote the foreword for George "Tyrus" Murdoch''s new book, "WHAT IT
+        IS, AMERICA," praising Tyrus''s insights and humor.
+
+
+        **International Affairs:**
+
+        *   He reacted to reports that Hamas moved hostages above ground to use them
+        as human shields, calling it a "human atrocity" and demanding the release
+        of all hostages.
+
+
+        **General Sentiments:**
+
+        *   He stated, "I would rather go to ribbon cuttings than to groundbreakings!"'
+      data:
+        profile: '@realDonaldTrump'
+        post_count: 20
+        posts:
+        - content: RT @realDonaldTrumpThe only reason crime is somewhat down in Memphis
+            is because the FBI, and others in the Federal Government, at my direction,
+            have been working there for 5 months - on the absolutely terrible Crime
+            numbers. Likewise, in Chicago and Los Angeles! But the real work by us
+            has barely begun. That happens after we make the official announcement
+            that WE’RE COMING, and when we do that, as we did in now VERY SAFE WASHINGTON,
+            D.C., the no crime “miracle” begins. ONLY I CAN SAVE THEM!!! Thank you
+            for your attention to this matter. President DJT
+          created_at: '2025-09-16T07:40:08.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212839080179321
+        - content: RT @realDonaldTrumpWhen Foreign Companies who are building extremely
+            complex products, machines, and various other “things,” come into the
+            United States with massive Investments, I want them to bring their people
+            of expertise for a period of time to teach and train our people how to
+            make these very unique and complex products, as they phase out of our
+            Country, and back into their land. If we didn’t do this, all of that massive
+            Investment will never come in the first place — Chips, Semiconductors,
+            Computers, Ships, Trains, and so many other products that we have to learn
+            from others how to make, or, in many cases, relearn, because we used to
+            be great at it, but not anymore. For example, Shipbuilding, where we used
+            to build a Ship a day and now, we barely build a Ship a year. I don’t
+            want to frighten off or disincentivize Investment into America by outside
+            Countries or Companies. We welcome them, we welcome their employees, and
+            we are willing to proudly say we will learn from them, and do even better
+            than them at their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-16T07:39:36.541Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212836965154737
+        - content: Today, I have the Great Honor of bringing a $15 Billion Dollar
+            Defamation and Libel Lawsuit against The New York Times, one of the worst
+            and most degenerate newspapers in the History of our Country, becoming
+            a virtual “mouthpiece” for the Radical Left Democrat Party. I view it
+            as the single largest illegal Campaign contribution, EVER. Their Endorsement
+            of Kamala Harris was actually put dead center on the front page of The
+            New York Times, something heretofore UNHEARD OF! The “Times” has engaged
+            in a decades long method of lying about your Favorite President (ME!),
+            my family, business, the America First Movement, MAGA, and our Nation
+            as a whole. I am PROUD to hold this once respected “rag” responsible,
+            as we are doing with the Fake News Networks such as our successful litigation
+            against George Slopadopoulos/ABC/Disney, and 60 Minutes/CBS/Paramount,
+            who knew that they were falsely “smearing” me through a highly sophisticated
+            system of document and visual alteration, which was, in effect, a malicious
+            form of defamation, and thus, settled for record amounts. They practiced
+            this longterm INTENT and pattern of abuse, which is both unacceptable
+            and illegal. The New York Times has been allowed to freely lie, smear,
+            and defame me for far too long, and that stops, NOW! The suit is being
+            brought in the Great State of Florida. Thank you for your attention to
+            this matter. MAKE AMERICA GREAT AGAIN!
+          created_at: '2025-09-16T03:45:57.266Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115211918198289404
+        - content: 'Today, at the request of Governor Bill Lee of Tennessee, I signed
+            a Presidential Memorandum to establish the Memphis Safe Task Force…Memorandum:
+            https://www.whitehouse.gov/presidential-actions/2025/09/restoring-law-and-order-in-memphis/'
+          created_at: '2025-09-15T21:56:00.539Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210542156462323
+        - content: I have just read a News Report that Hamas has moved the hostages
+            above ground to use them as human shields against Israel’s ground offensive.
+            I hope the Leaders of Hamas know what they’re getting into if they do
+            such a thing. This is a human atrocity, the likes of which few people
+            have ever seen before. Don’t let this happen or, ALL “BETS” ARE OFF. RELEASE
+            ALL HOSTAGES NOW!
+          created_at: '2025-09-15T20:42:01.839Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210251262068973
+        - content: This morning, on my Orders, U.S. Military Forces conducted a SECOND
+            Kinetic Strike against positively identified, extraordinarily violent
+            drug trafficking cartels and narcoterrorists in the SOUTHCOM area of responsibility.
+            The Strike occurred while these confirmed narcoterrorists from Venezuela
+            were in International Waters transporting illegal narcotics (A DEADLY
+            WEAPON POISONING AMERICANS!) headed to the U.S. These extremely violent
+            drug trafficking cartels POSE A THREAT to U.S. National Security, Foreign
+            Policy, and vital U.S. Interests. The Strike resulted in 3 male terrorists
+            killed in action. No U.S. Forces were harmed in this Strike. BE WARNED
+            — IF YOU ARE TRANSPORTING DRUGS THAT CAN KILL AMERICANS, WE ARE HUNTING
+            YOU! The illicit activities by these cartels have wrought DEVASTATING
+            CONSEQUENCES ON AMERICAN COMMUNITIES FOR DECADES, killing millions of
+            American Citizens. NO LONGER. Thank you for your attention to this matter!!!
+          created_at: '2025-09-15T19:57:14.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210075167747572
+        - content: Congressional Republicans, including Leader John Thune and Speaker
+            Mike Johnson, are working on a short term “CLEAN” extension of Government
+            Funding to stop Cryin’ Chuck Schumer from shutting down the Government.
+            In times like these, Republicans have to stick TOGETHER to fight back
+            against the Radical Left Democrat demands, and vote “YES!” on both Votes
+            needed to pass a Clean CR this week out of the House of Representatives.
+            Democrats want the Government to shut down. Republicans want the Government
+            to OPEN. Democrats love CRIME, Republicans make our Country SAFE — WE
+            HATE CRIME. FAILURE IS NOT AN OPTION. Thank you for your attention to
+            this matter! President DJT
+          created_at: '2025-09-15T17:43:26.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209549037822166
+        - content: MY son Eric’s just out book, “UNDER SIEGE,” immediately went to
+            NUMBER ONE on Amazon. Great going Eric, you deserve it!!! https://a.co/d/7oPyLF5
+          created_at: '2025-09-15T16:42:14.412Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209308362990527
+        - content: RT @realDonaldTrumpWe honor the extraordinary life and service
+            of Retired U.S. Army Sergeant Michael Verardo, a true American Hero, who
+            gave everything for our Nation. After suffering catastrophic injuries
+            from an IED in Afghanistan on April 24, 2010, Michael endured 120 surgeries
+            with unwavering Courage, and the strong support of his incredible wife,
+            Sarah, and three beautiful daughters. Sarah’s tireless advocacy for Wounded
+            Warriors and Military Families exemplifies the Spirit of America. Michael's
+            Legacy of Resilience, and Sarah's Selfless Dedication, will forever inspire
+            us. Brave Patriots like Michael, and their families, will never be forgotten.
+            We will cherish them in our hearts, forever!
+          created_at: '2025-09-15T16:20:05.954Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209221305670983
+        - content: https://truthsocial.com/@realDonaldTrump/115206570863756188
+          created_at: '2025-09-15T12:58:24.026Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208428190944040
+        - content: “Too Late” MUST CUT INTEREST RATES, NOW, AND BIGGER THAN HE HAD
+            IN MIND. HOUSING WILL SOAR!!! President DJT
+          created_at: '2025-09-15T12:39:18.834Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208353139528932
+        - content: The big Trade Meeting in Europe between The United States of America,
+            and China,  has gone VERY WELL! It will be concluding shortly. A deal
+            was also reached on a “certain” company that young people in our Country
+            very much wanted to save. They will be very happy! I will be speaking
+            to President Xi on Friday. The relationship remains a very strong one!!!
+            President DJT
+          created_at: '2025-09-15T12:15:51.765Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208260926006345
+        - content: Subject to SEC Approval, Companies and Corporations should no longer
+            be forced to “Report” on a quarterly basis (Quarterly Reporting!), but
+            rather to Report on a “Six (6) Month Basis.” This will save money, and
+            allow managers to focus on properly running their companies. Did you ever
+            hear the statement that, “China has a 50 to 100 year view on management
+            of a company, whereas we run our companies on a quarterly basis???” Not
+            good!!!
+          created_at: '2025-09-15T12:05:25.559Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208219886830624
+        - content: The NFL has to get rid of that ridiculous looking new Kickoff Rule.
+            How can they make such a big and sweeping change so easily and quickly.
+            It’s at least as dangerous as the “normal” kickoff, and looks like hell.
+            The ball is moving, and the players are not, the exact opposite of what
+            football is all about. “Sissy” football is bad for America, and bad for
+            the NFL! Who comes up with these ridiculous ideas? It’s like wanting to
+            “roll back” the golf ball so it doesn’t go (nearly!) as far. Fortunately,
+            college football will remain the same, hopefully forever!!
+          created_at: '2025-09-15T11:46:02.388Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208143657180249
+        - content: Governor Kathy Hochul of New York has Endorsed the “Liddle’ Communist,”
+            Zohran Mamdani, running for Mayor of New York. This is a rather shocking
+            development, and a very bad one for New York City. How can such a thing
+            happen? Washington will be watching this situation very closely. No reason
+            to be sending good money after bad! President DJT
+          created_at: '2025-09-15T11:07:26.318Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115207991871277413
+        - content: The Federal Government, under my auspices as President of the United
+            States of America, has stepped into the complete criminal mess that was
+            Washington, D.C., our Nation’s Capital. Because of this, D.C. has gone
+            from one of the most dangerous and murder ridden cities in the U.S.A.,
+            and even around the World, to one of the safest - In just a few weeks.
+            The “place” is absolutely booming, with restaurants, stores, and businesses
+            packed and, for the first time in decades, virtually NO CRIME. It has
+            been a beautiful thing to watch but, now, under pressure from the Radical
+            Left Democrats, Mayor Muriel Bowser, who has presided over this violent
+            criminal takeover of our Capital for years, has informed the Federal Government
+            that the Metropolitan Police Department will no longer cooperate with
+            ICE in removing and relocating dangerous illegal aliens. If I allowed
+            this to happen, CRIME would come roaring back. To the people and businesses
+            of Washington, D.C., DON’T WORRY, I AM WITH YOU, AND WON’T ALLOW THIS
+            TO HAPPEN. I’ll call a National Emergency, and Federalize, if necessary!!!
+            Thank you for your attention to this matter. MAKE AMERICA GREAT AGAIN!!!
+            President DJT
+          created_at: '2025-09-15T05:06:03.466Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115206570863756188
+        - content: I am aware of the terrible reports regarding the murder of Chandra
+            Nagamallaiah, a well respected person in Dallas, Texas, who was brutally
+            beheaded, in front of his wife and son, by an ILLEGAL ALIEN from Cuba
+            who should have never been in our Country. This individual was previously
+            arrested for terrible crimes, including child sex abuse, grand theft auto,
+            and false imprisonment, but was released back into our Homeland under
+            incompetent Joe Biden because Cuba did not want such an evil person in
+            their Country. Rest assured, the time for being soft on these Illegal
+            Immigrant Criminals is OVER under my watch! Secretary of Homeland Security
+            Kristi Noem, Attorney General Pam Bondi, Border Czar Tom Homan, and many
+            others in my Administration, are doing an incredible job in, MAKING AMERICA
+            SAFE AGAIN. This criminal, who we have in custody, will be prosecuted
+            to the fullest extent of the Law. He will be charged with murder in the
+            first degree!
+          created_at: '2025-09-15T00:38:56.350Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205520510774944
+        - content: 'It was my Great Honor to write the Foreword for George “Tyrus”
+            Murdoch’s (Is he related to Rupert Murdoch?) new Book, “WHAT IT IS, AMERICA.”
+            I have been fortunate in getting to know Tyrus, and he is a very smart
+            and talented guy — And also a very good man. Throughout his career in
+            Professional Wrestling and Television, he has earned the respect and admiration
+            of millions. While Late Night Television Ratings have rapidly declined
+            for others, Tyrus, working with the incredible Greg Gutfeld, and a group
+            of wonderful people, have created something very special — A Late Night
+            Show that is destroying Traditional Late Night Television, and the Radical
+            Left who preside over it, in TV Ratings and beyond. Tyrus, using his iconic
+            Wit, Humor, and Charm, to target the Deranged Trump Haters, and their
+            joyless campaign against the American Way of Life, Liberty, and the Pursuit
+            of Happiness, is a STAR. He became famous for saying, long before the
+            Election, “Why we are talking about the 2024 Presidential Election? It’s
+            OVER. TRUMP is going to win, and everyone knows it. It’s a waste of time
+            to talk about it. They’re not going to beat him, and they never will.”
+            I used to laugh when I heard it, but he was right. In his wonderful new
+            Book, Tyrus tells the true story of the 2024 Presidential Election, with
+            his own unique insights, strongly rooted in Common Sense and Love for
+            our Country. This Book is fantastic — Enjoy! Pre-Order today: https://a.co/d/ef3e2av'
+          created_at: '2025-09-14T23:43:08.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205301127455058
+        - content: When Foreign Companies who are building extremely complex products,
+            machines, and various other “things,” come into the United States with
+            massive Investments, I want them to bring their people of expertise for
+            a period of time to teach and train our people how to make these very
+            unique and complex products, as they phase out of our Country, and back
+            into their land. If we didn’t do this, all of that massive Investment
+            will never come in the first place — Chips, Semiconductors, Computers,
+            Ships, Trains, and so many other products that we have to learn from others
+            how to make, or, in many cases, relearn, because we used to be great at
+            it, but not anymore. For example, Shipbuilding, where we used to build
+            a Ship a day and now, we barely build a Ship a year. I don’t want to frighten
+            off or disincentivize Investment into America by outside Countries or
+            Companies. We welcome them, we welcome their employees, and we are willing
+            to proudly say we will learn from them, and do even better than them at
+            their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-14T18:24:48.332Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115204049358078594
+        - content: I would rather go to ribbon cuttings than to groundbreakings!
+          created_at: '2025-09-14T18:06:18.868Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115203976647679985
+    description: Natural language query for Donald Trump's recent Truth Social posts
+    status: success
+  trump_posts_direct:
+    input:
+      tool: get_trump_posts
+      tool_arguments:
+        max_posts: 5
+      raw_data_only: false
+    output:
+      response: ''
+      data:
+        profile: '@realDonaldTrump'
+        post_count: 20
+        posts:
+        - content: RT @realDonaldTrumpThe only reason crime is somewhat down in Memphis
+            is because the FBI, and others in the Federal Government, at my direction,
+            have been working there for 5 months - on the absolutely terrible Crime
+            numbers. Likewise, in Chicago and Los Angeles! But the real work by us
+            has barely begun. That happens after we make the official announcement
+            that WE’RE COMING, and when we do that, as we did in now VERY SAFE WASHINGTON,
+            D.C., the no crime “miracle” begins. ONLY I CAN SAVE THEM!!! Thank you
+            for your attention to this matter. President DJT
+          created_at: '2025-09-16T07:40:08.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212839080179321
+        - content: RT @realDonaldTrumpWhen Foreign Companies who are building extremely
+            complex products, machines, and various other “things,” come into the
+            United States with massive Investments, I want them to bring their people
+            of expertise for a period of time to teach and train our people how to
+            make these very unique and complex products, as they phase out of our
+            Country, and back into their land. If we didn’t do this, all of that massive
+            Investment will never come in the first place — Chips, Semiconductors,
+            Computers, Ships, Trains, and so many other products that we have to learn
+            from others how to make, or, in many cases, relearn, because we used to
+            be great at it, but not anymore. For example, Shipbuilding, where we used
+            to build a Ship a day and now, we barely build a Ship a year. I don’t
+            want to frighten off or disincentivize Investment into America by outside
+            Countries or Companies. We welcome them, we welcome their employees, and
+            we are willing to proudly say we will learn from them, and do even better
+            than them at their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-16T07:39:36.541Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212836965154737
+        - content: Today, I have the Great Honor of bringing a $15 Billion Dollar
+            Defamation and Libel Lawsuit against The New York Times, one of the worst
+            and most degenerate newspapers in the History of our Country, becoming
+            a virtual “mouthpiece” for the Radical Left Democrat Party. I view it
+            as the single largest illegal Campaign contribution, EVER. Their Endorsement
+            of Kamala Harris was actually put dead center on the front page of The
+            New York Times, something heretofore UNHEARD OF! The “Times” has engaged
+            in a decades long method of lying about your Favorite President (ME!),
+            my family, business, the America First Movement, MAGA, and our Nation
+            as a whole. I am PROUD to hold this once respected “rag” responsible,
+            as we are doing with the Fake News Networks such as our successful litigation
+            against George Slopadopoulos/ABC/Disney, and 60 Minutes/CBS/Paramount,
+            who knew that they were falsely “smearing” me through a highly sophisticated
+            system of document and visual alteration, which was, in effect, a malicious
+            form of defamation, and thus, settled for record amounts. They practiced
+            this longterm INTENT and pattern of abuse, which is both unacceptable
+            and illegal. The New York Times has been allowed to freely lie, smear,
+            and defame me for far too long, and that stops, NOW! The suit is being
+            brought in the Great State of Florida. Thank you for your attention to
+            this matter. MAKE AMERICA GREAT AGAIN!
+          created_at: '2025-09-16T03:45:57.266Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115211918198289404
+        - content: 'Today, at the request of Governor Bill Lee of Tennessee, I signed
+            a Presidential Memorandum to establish the Memphis Safe Task Force…Memorandum:
+            https://www.whitehouse.gov/presidential-actions/2025/09/restoring-law-and-order-in-memphis/'
+          created_at: '2025-09-15T21:56:00.539Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210542156462323
+        - content: I have just read a News Report that Hamas has moved the hostages
+            above ground to use them as human shields against Israel’s ground offensive.
+            I hope the Leaders of Hamas know what they’re getting into if they do
+            such a thing. This is a human atrocity, the likes of which few people
+            have ever seen before. Don’t let this happen or, ALL “BETS” ARE OFF. RELEASE
+            ALL HOSTAGES NOW!
+          created_at: '2025-09-15T20:42:01.839Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210251262068973
+        - content: This morning, on my Orders, U.S. Military Forces conducted a SECOND
+            Kinetic Strike against positively identified, extraordinarily violent
+            drug trafficking cartels and narcoterrorists in the SOUTHCOM area of responsibility.
+            The Strike occurred while these confirmed narcoterrorists from Venezuela
+            were in International Waters transporting illegal narcotics (A DEADLY
+            WEAPON POISONING AMERICANS!) headed to the U.S. These extremely violent
+            drug trafficking cartels POSE A THREAT to U.S. National Security, Foreign
+            Policy, and vital U.S. Interests. The Strike resulted in 3 male terrorists
+            killed in action. No U.S. Forces were harmed in this Strike. BE WARNED
+            — IF YOU ARE TRANSPORTING DRUGS THAT CAN KILL AMERICANS, WE ARE HUNTING
+            YOU! The illicit activities by these cartels have wrought DEVASTATING
+            CONSEQUENCES ON AMERICAN COMMUNITIES FOR DECADES, killing millions of
+            American Citizens. NO LONGER. Thank you for your attention to this matter!!!
+          created_at: '2025-09-15T19:57:14.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210075167747572
+        - content: Congressional Republicans, including Leader John Thune and Speaker
+            Mike Johnson, are working on a short term “CLEAN” extension of Government
+            Funding to stop Cryin’ Chuck Schumer from shutting down the Government.
+            In times like these, Republicans have to stick TOGETHER to fight back
+            against the Radical Left Democrat demands, and vote “YES!” on both Votes
+            needed to pass a Clean CR this week out of the House of Representatives.
+            Democrats want the Government to shut down. Republicans want the Government
+            to OPEN. Democrats love CRIME, Republicans make our Country SAFE — WE
+            HATE CRIME. FAILURE IS NOT AN OPTION. Thank you for your attention to
+            this matter! President DJT
+          created_at: '2025-09-15T17:43:26.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209549037822166
+        - content: MY son Eric’s just out book, “UNDER SIEGE,” immediately went to
+            NUMBER ONE on Amazon. Great going Eric, you deserve it!!! https://a.co/d/7oPyLF5
+          created_at: '2025-09-15T16:42:14.412Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209308362990527
+        - content: RT @realDonaldTrumpWe honor the extraordinary life and service
+            of Retired U.S. Army Sergeant Michael Verardo, a true American Hero, who
+            gave everything for our Nation. After suffering catastrophic injuries
+            from an IED in Afghanistan on April 24, 2010, Michael endured 120 surgeries
+            with unwavering Courage, and the strong support of his incredible wife,
+            Sarah, and three beautiful daughters. Sarah’s tireless advocacy for Wounded
+            Warriors and Military Families exemplifies the Spirit of America. Michael's
+            Legacy of Resilience, and Sarah's Selfless Dedication, will forever inspire
+            us. Brave Patriots like Michael, and their families, will never be forgotten.
+            We will cherish them in our hearts, forever!
+          created_at: '2025-09-15T16:20:05.954Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209221305670983
+        - content: https://truthsocial.com/@realDonaldTrump/115206570863756188
+          created_at: '2025-09-15T12:58:24.026Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208428190944040
+        - content: “Too Late” MUST CUT INTEREST RATES, NOW, AND BIGGER THAN HE HAD
+            IN MIND. HOUSING WILL SOAR!!! President DJT
+          created_at: '2025-09-15T12:39:18.834Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208353139528932
+        - content: The big Trade Meeting in Europe between The United States of America,
+            and China,  has gone VERY WELL! It will be concluding shortly. A deal
+            was also reached on a “certain” company that young people in our Country
+            very much wanted to save. They will be very happy! I will be speaking
+            to President Xi on Friday. The relationship remains a very strong one!!!
+            President DJT
+          created_at: '2025-09-15T12:15:51.765Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208260926006345
+        - content: Subject to SEC Approval, Companies and Corporations should no longer
+            be forced to “Report” on a quarterly basis (Quarterly Reporting!), but
+            rather to Report on a “Six (6) Month Basis.” This will save money, and
+            allow managers to focus on properly running their companies. Did you ever
+            hear the statement that, “China has a 50 to 100 year view on management
+            of a company, whereas we run our companies on a quarterly basis???” Not
+            good!!!
+          created_at: '2025-09-15T12:05:25.559Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208219886830624
+        - content: The NFL has to get rid of that ridiculous looking new Kickoff Rule.
+            How can they make such a big and sweeping change so easily and quickly.
+            It’s at least as dangerous as the “normal” kickoff, and looks like hell.
+            The ball is moving, and the players are not, the exact opposite of what
+            football is all about. “Sissy” football is bad for America, and bad for
+            the NFL! Who comes up with these ridiculous ideas? It’s like wanting to
+            “roll back” the golf ball so it doesn’t go (nearly!) as far. Fortunately,
+            college football will remain the same, hopefully forever!!
+          created_at: '2025-09-15T11:46:02.388Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208143657180249
+        - content: Governor Kathy Hochul of New York has Endorsed the “Liddle’ Communist,”
+            Zohran Mamdani, running for Mayor of New York. This is a rather shocking
+            development, and a very bad one for New York City. How can such a thing
+            happen? Washington will be watching this situation very closely. No reason
+            to be sending good money after bad! President DJT
+          created_at: '2025-09-15T11:07:26.318Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115207991871277413
+        - content: The Federal Government, under my auspices as President of the United
+            States of America, has stepped into the complete criminal mess that was
+            Washington, D.C., our Nation’s Capital. Because of this, D.C. has gone
+            from one of the most dangerous and murder ridden cities in the U.S.A.,
+            and even around the World, to one of the safest - In just a few weeks.
+            The “place” is absolutely booming, with restaurants, stores, and businesses
+            packed and, for the first time in decades, virtually NO CRIME. It has
+            been a beautiful thing to watch but, now, under pressure from the Radical
+            Left Democrats, Mayor Muriel Bowser, who has presided over this violent
+            criminal takeover of our Capital for years, has informed the Federal Government
+            that the Metropolitan Police Department will no longer cooperate with
+            ICE in removing and relocating dangerous illegal aliens. If I allowed
+            this to happen, CRIME would come roaring back. To the people and businesses
+            of Washington, D.C., DON’T WORRY, I AM WITH YOU, AND WON’T ALLOW THIS
+            TO HAPPEN. I’ll call a National Emergency, and Federalize, if necessary!!!
+            Thank you for your attention to this matter. MAKE AMERICA GREAT AGAIN!!!
+            President DJT
+          created_at: '2025-09-15T05:06:03.466Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115206570863756188
+        - content: I am aware of the terrible reports regarding the murder of Chandra
+            Nagamallaiah, a well respected person in Dallas, Texas, who was brutally
+            beheaded, in front of his wife and son, by an ILLEGAL ALIEN from Cuba
+            who should have never been in our Country. This individual was previously
+            arrested for terrible crimes, including child sex abuse, grand theft auto,
+            and false imprisonment, but was released back into our Homeland under
+            incompetent Joe Biden because Cuba did not want such an evil person in
+            their Country. Rest assured, the time for being soft on these Illegal
+            Immigrant Criminals is OVER under my watch! Secretary of Homeland Security
+            Kristi Noem, Attorney General Pam Bondi, Border Czar Tom Homan, and many
+            others in my Administration, are doing an incredible job in, MAKING AMERICA
+            SAFE AGAIN. This criminal, who we have in custody, will be prosecuted
+            to the fullest extent of the Law. He will be charged with murder in the
+            first degree!
+          created_at: '2025-09-15T00:38:56.350Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205520510774944
+        - content: 'It was my Great Honor to write the Foreword for George “Tyrus”
+            Murdoch’s (Is he related to Rupert Murdoch?) new Book, “WHAT IT IS, AMERICA.”
+            I have been fortunate in getting to know Tyrus, and he is a very smart
+            and talented guy — And also a very good man. Throughout his career in
+            Professional Wrestling and Television, he has earned the respect and admiration
+            of millions. While Late Night Television Ratings have rapidly declined
+            for others, Tyrus, working with the incredible Greg Gutfeld, and a group
+            of wonderful people, have created something very special — A Late Night
+            Show that is destroying Traditional Late Night Television, and the Radical
+            Left who preside over it, in TV Ratings and beyond. Tyrus, using his iconic
+            Wit, Humor, and Charm, to target the Deranged Trump Haters, and their
+            joyless campaign against the American Way of Life, Liberty, and the Pursuit
+            of Happiness, is a STAR. He became famous for saying, long before the
+            Election, “Why we are talking about the 2024 Presidential Election? It’s
+            OVER. TRUMP is going to win, and everyone knows it. It’s a waste of time
+            to talk about it. They’re not going to beat him, and they never will.”
+            I used to laugh when I heard it, but he was right. In his wonderful new
+            Book, Tyrus tells the true story of the 2024 Presidential Election, with
+            his own unique insights, strongly rooted in Common Sense and Love for
+            our Country. This Book is fantastic — Enjoy! Pre-Order today: https://a.co/d/ef3e2av'
+          created_at: '2025-09-14T23:43:08.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205301127455058
+        - content: When Foreign Companies who are building extremely complex products,
+            machines, and various other “things,” come into the United States with
+            massive Investments, I want them to bring their people of expertise for
+            a period of time to teach and train our people how to make these very
+            unique and complex products, as they phase out of our Country, and back
+            into their land. If we didn’t do this, all of that massive Investment
+            will never come in the first place — Chips, Semiconductors, Computers,
+            Ships, Trains, and so many other products that we have to learn from others
+            how to make, or, in many cases, relearn, because we used to be great at
+            it, but not anymore. For example, Shipbuilding, where we used to build
+            a Ship a day and now, we barely build a Ship a year. I don’t want to frighten
+            off or disincentivize Investment into America by outside Countries or
+            Companies. We welcome them, we welcome their employees, and we are willing
+            to proudly say we will learn from them, and do even better than them at
+            their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-14T18:24:48.332Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115204049358078594
+        - content: I would rather go to ribbon cuttings than to groundbreakings!
+          created_at: '2025-09-14T18:06:18.868Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115203976647679985
+    description: Direct tool call for Trump posts with max 5 posts and formatted response
+    status: success
+  trump_posts_direct_raw:
+    input:
+      tool: get_trump_posts
+      tool_arguments:
+        max_posts: 5
+      raw_data_only: true
+    output:
+      response: ''
+      data:
+        profile: '@realDonaldTrump'
+        post_count: 20
+        posts:
+        - content: RT @realDonaldTrumpThe only reason crime is somewhat down in Memphis
+            is because the FBI, and others in the Federal Government, at my direction,
+            have been working there for 5 months - on the absolutely terrible Crime
+            numbers. Likewise, in Chicago and Los Angeles! But the real work by us
+            has barely begun. That happens after we make the official announcement
+            that WE’RE COMING, and when we do that, as we did in now VERY SAFE WASHINGTON,
+            D.C., the no crime “miracle” begins. ONLY I CAN SAVE THEM!!! Thank you
+            for your attention to this matter. President DJT
+          created_at: '2025-09-16T07:40:08.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212839080179321
+        - content: RT @realDonaldTrumpWhen Foreign Companies who are building extremely
+            complex products, machines, and various other “things,” come into the
+            United States with massive Investments, I want them to bring their people
+            of expertise for a period of time to teach and train our people how to
+            make these very unique and complex products, as they phase out of our
+            Country, and back into their land. If we didn’t do this, all of that massive
+            Investment will never come in the first place — Chips, Semiconductors,
+            Computers, Ships, Trains, and so many other products that we have to learn
+            from others how to make, or, in many cases, relearn, because we used to
+            be great at it, but not anymore. For example, Shipbuilding, where we used
+            to build a Ship a day and now, we barely build a Ship a year. I don’t
+            want to frighten off or disincentivize Investment into America by outside
+            Countries or Companies. We welcome them, we welcome their employees, and
+            we are willing to proudly say we will learn from them, and do even better
+            than them at their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-16T07:39:36.541Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115212836965154737
+        - content: Today, I have the Great Honor of bringing a $15 Billion Dollar
+            Defamation and Libel Lawsuit against The New York Times, one of the worst
+            and most degenerate newspapers in the History of our Country, becoming
+            a virtual “mouthpiece” for the Radical Left Democrat Party. I view it
+            as the single largest illegal Campaign contribution, EVER. Their Endorsement
+            of Kamala Harris was actually put dead center on the front page of The
+            New York Times, something heretofore UNHEARD OF! The “Times” has engaged
+            in a decades long method of lying about your Favorite President (ME!),
+            my family, business, the America First Movement, MAGA, and our Nation
+            as a whole. I am PROUD to hold this once respected “rag” responsible,
+            as we are doing with the Fake News Networks such as our successful litigation
+            against George Slopadopoulos/ABC/Disney, and 60 Minutes/CBS/Paramount,
+            who knew that they were falsely “smearing” me through a highly sophisticated
+            system of document and visual alteration, which was, in effect, a malicious
+            form of defamation, and thus, settled for record amounts. They practiced
+            this longterm INTENT and pattern of abuse, which is both unacceptable
+            and illegal. The New York Times has been allowed to freely lie, smear,
+            and defame me for far too long, and that stops, NOW! The suit is being
+            brought in the Great State of Florida. Thank you for your attention to
+            this matter. MAKE AMERICA GREAT AGAIN!
+          created_at: '2025-09-16T03:45:57.266Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115211918198289404
+        - content: 'Today, at the request of Governor Bill Lee of Tennessee, I signed
+            a Presidential Memorandum to establish the Memphis Safe Task Force…Memorandum:
+            https://www.whitehouse.gov/presidential-actions/2025/09/restoring-law-and-order-in-memphis/'
+          created_at: '2025-09-15T21:56:00.539Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210542156462323
+        - content: I have just read a News Report that Hamas has moved the hostages
+            above ground to use them as human shields against Israel’s ground offensive.
+            I hope the Leaders of Hamas know what they’re getting into if they do
+            such a thing. This is a human atrocity, the likes of which few people
+            have ever seen before. Don’t let this happen or, ALL “BETS” ARE OFF. RELEASE
+            ALL HOSTAGES NOW!
+          created_at: '2025-09-15T20:42:01.839Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210251262068973
+        - content: This morning, on my Orders, U.S. Military Forces conducted a SECOND
+            Kinetic Strike against positively identified, extraordinarily violent
+            drug trafficking cartels and narcoterrorists in the SOUTHCOM area of responsibility.
+            The Strike occurred while these confirmed narcoterrorists from Venezuela
+            were in International Waters transporting illegal narcotics (A DEADLY
+            WEAPON POISONING AMERICANS!) headed to the U.S. These extremely violent
+            drug trafficking cartels POSE A THREAT to U.S. National Security, Foreign
+            Policy, and vital U.S. Interests. The Strike resulted in 3 male terrorists
+            killed in action. No U.S. Forces were harmed in this Strike. BE WARNED
+            — IF YOU ARE TRANSPORTING DRUGS THAT CAN KILL AMERICANS, WE ARE HUNTING
+            YOU! The illicit activities by these cartels have wrought DEVASTATING
+            CONSEQUENCES ON AMERICAN COMMUNITIES FOR DECADES, killing millions of
+            American Citizens. NO LONGER. Thank you for your attention to this matter!!!
+          created_at: '2025-09-15T19:57:14.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115210075167747572
+        - content: Congressional Republicans, including Leader John Thune and Speaker
+            Mike Johnson, are working on a short term “CLEAN” extension of Government
+            Funding to stop Cryin’ Chuck Schumer from shutting down the Government.
+            In times like these, Republicans have to stick TOGETHER to fight back
+            against the Radical Left Democrat demands, and vote “YES!” on both Votes
+            needed to pass a Clean CR this week out of the House of Representatives.
+            Democrats want the Government to shut down. Republicans want the Government
+            to OPEN. Democrats love CRIME, Republicans make our Country SAFE — WE
+            HATE CRIME. FAILURE IS NOT AN OPTION. Thank you for your attention to
+            this matter! President DJT
+          created_at: '2025-09-15T17:43:26.817Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209549037822166
+        - content: MY son Eric’s just out book, “UNDER SIEGE,” immediately went to
+            NUMBER ONE on Amazon. Great going Eric, you deserve it!!! https://a.co/d/7oPyLF5
+          created_at: '2025-09-15T16:42:14.412Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209308362990527
+        - content: RT @realDonaldTrumpWe honor the extraordinary life and service
+            of Retired U.S. Army Sergeant Michael Verardo, a true American Hero, who
+            gave everything for our Nation. After suffering catastrophic injuries
+            from an IED in Afghanistan on April 24, 2010, Michael endured 120 surgeries
+            with unwavering Courage, and the strong support of his incredible wife,
+            Sarah, and three beautiful daughters. Sarah’s tireless advocacy for Wounded
+            Warriors and Military Families exemplifies the Spirit of America. Michael's
+            Legacy of Resilience, and Sarah's Selfless Dedication, will forever inspire
+            us. Brave Patriots like Michael, and their families, will never be forgotten.
+            We will cherish them in our hearts, forever!
+          created_at: '2025-09-15T16:20:05.954Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115209221305670983
+        - content: https://truthsocial.com/@realDonaldTrump/115206570863756188
+          created_at: '2025-09-15T12:58:24.026Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208428190944040
+        - content: “Too Late” MUST CUT INTEREST RATES, NOW, AND BIGGER THAN HE HAD
+            IN MIND. HOUSING WILL SOAR!!! President DJT
+          created_at: '2025-09-15T12:39:18.834Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208353139528932
+        - content: The big Trade Meeting in Europe between The United States of America,
+            and China,  has gone VERY WELL! It will be concluding shortly. A deal
+            was also reached on a “certain” company that young people in our Country
+            very much wanted to save. They will be very happy! I will be speaking
+            to President Xi on Friday. The relationship remains a very strong one!!!
+            President DJT
+          created_at: '2025-09-15T12:15:51.765Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208260926006345
+        - content: Subject to SEC Approval, Companies and Corporations should no longer
+            be forced to “Report” on a quarterly basis (Quarterly Reporting!), but
+            rather to Report on a “Six (6) Month Basis.” This will save money, and
+            allow managers to focus on properly running their companies. Did you ever
+            hear the statement that, “China has a 50 to 100 year view on management
+            of a company, whereas we run our companies on a quarterly basis???” Not
+            good!!!
+          created_at: '2025-09-15T12:05:25.559Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208219886830624
+        - content: The NFL has to get rid of that ridiculous looking new Kickoff Rule.
+            How can they make such a big and sweeping change so easily and quickly.
+            It’s at least as dangerous as the “normal” kickoff, and looks like hell.
+            The ball is moving, and the players are not, the exact opposite of what
+            football is all about. “Sissy” football is bad for America, and bad for
+            the NFL! Who comes up with these ridiculous ideas? It’s like wanting to
+            “roll back” the golf ball so it doesn’t go (nearly!) as far. Fortunately,
+            college football will remain the same, hopefully forever!!
+          created_at: '2025-09-15T11:46:02.388Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115208143657180249
+        - content: Governor Kathy Hochul of New York has Endorsed the “Liddle’ Communist,”
+            Zohran Mamdani, running for Mayor of New York. This is a rather shocking
+            development, and a very bad one for New York City. How can such a thing
+            happen? Washington will be watching this situation very closely. No reason
+            to be sending good money after bad! President DJT
+          created_at: '2025-09-15T11:07:26.318Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115207991871277413
+        - content: The Federal Government, under my auspices as President of the United
+            States of America, has stepped into the complete criminal mess that was
+            Washington, D.C., our Nation’s Capital. Because of this, D.C. has gone
+            from one of the most dangerous and murder ridden cities in the U.S.A.,
+            and even around the World, to one of the safest - In just a few weeks.
+            The “place” is absolutely booming, with restaurants, stores, and businesses
+            packed and, for the first time in decades, virtually NO CRIME. It has
+            been a beautiful thing to watch but, now, under pressure from the Radical
+            Left Democrats, Mayor Muriel Bowser, who has presided over this violent
+            criminal takeover of our Capital for years, has informed the Federal Government
+            that the Metropolitan Police Department will no longer cooperate with
+            ICE in removing and relocating dangerous illegal aliens. If I allowed
+            this to happen, CRIME would come roaring back. To the people and businesses
+            of Washington, D.C., DON’T WORRY, I AM WITH YOU, AND WON’T ALLOW THIS
+            TO HAPPEN. I’ll call a National Emergency, and Federalize, if necessary!!!
+            Thank you for your attention to this matter. MAKE AMERICA GREAT AGAIN!!!
+            President DJT
+          created_at: '2025-09-15T05:06:03.466Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115206570863756188
+        - content: I am aware of the terrible reports regarding the murder of Chandra
+            Nagamallaiah, a well respected person in Dallas, Texas, who was brutally
+            beheaded, in front of his wife and son, by an ILLEGAL ALIEN from Cuba
+            who should have never been in our Country. This individual was previously
+            arrested for terrible crimes, including child sex abuse, grand theft auto,
+            and false imprisonment, but was released back into our Homeland under
+            incompetent Joe Biden because Cuba did not want such an evil person in
+            their Country. Rest assured, the time for being soft on these Illegal
+            Immigrant Criminals is OVER under my watch! Secretary of Homeland Security
+            Kristi Noem, Attorney General Pam Bondi, Border Czar Tom Homan, and many
+            others in my Administration, are doing an incredible job in, MAKING AMERICA
+            SAFE AGAIN. This criminal, who we have in custody, will be prosecuted
+            to the fullest extent of the Law. He will be charged with murder in the
+            first degree!
+          created_at: '2025-09-15T00:38:56.350Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205520510774944
+        - content: 'It was my Great Honor to write the Foreword for George “Tyrus”
+            Murdoch’s (Is he related to Rupert Murdoch?) new Book, “WHAT IT IS, AMERICA.”
+            I have been fortunate in getting to know Tyrus, and he is a very smart
+            and talented guy — And also a very good man. Throughout his career in
+            Professional Wrestling and Television, he has earned the respect and admiration
+            of millions. While Late Night Television Ratings have rapidly declined
+            for others, Tyrus, working with the incredible Greg Gutfeld, and a group
+            of wonderful people, have created something very special — A Late Night
+            Show that is destroying Traditional Late Night Television, and the Radical
+            Left who preside over it, in TV Ratings and beyond. Tyrus, using his iconic
+            Wit, Humor, and Charm, to target the Deranged Trump Haters, and their
+            joyless campaign against the American Way of Life, Liberty, and the Pursuit
+            of Happiness, is a STAR. He became famous for saying, long before the
+            Election, “Why we are talking about the 2024 Presidential Election? It’s
+            OVER. TRUMP is going to win, and everyone knows it. It’s a waste of time
+            to talk about it. They’re not going to beat him, and they never will.”
+            I used to laugh when I heard it, but he was right. In his wonderful new
+            Book, Tyrus tells the true story of the 2024 Presidential Election, with
+            his own unique insights, strongly rooted in Common Sense and Love for
+            our Country. This Book is fantastic — Enjoy! Pre-Order today: https://a.co/d/ef3e2av'
+          created_at: '2025-09-14T23:43:08.856Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115205301127455058
+        - content: When Foreign Companies who are building extremely complex products,
+            machines, and various other “things,” come into the United States with
+            massive Investments, I want them to bring their people of expertise for
+            a period of time to teach and train our people how to make these very
+            unique and complex products, as they phase out of our Country, and back
+            into their land. If we didn’t do this, all of that massive Investment
+            will never come in the first place — Chips, Semiconductors, Computers,
+            Ships, Trains, and so many other products that we have to learn from others
+            how to make, or, in many cases, relearn, because we used to be great at
+            it, but not anymore. For example, Shipbuilding, where we used to build
+            a Ship a day and now, we barely build a Ship a year. I don’t want to frighten
+            off or disincentivize Investment into America by outside Countries or
+            Companies. We welcome them, we welcome their employees, and we are willing
+            to proudly say we will learn from them, and do even better than them at
+            their own “game,” sometime into the not too distant future!
+          created_at: '2025-09-14T18:24:48.332Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115204049358078594
+        - content: I would rather go to ribbon cuttings than to groundbreakings!
+          created_at: '2025-09-14T18:06:18.868Z'
+          likes: 0
+          replies: 0
+          reposts: 0
+          url: https://truthsocial.com/@realDonaldTrump/115203976647679985
+    description: Direct tool call for Trump posts with max 5 posts and raw data
+    status: success

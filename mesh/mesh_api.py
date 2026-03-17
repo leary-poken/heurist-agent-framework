@@ -1,0 +1,633 @@
+import asyncio
+import logging
+import os
+import sys
+import time
+from contextlib import asynccontextmanager
+from datetime import datetime
+from decimal import Decimal
+from pathlib import Path
+from typing import Any, Dict, Optional, Union
+
+import boto3
+import botocore.exceptions
+import uvicorn
+from dotenv import load_dotenv
+from fastapi import Depends, FastAPI, HTTPException, Query, Request
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
+from pydantic import BaseModel
+
+load_dotenv()
+project_root = Path(__file__).parent.parent
+sys.path.append(str(project_root))
+
+from mesh.mesh_manager import AgentLoader, Config  # noqa: E402
+from mesh.mesh_task_store import MeshTaskStore  # noqa: E402
+from mesh.tweet_claim import ClaimStoreUnavailableError, ensure_claim_store_ready_sync, initiate_claim, verify_claim  # noqa: E402
+from mesh.usage_tracker import record_usage  # noqa: E402
+from mesh.skill_marketplace.routes import router as skill_marketplace_router  # noqa: E402
+from mesh.skill_marketplace.admin_routes import admin_router as skill_marketplace_admin_router  # noqa: E402
+from mesh.skill_marketplace.db import init_db as init_skill_marketplace_db, close_pool as close_skill_marketplace_pool  # noqa: E402
+from mesh.inflow_payment import (  # noqa: E402
+    InflowPayment,
+    InflowSignupAttachRequest,
+    InflowSignupRequest,
+    attach_inflow_agentic_user,
+    enforce_signup_rate_limit,
+    get_client_ip_from_request,
+    is_inflow_payment_request,
+    process_inflow_mesh_request,
+    signup_inflow_agentic_user,
+)
+
+
+# exclude `mesh_health` logs as it's used for health checks
+class EndpointFilter(logging.Filter):
+    def filter(self, record: logging.LogRecord) -> bool:
+        return "GET /mesh_health" not in record.getMessage()
+
+
+logging.getLogger("uvicorn.access").addFilter(EndpointFilter())
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s - %(message)s")
+logger = logging.getLogger("MeshAPI")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    try:
+        ensure_claim_store_ready_sync()
+    except ClaimStoreUnavailableError as exc:
+        logger.warning(f"Claim store unavailable at startup: {exc}. Tweet claim endpoints will return 503.")
+    try:
+        await init_skill_marketplace_db()
+    except Exception as exc:
+        logger.warning(f"Skill marketplace DB unavailable at startup: {exc}. Skill marketplace endpoints will fail.")
+    yield
+    logger.info("Application shutdown: cleaning up agent pool")
+    await agent_pool.cleanup()
+    await close_skill_marketplace_pool()
+
+
+app = FastAPI(
+    title="Heurist Mesh API",
+    description="Unified API for Heurist Mesh agent execution, async tasks, skill marketplace, and credit management.",
+    version="1.0.0",
+    lifespan=lifespan,
+    openapi_tags=[
+        {"name": "Agent Execution", "description": "Synchronous and asynchronous agent task execution."},
+        {"name": "Skill Marketplace", "description": "Browse, search, and check updates for curated Web3 agent skills."},
+        {"name": "Credits", "description": "Claim and verify free credits via Twitter/X."},
+        {"name": "Payments", "description": "Inflow payment signup and wallet attachment."},
+        {"name": "System", "description": "Health checks, cache debug, and agent schema introspection."},
+    ],
+)
+security = HTTPBearer(auto_error=False)
+
+app.add_middleware(
+    CORSMiddleware,
+    # allow heurist.ai subdomains and localhost for development, mainly for the docs playground
+    # ref: http://docs.heurist.ai/dev-guide/heurist-mesh/endpoint
+    allow_origin_regex=r"^https?://.*\.heurist\.ai(:\d+)?$|^http?://(localhost|127\.0\.0\.1)(:\d+)?$",
+    allow_methods=["POST", "GET", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
+    max_age=600,
+    allow_credentials=False,
+)
+
+# Skill marketplace routes
+app.include_router(skill_marketplace_router)
+app.include_router(skill_marketplace_admin_router)
+
+
+class AgentPool:
+    """
+    Pool of agent instances to be reused across requests.
+    This ensures that cached method calls work correctly.
+    """
+
+    def __init__(self, agents_dict):
+        self.agents_dict = agents_dict
+        self.instances = {}  # {agent_id: {"instance": agent_instance, "last_used": timestamp}}
+        self.lock = asyncio.Lock()
+        self.ttl = 1800  # Time in seconds to keep unused agents
+
+    async def get_agent(self, agent_id):
+        """Get an agent instance from the pool or create a new one"""
+        async with self.lock:
+            now = time.time()
+
+            # Clean up old instances
+            to_remove = []
+            for id, data in self.instances.items():
+                if now - data["last_used"] > self.ttl:
+                    to_remove.append(id)
+                    # Cleanup the agent
+                    try:
+                        await data["instance"].cleanup()
+                    except Exception as e:
+                        logger.warning(f"Error cleaning up agent {id}: {e}")
+
+            for id in to_remove:
+                del self.instances[id]
+
+            # Get or create agent instance
+            if agent_id not in self.instances:
+                if agent_id not in self.agents_dict:
+                    raise ValueError(f"Agent {agent_id} not found")
+
+                agent_cls = self.agents_dict[agent_id]
+                self.instances[agent_id] = {"instance": agent_cls(), "last_used": now}
+                logger.info(f"Created new agent instance: {agent_id}")
+            else:
+                # Update last used time
+                self.instances[agent_id]["last_used"] = now
+                logger.info(f"Reusing existing agent instance: {agent_id}")
+
+            return self.instances[agent_id]["instance"]
+
+    async def cleanup(self):
+        """Cleanup all agent instances"""
+        async with self.lock:
+            for id, data in self.instances.items():
+                try:
+                    await data["instance"].cleanup()
+                except Exception as e:
+                    logger.warning(f"Error cleaning up agent {id}: {e}")
+            self.instances.clear()
+
+
+config = Config()
+agents_dict = AgentLoader(config).load_agents()
+agent_pool = AgentPool(agents_dict)
+current_commit = os.getenv("GITHUB_SHA", "unknown")
+task_store = MeshTaskStore(project_root / "mesh_async_tasks.db")
+
+
+class MeshRequest(BaseModel):
+    agent_id: str
+    input: Dict[str, Any]
+    api_key: str | None = None
+    heurist_api_key: str | None = None
+    payment: InflowPayment | None = None
+
+
+class MeshTaskCreateRequest(BaseModel):
+    agent_id: str
+    task_details: Dict[str, Any]
+    api_key: str | None = None
+    heurist_api_key: str | None = None
+    agent_type: Optional[str] = None
+
+
+class MeshTaskQueryRequest(BaseModel):
+    task_id: str
+    api_key: str | None = None
+
+
+class TweetClaimVerifyRequest(BaseModel):
+    tweet_url: str
+    verification_code: str
+
+
+DYNAMODB_TABLE_NAME = os.getenv("DYNAMODB_TABLE_NAME")
+AUTH_ENABLED = os.getenv("AUTH_ENABLED")
+AWS_REGION = os.getenv("AWS_REGION")
+AWS_ACCESS_KEY_ID = os.getenv("AWS_ACCESS_KEY_ID")
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+_dynamodb_table = None
+
+
+def _get_dynamodb_table():
+    global _dynamodb_table
+    if _dynamodb_table is None and DYNAMODB_TABLE_NAME:
+        # Build kwargs for boto3
+        kwargs = {}
+        if AWS_REGION:
+            kwargs["region_name"] = AWS_REGION
+        if AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY:
+            kwargs["aws_access_key_id"] = AWS_ACCESS_KEY_ID
+            kwargs["aws_secret_access_key"] = AWS_SECRET_ACCESS_KEY
+        dynamodb = boto3.resource("dynamodb", **kwargs)
+        _dynamodb_table = dynamodb.Table(DYNAMODB_TABLE_NAME)
+    return _dynamodb_table
+
+
+def parse_api_key(origin_api_key: str) -> tuple[str, str]:
+    if "#" in origin_api_key:
+        user_id, api_key_part = origin_api_key.split("#", 1)
+    elif "-" in origin_api_key:
+        user_id, api_key_part = origin_api_key.split("-", 1)
+    else:
+        raise ValueError("Invalid API key format")
+    return user_id, api_key_part
+
+
+def _sync_validate_and_check_credits(user_id: str, api_key_part: str, required_credits: float) -> Decimal:
+    """Synchronous DynamoDB validation - called via asyncio.to_thread()"""
+    table = _get_dynamodb_table()
+
+    # 1. Validate API key exists
+    api_key_response = table.get_item(Key={"user_id": user_id, "api_key": api_key_part})
+    if "Item" not in api_key_response:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+
+    # 2. Get user data and check credits
+    user_data_response = table.get_item(Key={"user_id": user_id, "api_key": "USER_DATA"})
+    if "Item" not in user_data_response:
+        raise HTTPException(status_code=401, detail="User data not found")
+
+    user_data = user_data_response["Item"]
+    remaining_credits = Decimal(str(user_data.get("remaining_credits", 0)))
+
+    if remaining_credits < Decimal(str(required_credits)):
+        raise HTTPException(status_code=402, detail="Insufficient credits")
+
+    return remaining_credits
+
+
+async def validate_and_check_credits(user_id: str, api_key_part: str, required_credits: float = 1.0) -> Decimal:
+    if not AUTH_ENABLED:
+        return Decimal("999999")
+
+    try:
+        return await asyncio.to_thread(_sync_validate_and_check_credits, user_id, api_key_part, required_credits)
+    except HTTPException:
+        raise
+    except Exception as exc:
+        logger.error(f"DynamoDB validation error: {exc}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Credit validation error")
+
+
+def _sync_deduct_credits(user_id: str, credits_to_deduct: float) -> bool:
+    """Synchronous credit deduction - called via asyncio.to_thread()"""
+    table = _get_dynamodb_table()
+    table.update_item(
+        Key={"user_id": user_id, "api_key": "USER_DATA"},
+        UpdateExpression="SET remaining_credits = remaining_credits - :amount",
+        ConditionExpression="remaining_credits >= :amount",
+        ExpressionAttributeValues={":amount": Decimal(str(credits_to_deduct))},
+    )
+    return True
+
+
+async def deduct_credits_dynamodb(user_id: str, agent_id: str, credits_to_deduct: float) -> bool:
+    if not AUTH_ENABLED or credits_to_deduct <= 0:
+        return True
+
+    try:
+        await asyncio.to_thread(_sync_deduct_credits, user_id, credits_to_deduct)
+        logger.info(f"Deducted {credits_to_deduct} credits from {user_id} for {agent_id}")
+        return True
+
+    except botocore.exceptions.ClientError as exc:
+        if exc.response.get("Error", {}).get("Code") == "ConditionalCheckFailedException":
+            logger.warning(f"Insufficient credits for user {user_id} (race condition)")
+            return False
+        logger.error(f"Credit deduction error: {exc}", exc_info=True)
+        return False
+    except Exception as exc:
+        logger.error(f"Credit deduction error: {exc}", exc_info=True)
+        return False
+
+
+async def pre_validate_credits(origin_api_key: str, agent_credits: float = 1.0) -> str:
+    if not AUTH_ENABLED:
+        return "anonymous"
+    try:
+        user_id, api_key_part = parse_api_key(origin_api_key)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Invalid API key format")
+
+    await validate_and_check_credits(user_id, api_key_part, agent_credits)
+    return user_id
+
+
+def resolve_agent_credits(agent_metadata: dict, tool_name: str | None = None) -> float:
+    credits_config = agent_metadata.get("credits", {"default": 1})
+    if tool_name and tool_name in credits_config:
+        return float(credits_config[tool_name])
+    return float(credits_config.get("default", 1))
+
+
+async def deduct_credits(
+    user_id: str,
+    api_key_part: str,
+    agent_id: str,
+    agent_credits: float,
+) -> bool:
+    if not AUTH_ENABLED or agent_credits <= 0:
+        return True
+
+    success = await deduct_credits_dynamodb(user_id, agent_id, agent_credits)
+
+    if success:
+        asyncio.create_task(record_usage(user_id, agent_id, agent_credits))
+
+    return success
+
+
+async def run_async_agent_task(
+    task_id: str,
+    agent_id: str,
+    payload: Dict[str, Any],
+    origin_api_key: str,
+    heurist_api_key: Optional[str],
+    agent_credits: float = 1.0,
+    user_id: str = "",
+    api_key_part: str = "",
+) -> None:
+    """Run agent task asynchronously. Credits are deducted only on success."""
+    task_store.mark_running(task_id)
+
+    try:
+        agent = await agent_pool.get_agent(agent_id)
+
+        if heurist_api_key:
+            agent.set_heurist_api_key(heurist_api_key)
+
+        call_args = dict(payload)
+        call_args.setdefault("raw_data_only", False)
+        call_args["session_context"] = {"api_key": origin_api_key}
+        call_args.setdefault("task_id", task_id)
+
+        result = await agent.call_agent(call_args)
+
+        # DEDUCT: Only after successful agent execution
+        if user_id and api_key_part:
+            await deduct_credits(user_id, api_key_part, agent_id, agent_credits)
+
+        result_payload = dict(result)
+        result_payload["success"] = True
+        task_store.mark_completed(task_id, result_payload)
+    except HTTPException as exc:
+        detail = exc.detail if isinstance(exc.detail, str) else str(exc.detail)
+        task_store.mark_failed(task_id, detail)
+        logger.error(f"Async task failed | Agent: {agent_id} | Task: {task_id} | Error: {detail}")
+    except Exception as exc:
+        task_store.mark_failed(task_id, str(exc))
+        logger.error(f"Async task failed | Agent: {agent_id} | Task: {task_id} | Error: {exc}", exc_info=True)
+
+
+async def get_api_key(
+    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security),
+    request: Union[MeshRequest, MeshTaskCreateRequest, MeshTaskQueryRequest, None] = None,
+) -> str:
+    if credentials:
+        return credentials.credentials
+    if request:
+        api_key = getattr(request, "api_key", None)
+        if api_key:
+            return api_key
+    raise HTTPException(status_code=401, detail="API key is required from either bearer token or request body")
+
+
+@app.post("/mesh_request", tags=["Agent Execution"], summary="Execute an agent synchronously")
+async def process_mesh_request(
+    request: MeshRequest,
+    credentials: Optional[HTTPAuthorizationCredentials] = Depends(security),
+):
+    if request.agent_id not in agents_dict:
+        raise HTTPException(status_code=404, detail=f"Agent {request.agent_id} not found")
+
+    input_payload = dict(request.input)
+    input_payload.setdefault("raw_data_only", True)
+
+    agent = await agent_pool.get_agent(request.agent_id)
+    is_inflow_mode = is_inflow_payment_request(request.payment)
+
+    if request.payment and not is_inflow_mode:
+        raise HTTPException(status_code=400, detail="Unsupported payment provider")
+
+    if is_inflow_mode:
+        payment = request.payment
+        if not payment:
+            raise HTTPException(status_code=400, detail="Missing payment object")
+
+        agent_credits = resolve_agent_credits(agent.metadata, input_payload.get("tool"))
+
+        return await process_inflow_mesh_request(
+            payment=payment,
+            agent_id=request.agent_id,
+            input_payload=input_payload,
+            heurist_api_key=request.heurist_api_key,
+            agent=agent,
+            agent_credits=float(agent_credits),
+        )
+
+    origin_api_key = await get_api_key(credentials, request)
+
+    agent_credits = resolve_agent_credits(agent.metadata, input_payload.get("tool"))
+    try:
+        user_id, api_key_part = parse_api_key(origin_api_key)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Invalid API key format")
+    await pre_validate_credits(origin_api_key, agent_credits)
+
+    try:
+        if request.heurist_api_key:
+            agent.set_heurist_api_key(request.heurist_api_key)
+
+        call_args = dict(input_payload)
+        call_args["session_context"] = {"api_key": origin_api_key}
+        result = await agent.call_agent(call_args)
+
+        # DEDUCT: Only after successful execution
+        await deduct_credits(user_id, api_key_part, request.agent_id, agent_credits)
+
+        return result
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Error processing request: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/mesh_signup_inflow", tags=["Payments"], summary="Sign up for Inflow agentic payments")
+async def mesh_signup_inflow(http_request: Request, request: InflowSignupRequest):
+    client_ip = get_client_ip_from_request(http_request)
+    enforce_signup_rate_limit(client_ip)
+    return await signup_inflow_agentic_user(request)
+
+
+@app.post("/mesh_signup_inflow_attach", tags=["Payments"], summary="Attach wallet to Inflow account")
+async def mesh_signup_inflow_attach(request: InflowSignupAttachRequest):
+    return await attach_inflow_agentic_user(request)
+
+
+@app.post("/mesh_task_create", tags=["Agent Execution"], summary="Create an async agent task")
+async def create_mesh_task(request: MeshTaskCreateRequest, api_key: str = Depends(get_api_key)):
+    if request.agent_id not in agents_dict:
+        raise HTTPException(status_code=404, detail=f"Agent {request.agent_id} not found")
+
+    if not isinstance(request.task_details, dict):
+        raise HTTPException(status_code=400, detail="task_details must be an object")
+
+    task_payload = dict(request.task_details)
+    if not task_payload.get("query") and not task_payload.get("tool"):
+        raise HTTPException(status_code=400, detail="task_details must include either query or tool")
+
+    # Ensure raw_data_only is present for consistency
+    task_payload.setdefault("raw_data_only", False)
+
+    agent = await agent_pool.get_agent(request.agent_id)
+    agent_credits = resolve_agent_credits(agent.metadata, task_payload.get("tool"))
+    try:
+        user_id, api_key_part = parse_api_key(api_key)
+    except ValueError:
+        raise HTTPException(status_code=401, detail="Invalid API key format")
+    await pre_validate_credits(api_key, agent_credits)
+
+    task_id = task_store.create_task(request.agent_id, task_payload, api_key)
+
+    asyncio.create_task(
+        run_async_agent_task(
+            task_id,
+            request.agent_id,
+            task_payload,
+            api_key,
+            request.heurist_api_key,
+            agent_credits,
+            user_id,
+            api_key_part,
+        )
+    )
+
+    return {"task_id": task_id, "msg": "Task created"}
+
+
+@app.post("/mesh_task_query", tags=["Agent Execution"], summary="Query async task status and result")
+async def query_mesh_task(request: MeshTaskQueryRequest, api_key: str = Depends(get_api_key)):
+    record = task_store.get_task(request.task_id)
+    if not record:
+        raise HTTPException(status_code=404, detail="Task not found")
+
+    if record["api_key"] != api_key:
+        raise HTTPException(status_code=403, detail="Forbidden")
+
+    status = record["status"]
+    response: Dict[str, Any] = {"status": status}
+
+    if status == "completed" and record["result"]:
+        response["result"] = record["result"]
+    elif status == "failed":
+        response["error"] = record["error"] or "Task failed"
+
+    return response
+
+
+@app.get("/mesh_health", tags=["System"], summary="Health check")
+async def health_check():
+    return {
+        "status": "ok",
+        "commit": current_commit,
+        "agents_loaded": len(agents_dict),
+        "active_agent_instances": len(agent_pool.instances),
+    }
+
+
+@app.get("/mesh_debug/cache", tags=["System"], summary="View agent cache statistics")
+async def cache_debug():
+    """Debug endpoint to view cache statistics for all agents"""
+    stats = {}
+
+    for agent_id, data in agent_pool.instances.items():
+        instance = data["instance"]
+        agent_stats = {}
+
+        # Get all cache attributes
+        for attr_name in dir(instance.__class__):
+            if attr_name.startswith("_cache_") and not attr_name.startswith("_cache_ttl_"):
+                func_name = attr_name.replace("_cache_", "")
+                cache = getattr(instance.__class__, attr_name, {})
+                hits = getattr(instance.__class__, f"_cache_hits_{func_name}", 0)
+                misses = getattr(instance.__class__, f"_cache_misses_{func_name}", 0)
+                ttl_cache = getattr(instance.__class__, f"_cache_ttl_{func_name}", {})
+
+                # Calculate stats
+                total_calls = hits + misses
+                hit_ratio = (hits / total_calls * 100) if total_calls > 0 else 0
+
+                # Get expiration times for the first few keys
+                expirations = {}
+                for key in list(cache.keys())[:5]:
+                    if key in ttl_cache:
+                        expiration = ttl_cache[key]
+                        expirations[key] = {
+                            "expires_at": expiration.isoformat(),
+                            "seconds_left": (expiration - datetime.now()).total_seconds(),
+                        }
+
+                agent_stats[func_name] = {
+                    "items": len(cache),
+                    "hits": hits,
+                    "misses": misses,
+                    "hit_ratio": f"{hit_ratio:.1f}%",
+                    "first_few_keys": list(cache.keys())[:5],
+                    "expiration_info": expirations,
+                }
+
+        stats[agent_id] = agent_stats
+
+    return {
+        "cache_stats": stats,
+        "active_agent_instances": len(agent_pool.instances),
+        "timestamp": datetime.now().isoformat(),
+    }
+
+
+@app.get("/mesh_schema", tags=["System"], summary="Get agent tool schemas and pricing")
+async def get_mesh_schema(
+    agent_id: list[str] = Query(..., description="One or more agent IDs"),
+    pricing: str = Query("credits", description="Pricing unit: 'credits' or 'usd'"),
+):
+    if pricing not in ("credits", "usd"):
+        raise HTTPException(status_code=400, detail="pricing must be 'credits' or 'usd'")
+
+    result = {}
+    not_found = []
+    for aid in agent_id:
+        if aid not in agents_dict:
+            not_found.append(aid)
+            continue
+
+        agent = await agent_pool.get_agent(aid)
+        tools = []
+        for schema in agent.get_tool_schemas():
+            func = schema["function"]
+
+            credit_cost = resolve_agent_credits(agent.metadata, func["name"])
+            price = credit_cost / 100 if pricing == "usd" else credit_cost
+
+            tools.append(
+                {
+                    "name": func["name"],
+                    "description": func.get("description", ""),
+                    "parameters": func["parameters"],
+                    "price": price,
+                }
+            )
+
+        result[aid] = {"tools": tools}
+
+    if not_found and not result:
+        raise HTTPException(status_code=404, detail=f"Agents not found: {', '.join(not_found)}")
+
+    response = {"agents": result, "pricing_unit": pricing}
+    if not_found:
+        response["not_found"] = not_found
+    return response
+
+
+@app.post("/claim_credits/initiate", tags=["Credits"], summary="Initiate a credit claim via Twitter/X")
+async def claim_credits_initiate():
+    return await initiate_claim()
+
+
+@app.post("/claim_credits/verify", tags=["Credits"], summary="Verify tweet and award credits")
+async def claim_credits_verify(request: TweetClaimVerifyRequest):
+    return await verify_claim(request.tweet_url, request.verification_code)
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0")

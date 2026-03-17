@@ -1,0 +1,1189 @@
+metadata:
+  agent: ElfaTwitterIntelligenceAgent
+  test_file: elfa_twitter_intelligence_agent.py
+  timestamp: '2025-09-16T17:06:29.964459'
+  total_tests: 6
+  passed: 6
+  failed: 0
+results:
+  search_mentions_tool:
+    input:
+      tool: search_mentions
+      tool_arguments:
+        keywords:
+        - bitcoin
+        - solana
+        - ethereum
+        days_ago: 30
+        limit: 25
+      query: Search for crypto mentions using tool arguments
+    output:
+      response: ''
+      data:
+        status: success
+        data:
+          success: true
+          data:
+          - tweetId: '1967856203377107407'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T07:40:54+00:00'
+            type: quote
+            account:
+              username: pawnie_
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967798990826770511'
+            likeCount: 2
+            repostCount: 0
+            viewCount: 43
+            quoteCount: 1
+            replyCount: 1
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T03:53:34+00:00'
+            type: quote
+            account:
+              username: ryancharleston
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967785794288115983'
+            likeCount: 0
+            repostCount: 45
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T03:01:07+00:00'
+            type: repost
+            account:
+              username: RuleXRP
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967783259909374250'
+            likeCount: 0
+            repostCount: 54
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T02:51:03+00:00'
+            type: repost
+            account:
+              username: Junieteru
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967778108825592070'
+            likeCount: 210
+            repostCount: 45
+            viewCount: 33016
+            quoteCount: 9
+            replyCount: 67
+            bookmarkCount: 14
+            mentionedAt: '2025-09-16T02:30:35+00:00'
+            type: note
+            account:
+              username: Cointelegraph
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 1
+            text: null
+          - tweetId: '1967767626089889931'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 120
+            quoteCount: 1
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T01:48:56+00:00'
+            type: quote
+            account:
+              username: westonnelson
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967749050981376238'
+            likeCount: 18
+            repostCount: 0
+            viewCount: 6540
+            quoteCount: 0
+            replyCount: 13
+            bookmarkCount: 1
+            mentionedAt: '2025-09-16T00:35:07+00:00'
+            type: note
+            account:
+              username: hellosuoha
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967748543508287794'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T00:33:06+00:00'
+            type: note
+            account:
+              username: hellosuoha
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967748266717798589'
+            likeCount: 7
+            repostCount: 1
+            viewCount: 301
+            quoteCount: 0
+            replyCount: 4
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T00:32:00+00:00'
+            type: note
+            account:
+              username: munchPRMR
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967717567671439626'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 18
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T22:30:01+00:00'
+            type: quote
+            account:
+              username: Crypto_TownHall
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 1
+            text: null
+          - tweetId: '1967717566576513314'
+            likeCount: 57
+            repostCount: 12
+            viewCount: 3581
+            quoteCount: 0
+            replyCount: 17
+            bookmarkCount: 3
+            mentionedAt: '2025-09-15T22:30:00+00:00'
+            type: quote
+            account:
+              username: CryptoCurb
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967703088145502356'
+            likeCount: 34
+            repostCount: 9
+            viewCount: 1005
+            quoteCount: 0
+            replyCount: 7
+            bookmarkCount: 2
+            mentionedAt: '2025-09-15T21:32:29+00:00'
+            type: note
+            account:
+              username: realtommybibi
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967702318041924024'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 7
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T21:29:25+00:00'
+            type: note
+            account:
+              username: TheApeBitcoiner
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967699781272342763'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T21:19:20+00:00'
+            type: post
+            account:
+              username: CryptosR_Us
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967699337296875595'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T21:17:34+00:00'
+            type: post
+            account:
+              username: CryptosR_Us
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967698808734900693'
+            likeCount: 0
+            repostCount: 7
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T21:15:28+00:00'
+            type: repost
+            account:
+              username: systemic_bliss
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967683169752322380'
+            likeCount: 83
+            repostCount: 3
+            viewCount: 2610
+            quoteCount: 4
+            replyCount: 38
+            bookmarkCount: 1
+            mentionedAt: '2025-09-15T20:13:20+00:00'
+            type: post
+            account:
+              username: Obesepotato_hl
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 1
+            text: null
+          - tweetId: '1967680371551875537'
+            likeCount: 1
+            repostCount: 0
+            viewCount: 5
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 1
+            mentionedAt: '2025-09-15T20:02:12+00:00'
+            type: note
+            account:
+              username: cchungccc
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967679042435354977'
+            likeCount: 2
+            repostCount: 0
+            viewCount: 993
+            quoteCount: 1
+            replyCount: 0
+            bookmarkCount: 1
+            mentionedAt: '2025-09-15T19:56:56+00:00'
+            type: note
+            account:
+              username: FTDA_US
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967676524716495025'
+            likeCount: 3
+            repostCount: 1
+            viewCount: 1077
+            quoteCount: 0
+            replyCount: 2
+            bookmarkCount: 0
+            mentionedAt: '2025-09-15T19:46:55+00:00'
+            type: post
+            account:
+              username: cryptonews
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+    description: Direct tool call to search mentions for crypto keywords
+    status: success
+  search_mentions_query:
+    input:
+      query: Search for mentions of bitcoin, solana, and ethereum in the last 30 days
+    output:
+      response: 'Here''s a summary of recent Twitter mentions for Bitcoin, Solana,
+        and Ethereum:
+
+
+        **Bitcoin:** There are 10 recent mentions of Bitcoin.
+
+        *   The most recent mention was on 2025-09-16 at 09:04:49+00:00 by user "pete\_rizzo\_".
+        This was a repost with 17 reposts.
+
+        *   Another mention was by "MHiesboeck" on 2025-09-16 at 09:04:02+00:00, which
+        was a note with 1 reply and 14 views.
+
+        *   "RD\_btc" posted about Bitcoin on 2025-09-16 at 08:57:17+00:00, receiving
+        3 replies and 69 views.
+
+        *   "MartiniGuyYT" also posted on 2025-09-16 at 08:55:08+00:00, with 57 views.
+
+
+        **Solana and Ethereum:** No mentions were found for Solana or Ethereum in
+        the provided data.'
+      data:
+        status: success
+        data:
+          success: true
+          data:
+          - tweetId: '1967877320120979585'
+            likeCount: 0
+            repostCount: 17
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:04:49+00:00'
+            type: repost
+            account:
+              username: pete_rizzo_
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967877123894325353'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 14
+            quoteCount: 0
+            replyCount: 1
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:04:02+00:00'
+            type: note
+            account:
+              username: MHiesboeck
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967876998803710105'
+            likeCount: 0
+            repostCount: 2
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:03:32+00:00'
+            type: repost
+            account:
+              username: ChangeNOW_io
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967876409365512655'
+            likeCount: 0
+            repostCount: 15
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:01:12+00:00'
+            type: repost
+            account:
+              username: pete_rizzo_
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967876210446450696'
+            likeCount: 0
+            repostCount: 17
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:00:24+00:00'
+            type: repost
+            account:
+              username: MariusCrypt0
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967876126371614801'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T09:00:04+00:00'
+            type: quote
+            account:
+              username: MacroCRG
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967875833248485800'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T08:58:54+00:00'
+            type: quote
+            account:
+              username: BTCGandalf
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967875424148656369'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 69
+            quoteCount: 0
+            replyCount: 3
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T08:57:17+00:00'
+            type: post
+            account:
+              username: RD_btc
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967874882647339507'
+            likeCount: 0
+            repostCount: 0
+            viewCount: 57
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T08:55:08+00:00'
+            type: post
+            account:
+              username: MartiniGuyYT
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+          - tweetId: '1967874785578455367'
+            likeCount: 0
+            repostCount: 2
+            viewCount: 0
+            quoteCount: 0
+            replyCount: 0
+            bookmarkCount: 0
+            mentionedAt: '2025-09-16T08:54:44+00:00'
+            type: repost
+            account:
+              username: BitcoinUbuntu
+              isVerified: false
+            repostBreakdown:
+              smart: 0
+              ct: 0
+            text: null
+    description: Natural language query to search for crypto mentions
+    status: success
+  search_account_tool:
+    input:
+      tool: search_account
+      tool_arguments:
+        username: heurist_ai
+        days_ago: 30
+        limit: 20
+      query: Analyze account using tool arguments
+    output:
+      response: ''
+      data: &id001
+        status: success
+        data:
+          account_stats:
+            success: true
+            data:
+              smartFollowingCount: 0
+              averageEngagement: 0.474343398425539
+              averageReach: 16007.666666666666
+              smartFollowerCount: 140
+              followerCount: 33747
+          mentions:
+            success: true
+            data:
+            - tweetId: '1965694070220607970'
+              likeCount: 0
+              repostCount: 1
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-10T08:29:21+00:00'
+              type: repost
+              account:
+                username: fundbrah
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1965603626828923249'
+              likeCount: 4
+              repostCount: 1
+              viewCount: 204
+              quoteCount: 0
+              replyCount: 1
+              bookmarkCount: 0
+              mentionedAt: '2025-09-10T02:29:58+00:00'
+              type: post
+              account:
+                username: fundbrah
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1965599258385809466'
+              likeCount: 0
+              repostCount: 15
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-10T02:12:36+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1965599258385809466'
+              likeCount: 0
+              repostCount: 15
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-10T02:12:36+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1965448361286484312'
+              likeCount: 55
+              repostCount: 15
+              viewCount: 25445
+              quoteCount: 1
+              replyCount: 21
+              bookmarkCount: 2
+              mentionedAt: '2025-09-09T16:13:00+00:00'
+              type: note
+              account:
+                username: carv_official
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1965448361286484312'
+              likeCount: 56
+              repostCount: 15
+              viewCount: 25572
+              quoteCount: 1
+              replyCount: 21
+              bookmarkCount: 2
+              mentionedAt: '2025-09-09T16:13:00+00:00'
+              type: note
+              account:
+                username: carv_official
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1964585494425325880'
+              likeCount: 114
+              repostCount: 0
+              viewCount: 12544
+              quoteCount: 18
+              replyCount: 108
+              bookmarkCount: 0
+              mentionedAt: '2025-09-07T07:04:16+00:00'
+              type: quote
+              account:
+                username: MEJ50749
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1964585494425325880'
+              likeCount: 116
+              repostCount: 1
+              viewCount: 12956
+              quoteCount: 18
+              replyCount: 108
+              bookmarkCount: 0
+              mentionedAt: '2025-09-07T07:04:16+00:00'
+              type: quote
+              account:
+                username: MEJ50749
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1964055863897051510'
+              likeCount: 124
+              repostCount: 16
+              viewCount: 16989
+              quoteCount: 4
+              replyCount: 25
+              bookmarkCount: 3
+              mentionedAt: '2025-09-05T19:59:43+00:00'
+              type: post
+              account:
+                username: JoinSapien
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1964055863897051510'
+              likeCount: 134
+              repostCount: 16
+              viewCount: 22193
+              quoteCount: 6
+              replyCount: 29
+              bookmarkCount: 3
+              mentionedAt: '2025-09-05T19:59:43+00:00'
+              type: post
+              account:
+                username: JoinSapien
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1963417245792833579'
+              likeCount: 0
+              repostCount: 3
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-04T01:42:04+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1963417245792833579'
+              likeCount: 0
+              repostCount: 3
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-04T01:42:04+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1963417245792833579'
+              likeCount: 0
+              repostCount: 3
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-04T01:42:04+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1963279233113002407'
+              likeCount: 14
+              repostCount: 3
+              viewCount: 682
+              quoteCount: 0
+              replyCount: 2
+              bookmarkCount: 0
+              mentionedAt: '2025-09-03T16:33:39+00:00'
+              type: quote
+              account:
+                username: AlexprimeOO1
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1963279233113002407'
+              likeCount: 14
+              repostCount: 3
+              viewCount: 816
+              quoteCount: 0
+              replyCount: 2
+              bookmarkCount: 0
+              mentionedAt: '2025-09-03T16:33:39+00:00'
+              type: quote
+              account:
+                username: AlexprimeOO1
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1963279233113002407'
+              likeCount: 14
+              repostCount: 3
+              viewCount: 821
+              quoteCount: 0
+              replyCount: 2
+              bookmarkCount: 0
+              mentionedAt: '2025-09-03T16:33:39+00:00'
+              type: quote
+              account:
+                username: AlexprimeOO1
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 1
+              text: null
+            - tweetId: '1962728408934424591'
+              likeCount: 3
+              repostCount: 0
+              viewCount: 182
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-02T04:04:53+00:00'
+              type: post
+              account:
+                username: Agent_YP
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1962727185862607312'
+              likeCount: 68
+              repostCount: 23
+              viewCount: 28045
+              quoteCount: 1
+              replyCount: 76
+              bookmarkCount: 2
+              mentionedAt: '2025-09-02T04:00:01+00:00'
+              type: quote
+              account:
+                username: carv_official
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1962727185862607312'
+              likeCount: 68
+              repostCount: 23
+              viewCount: 28175
+              quoteCount: 1
+              replyCount: 76
+              bookmarkCount: 2
+              mentionedAt: '2025-09-02T04:00:01+00:00'
+              type: quote
+              account:
+                username: carv_official
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+            - tweetId: '1962419991166513350'
+              likeCount: 0
+              repostCount: 56
+              viewCount: 0
+              quoteCount: 0
+              replyCount: 0
+              bookmarkCount: 0
+              mentionedAt: '2025-09-01T07:39:20+00:00'
+              type: repost
+              account:
+                username: artoriatech
+                isVerified: false
+              repostBreakdown:
+                smart: 0
+                ct: 0
+              text: null
+    description: Direct tool call to analyze @heurist_ai account
+    status: success
+  search_account_query:
+    input:
+      query: Analyze the Twitter account @heurist_ai and show me their recent activity
+    output:
+      response: 'The Twitter account @heurist_ai has a follower count of 33,747, with
+        140 smart followers. Their average engagement rate is 0.47% and average reach
+        is 16,007.67.
+
+
+        Here''s a summary of their recent activity:
+
+
+        **September 10, 2025:**
+
+        *   Reposted content from @fundbrah.
+
+        *   Posted content from @fundbrah, receiving 4 likes, 1 reply, 1 repost, and
+        204 views.
+
+        *   Reposted content from @artoriatech (twice).
+
+
+        **September 9, 2025:**
+
+        *   Posted a note from @carv_official, receiving 55-56 likes, 2 bookmarks,
+        1 quote, 21 replies, 15 reposts, and 25,445-25,572 views.
+
+
+        **September 7, 2025:**
+
+        *   Quoted content from @MEJ50749, receiving 114-116 likes, 18 quotes, 108
+        replies, 0-1 reposts, and 12,544-12,956 views.
+
+
+        **September 5, 2025:**
+
+        *   Posted content from @JoinSapien, receiving 124-134 likes, 3 bookmarks,
+        4-6 quotes, 25-29 replies, 16 reposts, and 16,989-22,193 views.
+
+
+        **September 4, 2025:**
+
+        *   Reposted content from @artoriatech (three times).
+
+
+        **September 3, 2025:**
+
+        *   Quoted content from @AlexprimeOO1, receiving 14 likes, 2 replies, 3 reposts,
+        and 682-821 views (three times).
+
+
+        **September 2, 2025:**
+
+        *   Posted content from @Agent_YP, receiving 3 likes and 182 views.
+
+        *   Quoted content from @carv_official, receiving 68 likes, 2 bookmarks, 1
+        quote, 76 replies, 23 reposts, and 28,045-28,175 views (twice).
+
+
+        **September 1, 2025:**
+
+        *   Reposted content from @artoriatech.'
+      data: *id001
+    description: Natural language query to analyze @heurist_ai account activity
+    status: success
+  get_trending_tokens_tool:
+    input:
+      tool: get_trending_tokens
+      tool_arguments:
+        time_window: 24h
+      query: Get trending tokens using tool arguments
+    output:
+      response: ''
+      data: &id002
+        status: success
+        data:
+          success: true
+          data:
+            total: 50
+            page: 1
+            pageSize: 50
+            data:
+            - token: btc
+              current_count: 875
+              previous_count: 592
+              change_percent: 47.8
+            - token: eth
+              current_count: 740
+              previous_count: 546
+              change_percent: 35.53
+            - token: sol
+              current_count: 560
+              previous_count: 503
+              change_percent: 11.33
+            - token: pump
+              current_count: 420
+              previous_count: 654
+              change_percent: -35.78
+            - token: base
+              current_count: 353
+              previous_count: 3
+              change_percent: 11666.67
+            - token: tsla
+              current_count: 352
+              previous_count: 69
+              change_percent: 410.14
+            - token: avax
+              current_count: 227
+              previous_count: 101
+              change_percent: 124.75
+            - token: streamer
+              current_count: 224
+              previous_count: 179
+              change_percent: 25.14
+            - token: avnt
+              current_count: 214
+              previous_count: 219
+              change_percent: -2.28
+            - token: pnkstr
+              current_count: 204
+              previous_count: 173
+              change_percent: 17.92
+            - token: zkc
+              current_count: 200
+              previous_count: 37
+              change_percent: 440.54
+            - token: hype
+              current_count: 197
+              previous_count: 200
+              change_percent: -1.5
+            - token: dog
+              current_count: 175
+              previous_count: 91
+              change_percent: 92.31
+            - token: doge
+              current_count: 170
+              previous_count: 159
+              change_percent: 6.92
+            - token: pengu
+              current_count: 165
+              previous_count: 126
+              change_percent: 30.95
+            - token: xrp
+              current_count: 162
+              previous_count: 102
+              change_percent: 58.82
+            - token: ape
+              current_count: 159
+              previous_count: 126
+              change_percent: 26.19
+            - token: usdc
+              current_count: 143
+              previous_count: 72
+              change_percent: 98.61
+            - token: link
+              current_count: 136
+              previous_count: 80
+              change_percent: 70
+            - token: tao
+              current_count: 123
+              previous_count: 86
+              change_percent: 43.02
+            - token: nvda
+              current_count: 122
+              previous_count: 36
+              change_percent: 238.89
+            - token: open
+              current_count: 120
+              previous_count: 41
+              change_percent: 192.68
+            - token: pcule
+              current_count: 118
+              previous_count: 16
+              change_percent: 637.5
+            - token: mvrk
+              current_count: 114
+              previous_count: 86
+              change_percent: 32.56
+            - token: glxy
+              current_count: 111
+              previous_count: 25
+              change_percent: 344
+            - token: bagwork
+              current_count: 107
+              previous_count: 173
+              change_percent: -38.15
+            - token: kind
+              current_count: 107
+              previous_count: 128
+              change_percent: -16.41
+            - token: iren
+              current_count: 103
+              previous_count: 34
+              change_percent: 202.94
+            - token: naka
+              current_count: 101
+              previous_count: 16
+              change_percent: 531.25
+            - token: coin
+              current_count: 99
+              previous_count: 19
+              change_percent: 421.05
+            - token: bmnr
+              current_count: 98
+              previous_count: 41
+              change_percent: 139.02
+            - token: mstr
+              current_count: 96
+              previous_count: 27
+              change_percent: 255.56
+            - token: bard
+              current_count: 90
+              previous_count: 8
+              change_percent: 1025
+            - token: troll
+              current_count: 90
+              previous_count: 97
+              change_percent: -7.22
+            - token: aero
+              current_count: 85
+              previous_count: 7
+              change_percent: 1114.29
+            - token: musd
+              current_count: 81
+              previous_count: 1
+              change_percent: 8000
+            - token: ftp
+              current_count: 79
+              previous_count: 69
+              change_percent: 14.49
+            - token: s
+              current_count: 79
+              previous_count: 69
+              change_percent: 14.49
+            - token: spx
+              current_count: 79
+              previous_count: 57
+              change_percent: 38.6
+            - token: sui
+              current_count: 73
+              previous_count: 46
+              change_percent: 58.7
+            - token: bitcoin
+              current_count: 72
+              previous_count: 41
+              change_percent: 75.61
+            - token: peaq
+              current_count: 72
+              previous_count: 98
+              change_percent: -26.53
+            - token: kas
+              current_count: 71
+              previous_count: 52
+              change_percent: 36.54
+            - token: rageguy
+              current_count: 70
+              previous_count: 26
+              change_percent: 169.23
+            - token: ford
+              current_count: 67
+              previous_count: 16
+              change_percent: 318.75
+            - token: bnb
+              current_count: 63
+              previous_count: 49
+              change_percent: 28.57
+            - token: portals
+              current_count: 63
+              previous_count: 45
+              change_percent: 40
+            - token: ena
+              current_count: 61
+              previous_count: 23
+              change_percent: 165.22
+            - token: mim
+              current_count: 61
+              previous_count: 18
+              change_percent: 238.89
+            - token: arb
+              current_count: 60
+              previous_count: 23
+              change_percent: 160.87
+    description: Direct tool call to get trending tokens for 24h window
+    status: success
+  get_trending_tokens_query:
+    input:
+      query: What are the trending tokens on Twitter in the last 24 hours?
+    output:
+      response: 'Here are the top 5 trending tokens on Twitter in the last 24 hours,
+        based on the change in their mention count:
+
+
+        1.  **BASE**: Current count: 353, Previous count: 3, Change: 11666.67%
+
+        2.  **MUSD**: Current count: 81, Previous count: 1, Change: 8000%
+
+        3.  **AERO**: Current count: 85, Previous count: 7, Change: 1114.29%
+
+        4.  **BARD**: Current count: 90, Previous count: 8, Change: 1025%
+
+        5.  **PCULE**: Current count: 118, Previous count: 16, Change: 637.5%'
+      data: *id002
+    description: Natural language query for trending tokens in last 24 hours
+    status: success

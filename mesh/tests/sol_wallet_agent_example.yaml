@@ -1,0 +1,260 @@
+metadata:
+  agent: SolWalletAgent
+  test_file: sol_wallet_agent.py
+  timestamp: '2025-09-16T17:15:00.341267'
+  total_tests: 5
+  passed: 5
+  failed: 0
+results:
+  token_holders_query:
+    input:
+      query: Give me the holders of this 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump
+      raw_data_only: false
+    output:
+      response: 'This token has 20 holders. The most commonly held tokens among them
+        are:
+
+
+        *   **PENGU (2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv)**: Held by 11 wallets,
+        with a total value of $58.57M.
+
+        *   **TRUMP (6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN)**: Held by 11 wallets,
+        with a total value of $57.31M.
+
+        *   **HYPER (3fppUjXzDXpBcDrLecYFuAAj3CkbFMNoLmTmjDYgkkW7)**: Held by 1 wallet,
+        with a total value of $14.33M.
+
+        *   **$WIF (EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm)**: Held by 6 wallets,
+        with a total value of $11.93M.
+
+        *   **MAXI (CRHSpw9i3KZkt1R8y9Nf5vMsPxe3d35paTvZAH2CXybu)**: Held by 2 wallets,
+        with a total value of $4.17M.'
+      data: &id002
+        common_tokens:
+        - token_address: 2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv
+          symbol: PENGU
+          price_per_token: 0.033071376
+          total_holding_value: 58569478.35396645
+          holder_count: 11
+        - token_address: 6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN
+          symbol: TRUMP
+          price_per_token: 8.5780525
+          total_holding_value: 57313146.85415839
+          holder_count: 11
+        - token_address: 3fppUjXzDXpBcDrLecYFuAAj3CkbFMNoLmTmjDYgkkW7
+          symbol: HYPER
+          price_per_token: 0.0078739
+          total_holding_value: 14330156.42429594
+          holder_count: 1
+        - token_address: EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm
+          symbol: $WIF
+          price_per_token: 0.8929786
+          total_holding_value: 11929912.416093396
+          holder_count: 6
+        - token_address: CRHSpw9i3KZkt1R8y9Nf5vMsPxe3d35paTvZAH2CXybu
+          symbol: MAXI
+          price_per_token: 1.26464e-05
+          total_holding_value: 4173312.0451681316
+          holder_count: 2
+        analyzed_holders: 20
+    description: Natural language query for token holders
+    status: success
+  wallet_transactions_raw:
+    input:
+      query: Show me the txs of this wallet DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+      raw_data_only: true
+    output:
+      response: ''
+      data: &id001
+        transactions:
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1757841901
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 917692.408181
+            FUJI for 5.912371236 SOL
+          token_in_address: 4M79Qjv2Jfjmcq19M41V8QFYohBv2KrgEn9dJhVtpump
+          token_in_amount: '917692.408181'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '5.912371236'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1757282222
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 9770.837388
+            Pepe for 0.043014478 SOL
+          token_in_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_in_amount: '9770.837388'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '0.043014478'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1757281812
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 9990000
+            CATJAK for 0.923510987 SOL
+          token_in_address: JyTYXrqcYkvRhotAaYBvFbm6zk7vimHc86hwLZzpump
+          token_in_amount: '9990000.0'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '0.923510987'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1757281798
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 1.367075383
+            SOL for 540268.419795 FUJI
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '1.367075383'
+          token_out_address: 4M79Qjv2Jfjmcq19M41V8QFYohBv2KrgEn9dJhVtpump
+          token_out_amount: '540268.419795'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1757274572
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 8977.977704
+            CoinCoin for 0.646862556 SOL
+          token_in_address: BJEiFsTR94vbt4Kfm5kXWQewhbHCY12vWbFroZ9upump
+          token_in_amount: '8977.977704'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '0.646862556'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1756966644
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 0.999
+            SOL for 130355.574738 FLOYDAI
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '0.999'
+          token_out_address: J7tYmq2JnQPvxyhcXpCDrvJnc9R5ts8rv7tgVHDPsw7U
+          token_out_amount: '130355.574738'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1756966589
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 23670395.096824002
+            CATJAK for 2.350215536 SOL
+          token_in_address: JyTYXrqcYkvRhotAaYBvFbm6zk7vimHc86hwLZzpump
+          token_in_amount: '23670395.096824'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '2.350215536'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754975001
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 2.465486239
+            SOL for 351728.459026 Pepe
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '2.465486239'
+          token_out_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_out_amount: '351728.459026'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754956895
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 700 Pepe
+            for 4.948678652 SOL
+          token_in_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_in_amount: '700.0'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '4.948678652'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754712852
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 1000 Pepe
+            for 7.292505037 SOL
+          token_in_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_in_amount: '1000.0'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '7.292505037'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754711873
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 0.999
+            SOL for 135458.510239 Pepe
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '0.999'
+          token_out_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_out_amount: '135458.510239'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754608169
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 6.159013938
+            SOL for 866428.696761 Pepe
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '6.159013938'
+          token_out_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_out_amount: '866428.696761'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754606805
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 22.1778
+            SOL for 3356164.95198 Pepe
+          token_in_address: So11111111111111111111111111111111111111112
+          token_in_amount: '22.1778'
+          token_out_address: B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B
+          token_out_amount: '3356164.95198'
+          type: BUY
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754606791
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 7751023.829794
+            iFloydmini for 1.088494512 SOL
+          token_in_address: 6QZFhw4197ne5T23K45K9PvHSdNMceLBKFrLE2n2pump
+          token_in_amount: '7751023.829794'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '1.088494512'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754606781
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 2450000
+            N2 for 2.404730828 SOL
+          token_in_address: 3t4yhNHfy5jZ9skJw9ZMRHvLJw1WUPouJ4TSxatTpump
+          token_in_amount: '2450000.0'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '2.404730828'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754606772
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 569705.423624
+            FLOYDAI for 5.855776005 SOL
+          token_in_address: J7tYmq2JnQPvxyhcXpCDrvJnc9R5ts8rv7tgVHDPsw7U
+          token_in_amount: '569705.423624'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '5.855776005'
+          type: SELL
+        - account: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+          timestamp: 1754437656
+          description: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN swapped 500 FLOYDAI
+            for 4.660715916 SOL
+          token_in_address: J7tYmq2JnQPvxyhcXpCDrvJnc9R5ts8rv7tgVHDPsw7U
+          token_in_amount: '500.0'
+          token_out_address: So11111111111111111111111111111111111111112
+          token_out_amount: '4.660715916'
+          type: SELL
+        count: 17
+    description: Natural language query for wallet transactions with raw data flag
+    status: success
+  get_wallet_assets:
+    input:
+      tool: get_wallet_assets
+      tool_arguments:
+        owner_address: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+    output:
+      response: ''
+      data:
+        assets:
+        - token_address: J7tYmq2JnQPvxyhcXpCDrvJnc9R5ts8rv7tgVHDPsw7U
+          symbol: FLOYDAI
+          price_per_token: 0.0014751793
+          total_holding_value: 2011.5369966749593
+    description: Direct tool call to get wallet assets
+    status: success
+  get_tx_history:
+    input:
+      tool: get_tx_history
+      tool_arguments:
+        owner_address: DbDi7soBXALYRMZSyJMEAfpaK3rD1hr5HuCYzuDrcEEN
+    output:
+      response: ''
+      data: *id001
+    description: Direct tool call to get transaction history
+    status: success
+  analyze_common_holdings:
+    input:
+      tool: analyze_common_holdings_of_top_holders
+      tool_arguments:
+        token_address: 4TBi66vi32S7J8X1A6eWfaLHYmUXu7CStcEmsJQdpump
+    output:
+      response: ''
+      data: *id002
+    description: Direct tool call to analyze common holdings of top holders
+    status: success

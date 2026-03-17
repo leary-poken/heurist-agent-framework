@@ -1,0 +1,447 @@
+metadata:
+  agent: FundingRateAgent
+  test_file: funding_rate_agent.py
+  timestamp: '2025-09-16T17:08:41.303372'
+  total_tests: 3
+  passed: 3
+  failed: 0
+results:
+  funding_rates_by_symbol:
+    input:
+      query: What are the current funding rates for Bitcoin?
+    output:
+      response: The current funding rate for BTC on Binance is 0.0071% with an 8-hour
+        funding interval.
+      data:
+        status: success
+        data:
+          symbol: BTC
+          funding_rates:
+          - symbol: BTC
+            exchange:
+              id: 1
+              name: Binance
+            rates:
+              latest: 7.119e-05
+            funding_interval: 8
+            last_updated: N/A
+    description: Natural language query for Bitcoin funding rates
+    status: success
+  cross_exchange_arbitrage:
+    input:
+      query: Find arbitrage opportunities across exchanges with at least 0.05% funding
+        rate difference
+    output:
+      response: After analyzing the current funding rates from various exchanges,
+        I couldn't find any cross-exchange arbitrage opportunities with a funding
+        rate difference of at least 0.05%. The current market does not present such
+        a significant disparity to recommend this strategy.
+      data:
+        status: success
+        data:
+          cross_exchange_opportunities: []
+    description: Natural language query for cross-exchange arbitrage opportunities
+      with 0.05% minimum difference
+    status: success
+  spot_futures_opportunities:
+    input:
+      query: What are the best spot-futures funding rate opportunities right now?
+    output:
+      response: 'There are no significant spot-futures funding rate arbitrage opportunities
+        at the moment. Most listed pairs on Binance have a funding rate of 0.0100%
+        per 8 hours, which is below the 0.01% threshold for a significant opportunity.
+
+
+        For a spot-futures arbitrage opportunity, you would typically:
+
+        1.  **Buy the spot asset** (e.g., AVAX on Binance Spot).
+
+        2.  **Short the perpetual futures contract** for the same asset (e.g., AVAXUSDT
+        on Binance Futures).
+
+
+        This strategy aims to capture the positive funding rate received by short
+        positions, while the long spot position hedges against price fluctuations.
+
+
+        **Potential risks to consider:**
+
+        *   **Funding rate changes:** Funding rates are dynamic and can change frequently,
+        potentially eroding profitability.
+
+        *   **Trading fees:** Entry and exit fees for both spot and futures trades
+        can impact overall returns.
+
+        *   **Slippage:** Large orders might experience slippage, affecting the execution
+        price.
+
+        *   **Liquidity:** Ensure sufficient liquidity in both spot and futures markets
+        for your desired position size.
+
+        *   **Counterparty risk:** The risk associated with the exchange itself.'
+      data:
+        status: success
+        data:
+          spot_futures_opportunities:
+          - symbol: AVAX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: BCH
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: WLD
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: FIL
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: OP
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: JELLYJELLY
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00024437
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: PENDLE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: KAVA
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: FET
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: CFX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: B
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00013029
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: VET
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: ENS
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: BTCDOM
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: COMP
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: APE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: SAND
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: IOTX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: DYDX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: ARKM
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: NEO
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: XMR
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: STX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: MANA
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: RUNE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: Q
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00013916
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: THETA
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: AXS
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: IOTA
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: AR
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: BAKE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: GRT
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: PEOPLE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: ACH
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: SKY
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00039826
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: ZEN
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: XPIN
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00016933
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: PIPPIN
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00023531
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: 1INCH
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: QNT
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: ROSE
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: FLOW
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: MINA
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: ZEC
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: DASH
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: SNX
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: GMT
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: RSR
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: 1000RATS
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00019814
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: HIPPO
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00043139
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: ONT
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: SWARMS
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.00032357
+            funding_interval: 4
+            quote_currency: USDT
+          - symbol: SSV
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: BLUR
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: KSM
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: FXS
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: CELO
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: COTI
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: CTSI
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+          - symbol: CKB
+            exchange_id: 1
+            exchange_name: Binance
+            funding_rate: 0.0001
+            funding_interval: 8
+            quote_currency: USDT
+    description: Natural language query for spot-futures funding rate opportunities
+    status: success

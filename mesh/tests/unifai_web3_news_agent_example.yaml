@@ -1,0 +1,453 @@
+metadata:
+  agent: UnifaiWeb3NewsAgent
+  test_file: unifai_web3_news_agent.py
+  timestamp: '2025-09-16T17:18:18.935452'
+  total_tests: 4
+  passed: 4
+  failed: 0
+results:
+  natural_language_query:
+    input:
+      query: What are the latest developments in Web3?
+      raw_data_only: false
+    output:
+      response: 'Here''s a summary of the latest Web3 developments, highlighting key
+        events and market-moving news:
+
+
+        **Market Movements & Price Action:**
+
+
+        *   **Bitcoin (BTC) holds at $115K:** Bitcoin is currently trading at the
+        upper end of its $108,000-$116,000 range, with its future direction heavily
+        dependent on the upcoming Federal Reserve meeting on September 17. Analysts
+        suggest a sustained break above $116,000 could lead to a move towards $125,000,
+        while a drop below $108,000 could see it fall to $107,000.
+
+        *   **Ether (ETH) price prediction:** Citigroup projects Ether to fall to
+        $4,300 by year-end.
+
+        *   **Altcoin volatility:** Altcoin leverage is surging as traders anticipate
+        the Fed''s rate decision, increasing the risk of significant price swings.
+        XLM is experiencing heavy volatility due to institutional selling pressure.
+
+        *   **Memecoin surge:** Pump.fun''s daily trading volume surpassed $1 billion
+        as the broader memecoin market experienced a surge in September.
+
+        *   **NAKA shares plunge:** KindlyMD''s NAKA shares have plummeted by 54%
+        in a day and over 90% in a month. This reflects investor exhaustion towards
+        Bitcoin treasury companies, exacerbated by equity dilution plans.
+
+
+        **Institutional Adoption & Funds:**
+
+
+        *   **Deutsche Börse''s Crypto Finance:** Unveiled a "Connected Custody Settlement"
+        solution for institutions, aiming to streamline digital asset transactions.
+
+        *   **Standard Chartered crypto fund:** SC Ventures, the innovation arm of
+        Standard Chartered, is reportedly preparing to launch a $250 million cryptocurrency
+        fund in 2026, focusing on global digital asset investment opportunities.
+
+        *   **Japanese TradFi enters Web3:** Credit Saison, Japan''s third-largest
+        credit card company, has launched a $50 million blockchain fund called "Onigiri
+        Capital." This fund will back early-stage blockchain firms in the real-world
+        asset sector, aiming to connect US startups with the Asian market.
+
+        *   **XRP and Dogecoin ETFs:** The first XRP and Dogecoin Exchange Traded
+        Products (ETPs) are expected to debut in the US this week through Rex-Osprey
+        ETFs, providing new avenues for institutional and retail access.
+
+
+        **Regulatory & Policy Developments:**
+
+
+        *   **Gemini and SEC resolution:** Gemini and the SEC have reached a "resolution
+        in principle" in their two-year-old court case.
+
+        *   **Fellowship PAC launches:** A new political action committee, Fellowship
+        PAC, has launched with a $100 million war chest to advance crypto policy goals
+        and defend US leadership in digital assets.
+
+        *   **Coinbase on stablecoins:** Coinbase refutes claims that stablecoins
+        drain US bank deposits, arguing that most activity occurs overseas and strengthens
+        the US dollar''s global position.
+
+
+        **Protocol & Ecosystem News:**
+
+
+        *   **Ethena (ENA) fee switch:** Ethena has met the thresholds for activating
+        its ENA fee switch, potentially offering ENA holders yields over 5%. This
+        is pending final approval by its Risk Committee and a tokenholder vote.
+
+        *   **Ethereum''s potential:** Industry experts, including former BlackRock
+        digital asset lead Joseph Chalom and EigenLayer founder Sreeram Kannan, believe
+        Ethereum is positioned to replace Wall Street''s outdated settlement infrastructure
+        and remains undervalued by investors.
+
+
+        **Other Notable News:**
+
+
+        *   **Google Gemini''s success:** The Google Gemini AI app has reached the
+        #1 spot in app stores, contributing to Google becoming the fourth-most valuable
+        company globally.'
+      data: &id001
+        payload:
+          results:
+          - link: https://www.coindesk.com/business/2025/09/16/deutsche-boerse-s-crypto-finance-unveils-custody-native-settlement-solution-for-institutions
+            published: Tue, 16 Sep 2025 08:15:55 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Deutsche Börse’s Crypto Finance Unveils Connected Custody Settlement
+              for Digital Assets
+          - link: https://www.coindesk.com/markets/2025/09/16/bitcoin-ether-xrp-and-dogecoin-lag-stocks-as-vix-stirs-up-some-nerves
+            published: Tue, 16 Sep 2025 07:56:55 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Bitcoin, Ether, XRP, and Dogecoin Lag Stocks as VIX Stirs Up Some
+              Nerves
+          - link: https://www.coindesk.com/markets/2025/09/16/asia-morning-briefing-fragility-or-back-on-track-btc-holds-the-line-at-usd115k
+            published: Tue, 16 Sep 2025 01:34:51 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: 'Asia Morning Briefing: Fragility or Back on Track? BTC Holds the
+              Line at $115K'
+          - link: https://www.coindesk.com/markets/2025/09/15/wall-street-bank-citigroup-sees-ether-falling-to-usd4-300-by-year-end
+            published: Mon, 15 Sep 2025 20:57:22 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Wall Street Bank Citigroup Sees Ether Falling to $4,300 by Year-End
+          - link: https://www.coindesk.com/markets/2025/09/15/xlm-sees-heavy-volatility-as-institutional-selling-weighs-on-price
+            published: Mon, 15 Sep 2025 16:26:15 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: XLM Sees Heavy Volatility as Institutional Selling Weighs on Price
+          - link: https://cointelegraph.com/news/standard-chartered-venture-raise-250m-2026-crypto-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 10:07:19 +0100
+            source: Cointelegraph.com News
+            summary: SC Ventures is preparing to launch a cryptocurrency fund in 2026,
+              with a focus on global digital asset investment opportunities.
+            title: 'Standard Chartered venture arm to raise $250M for crypto fund:
+              Report'
+          - link: https://cointelegraph.com/news/pumpfun-trading-volume-1b-memecoin-rally-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:49:34 +0100
+            source: Cointelegraph.com News
+            summary: Pump.fun recorded a trading volume of $942 million on Sunday,
+              followed by a spike to $1.02 billion on Monday as the broader memecoin
+              market surged.
+            title: Pump.fun daily volume crosses $1B as memecoins surge in September
+          - link: https://cointelegraph.com/news/how-to-earn-passive-crypto-income-with-yield-bearing-stablecoins-in-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:17:58 +0100
+            source: Cointelegraph.com News
+            summary: Yield-bearing stablecoins promise steady income onchain, but
+              regulation, taxes and risks make them more complex than cash. Here’s
+              what you need to know in 2025.
+            title: How to earn passive crypto income with yield-bearing stablecoins
+              in 2025
+          - link: https://cointelegraph.com/explained/ether-vs-bitcoin-treasuries-which-strategy-is-winning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:05:00 +0100
+            source: Cointelegraph.com News
+            summary: 'Which treasury strategy is gaining ground in 2025: Bitcoin as
+              digital gold or Ether as a yield engine?'
+            title: 'Ether vs. Bitcoin treasuries: Which strategy is winning in 2025?'
+          - link: https://cointelegraph.com/news/coinbase-stablecoins-myth-of-deposit-erosion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 08:56:48 +0100
+            source: Cointelegraph.com News
+            summary: Coinbase rejected claims that stablecoins drain US bank deposits,
+              arguing most activity happens overseas and boosts the US dollar’s global
+              strength.
+            title: Coinbase says stablecoins not draining bank deposits, calls it
+              a ‘myth’
+          - link: https://decrypt.co/339641/fellowship-pac-100m-crypto-policy-goals
+            published: Tue, 16 Sep 2025 06:30:33 +0000
+            source: Decrypt
+            summary: The Fellowship PAC has filed with the FEC, touting a $100 million
+              war chest to defend U.S. leadership in digital assets.
+            title: Fellowship PAC Launches With $100M to Advance Crypto Policy Goals
+          - link: https://decrypt.co/339638/altcoin-leverage-traders-brace-fed-decision
+            published: Tue, 16 Sep 2025 05:19:12 +0000
+            source: Decrypt
+            summary: Leveraged bets on altcoins are mounting ahead of the Fed’s rate
+              decision, raising the risk of sharp price swings across crypto markets.
+            title: Altcoin Leverage Surges as Traders Brace for Fed Decision
+          - link: https://decrypt.co/339636/gemini-sec-reach-resolution-two-year-old-court-case
+            published: Tue, 16 Sep 2025 02:46:40 +0000
+            source: Decrypt
+            summary: An update filed in a New York court marks how a resolution “in
+              principle” has been reached in a case that has spanned over two years.
+            title: Gemini, SEC Reach Resolution in 'Principle' in Two-Year-Old Court
+              Case
+          - link: https://decrypt.co/339563/nano-banana-google-gemini-dethrones-chatgpt
+            published: Mon, 15 Sep 2025 22:53:43 +0000
+            source: Decrypt
+            summary: 'The Gemini AI app hit #1 in app stores, and now Google is the
+              fourth-most valuable company in the world.'
+            title: 'Nano Banana Saves Google: Gemini Dethrones ChatGPT as GOOG Hits
+              $3 Trillion'
+          - link: https://decrypt.co/339588/first-xrp-dogecoin-etfs-set-debut-us-this-week-heres-how
+            published: Mon, 15 Sep 2025 21:43:02 +0000
+            source: Decrypt
+            summary: XRP and Dogecoin exchange traded products are expected to debut
+              this week, providing access to their underlying assets via Rex-Osprey
+              ETFs.
+            title: First XRP and Dogecoin ETFs Set for US Unveiling This Week—Here's
+              How
+          - link: https://cryptoslate.com/ena-holders-eye-potential-yields-over-5-as-ethena-confirms-fee-switch-thresholds-met/
+            published: Tue, 16 Sep 2025 08:20:12 +0000
+            source: CryptoSlate
+            summary: Ethena said it expects to activate the ENA fee switch, pending
+              final implementation approval by its Risk Committee and a tokenholder
+              vote, after the pre-set parameters were met. Those parameters, agreed
+              in late 2024, require USDe supply above 6 billion, lifetime protocol
+              revenue above 250 million, and USDe integration on four of the top five
+              […] The post ENA holders eye potential yields over 5% as Ethena confirms
+              fee switch thresholds met appeared first on CryptoSlate.
+            title: ENA holders eye potential yields over 5% as Ethena confirms fee
+              switch thresholds met
+          - link: https://cryptoslate.com/naka-shares-plunge-54-in-a-day-reinforcing-investor-exhaustion-toward-bitcoin-treasury-companies/
+            published: Tue, 16 Sep 2025 00:00:36 +0000
+            source: CryptoSlate
+            summary: KindlyMD’s NAKA shares slumped to $1.28 on Sept. 15, down by
+              54% in the past 24 hours and over 90% over one month. The healthcare-turned-Bitcoin
+              (BTC) treasury company faces mounting pressure from equity dilution
+              plans and broader investor fatigue toward digital asset treasury strategies.
+              The Nasdaq-traded medical firm transformed into a Bitcoin treasury company
+              after […] The post NAKA shares plunge 54% in a day, reinforcing investor
+              exhaustion toward Bitcoin treasury companies appeared first on CryptoSlate.
+            title: NAKA shares plunge 54% in a day, reinforcing investor exhaustion
+              toward Bitcoin treasury companies
+          - link: https://cryptoslate.com/japanese-tradfi-giant-credit-saison-launches-50m-blockchain-fund-to-bridge-us-startups-with-asia/
+            published: Mon, 15 Sep 2025 23:30:28 +0000
+            source: CryptoSlate
+            summary: Credit Saison, Japan’s third-largest credit card company, said
+              Monday it is creating a new venture fund to back early-stage blockchain
+              firms working in the real-world asset sector, according to local media
+              reports. The vehicle, known as Onigiri Capital, has raised $35 million
+              so far from Credit Saison and other backers and, according to a company
+              […] The post Japanese TradFi giant Credit Saison launches $50M blockchain
+              fund to bridge US startups with Asia appeared first on CryptoSlate.
+            title: Japanese TradFi giant Credit Saison launches $50M blockchain fund
+              to bridge US startups with Asia
+          - link: https://cryptoslate.com/ethereum-positioned-to-replace-wall-street-infrastructure-yet-remains-undervalued-by-investors/
+            published: Mon, 15 Sep 2025 22:45:45 +0000
+            source: CryptoSlate
+            summary: Investors have not priced in Ethereum’s (ETH) potential to replace
+              Wall Street’s outdated settlement infrastructure, according to SharpLink
+              CEO Joseph Chalom and EigenLayer founder Sreeram Kannan. During a Sept.
+              15 Milk Road podcast discussion, Chalom, who previously led BlackRock’s
+              digital asset initiatives, outlined the fundamental friction plaguing
+              traditional finance. Current systems require day-long settlement periods,
+              […] The post Ethereum positioned to replace Wall Street infrastructure,
+              yet remains undervalued by investors appeared first on CryptoSlate.
+            title: Ethereum positioned to replace Wall Street infrastructure, yet
+              remains undervalued by investors
+          - link: https://cryptoslate.com/bitcoin-faces-107000-or-125000-move-as-fomc-meeting-determines-market-direction/
+            published: Mon, 15 Sep 2025 22:00:40 +0000
+            source: CryptoSlate
+            summary: Bitcoin (BTC) trades at the upper edge of its $108,000-$116,000
+              air gap range ahead of the Federal Reserve meeting on Sept. 17, and
+              relies on the policy messaging. BTC traded at $115,046.29 as of press
+              time, down by 0.2% in the past 24 hours. According to the Bitfinex Alpha
+              report, Bitcoin needs a sustained break […] The post Bitcoin faces $107,000
+              or $125,000 move as FOMC meeting determines market direction appeared
+              first on CryptoSlate.
+            title: Bitcoin faces $107,000 or $125,000 move as FOMC meeting determines
+              market direction
+    description: Natural language query for latest Web3 developments
+    status: success
+  default_parameters:
+    input:
+      tool: get_web3_news
+      tool_arguments: {}
+      raw_data_only: false
+    output:
+      response: ''
+      data: *id001
+    description: Direct tool call with default parameters
+    status: success
+  limit_parameter:
+    input:
+      tool: get_web3_news
+      tool_arguments:
+        limit: 1
+      raw_data_only: true
+    output:
+      response: ''
+      data: *id001
+    description: Direct tool call with limit=1 and raw_data_only=True
+    status: success
+  keyword_parameter:
+    input:
+      tool: get_web3_news
+      tool_arguments:
+        keyword: bitcoin
+        limit: 2
+      raw_data_only: false
+    output:
+      response: ''
+      data:
+        payload:
+          results:
+          - link: https://www.coindesk.com/business/2025/09/16/deutsche-boerse-s-crypto-finance-unveils-custody-native-settlement-solution-for-institutions
+            published: Tue, 16 Sep 2025 08:15:55 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Deutsche Börse’s Crypto Finance Unveils Connected Custody Settlement
+              for Digital Assets
+          - link: https://www.coindesk.com/markets/2025/09/16/bitcoin-ether-xrp-and-dogecoin-lag-stocks-as-vix-stirs-up-some-nerves
+            published: Tue, 16 Sep 2025 07:56:55 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Bitcoin, Ether, XRP, and Dogecoin Lag Stocks as VIX Stirs Up Some
+              Nerves
+          - link: https://www.coindesk.com/markets/2025/09/16/asia-morning-briefing-fragility-or-back-on-track-btc-holds-the-line-at-usd115k
+            published: Tue, 16 Sep 2025 01:34:51 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: 'Asia Morning Briefing: Fragility or Back on Track? BTC Holds the
+              Line at $115K'
+          - link: https://www.coindesk.com/markets/2025/09/15/wall-street-bank-citigroup-sees-ether-falling-to-usd4-300-by-year-end
+            published: Mon, 15 Sep 2025 20:57:22 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: Wall Street Bank Citigroup Sees Ether Falling to $4,300 by Year-End
+          - link: https://www.coindesk.com/markets/2025/09/15/xlm-sees-heavy-volatility-as-institutional-selling-weighs-on-price
+            published: Mon, 15 Sep 2025 16:26:15 +0000
+            source: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+            summary: ''
+            title: XLM Sees Heavy Volatility as Institutional Selling Weighs on Price
+          - link: https://cointelegraph.com/news/standard-chartered-venture-raise-250m-2026-crypto-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 10:07:19 +0100
+            source: Cointelegraph.com News
+            summary: SC Ventures is preparing to launch a cryptocurrency fund in 2026,
+              with a focus on global digital asset investment opportunities.
+            title: 'Standard Chartered venture arm to raise $250M for crypto fund:
+              Report'
+          - link: https://cointelegraph.com/news/pumpfun-trading-volume-1b-memecoin-rally-september?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:49:34 +0100
+            source: Cointelegraph.com News
+            summary: Pump.fun recorded a trading volume of $942 million on Sunday,
+              followed by a spike to $1.02 billion on Monday as the broader memecoin
+              market surged.
+            title: Pump.fun daily volume crosses $1B as memecoins surge in September
+          - link: https://cointelegraph.com/news/how-to-earn-passive-crypto-income-with-yield-bearing-stablecoins-in-2025?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:17:58 +0100
+            source: Cointelegraph.com News
+            summary: Yield-bearing stablecoins promise steady income onchain, but
+              regulation, taxes and risks make them more complex than cash. Here’s
+              what you need to know in 2025.
+            title: How to earn passive crypto income with yield-bearing stablecoins
+              in 2025
+          - link: https://cointelegraph.com/explained/ether-vs-bitcoin-treasuries-which-strategy-is-winning?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 09:05:00 +0100
+            source: Cointelegraph.com News
+            summary: 'Which treasury strategy is gaining ground in 2025: Bitcoin as
+              digital gold or Ether as a yield engine?'
+            title: 'Ether vs. Bitcoin treasuries: Which strategy is winning in 2025?'
+          - link: https://cointelegraph.com/news/coinbase-stablecoins-myth-of-deposit-erosion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound
+            published: Tue, 16 Sep 2025 08:56:48 +0100
+            source: Cointelegraph.com News
+            summary: Coinbase rejected claims that stablecoins drain US bank deposits,
+              arguing most activity happens overseas and boosts the US dollar’s global
+              strength.
+            title: Coinbase says stablecoins not draining bank deposits, calls it
+              a ‘myth’
+          - link: https://decrypt.co/339641/fellowship-pac-100m-crypto-policy-goals
+            published: Tue, 16 Sep 2025 06:30:33 +0000
+            source: Decrypt
+            summary: The Fellowship PAC has filed with the FEC, touting a $100 million
+              war chest to defend U.S. leadership in digital assets.
+            title: Fellowship PAC Launches With $100M to Advance Crypto Policy Goals
+          - link: https://decrypt.co/339638/altcoin-leverage-traders-brace-fed-decision
+            published: Tue, 16 Sep 2025 05:19:12 +0000
+            source: Decrypt
+            summary: Leveraged bets on altcoins are mounting ahead of the Fed’s rate
+              decision, raising the risk of sharp price swings across crypto markets.
+            title: Altcoin Leverage Surges as Traders Brace for Fed Decision
+          - link: https://decrypt.co/339636/gemini-sec-reach-resolution-two-year-old-court-case
+            published: Tue, 16 Sep 2025 02:46:40 +0000
+            source: Decrypt
+            summary: An update filed in a New York court marks how a resolution “in
+              principle” has been reached in a case that has spanned over two years.
+            title: Gemini, SEC Reach Resolution in 'Principle' in Two-Year-Old Court
+              Case
+          - link: https://decrypt.co/339563/nano-banana-google-gemini-dethrones-chatgpt
+            published: Mon, 15 Sep 2025 22:53:43 +0000
+            source: Decrypt
+            summary: 'The Gemini AI app hit #1 in app stores, and now Google is the
+              fourth-most valuable company in the world.'
+            title: 'Nano Banana Saves Google: Gemini Dethrones ChatGPT as GOOG Hits
+              $3 Trillion'
+          - link: https://decrypt.co/339588/first-xrp-dogecoin-etfs-set-debut-us-this-week-heres-how
+            published: Mon, 15 Sep 2025 21:43:02 +0000
+            source: Decrypt
+            summary: XRP and Dogecoin exchange traded products are expected to debut
+              this week, providing access to their underlying assets via Rex-Osprey
+              ETFs.
+            title: First XRP and Dogecoin ETFs Set for US Unveiling This Week—Here's
+              How
+          - link: https://cryptoslate.com/ena-holders-eye-potential-yields-over-5-as-ethena-confirms-fee-switch-thresholds-met/
+            published: Tue, 16 Sep 2025 08:20:12 +0000
+            source: CryptoSlate
+            summary: Ethena said it expects to activate the ENA fee switch, pending
+              final implementation approval by its Risk Committee and a tokenholder
+              vote, after the pre-set parameters were met. Those parameters, agreed
+              in late 2024, require USDe supply above 6 billion, lifetime protocol
+              revenue above 250 million, and USDe integration on four of the top five
+              […] The post ENA holders eye potential yields over 5% as Ethena confirms
+              fee switch thresholds met appeared first on CryptoSlate.
+            title: ENA holders eye potential yields over 5% as Ethena confirms fee
+              switch thresholds met
+          - link: https://cryptoslate.com/naka-shares-plunge-54-in-a-day-reinforcing-investor-exhaustion-toward-bitcoin-treasury-companies/
+            published: Tue, 16 Sep 2025 00:00:36 +0000
+            source: CryptoSlate
+            summary: KindlyMD’s NAKA shares slumped to $1.28 on Sept. 15, down by
+              54% in the past 24 hours and over 90% over one month. The healthcare-turned-Bitcoin
+              (BTC) treasury company faces mounting pressure from equity dilution
+              plans and broader investor fatigue toward digital asset treasury strategies.
+              The Nasdaq-traded medical firm transformed into a Bitcoin treasury company
+              after […] The post NAKA shares plunge 54% in a day, reinforcing investor
+              exhaustion toward Bitcoin treasury companies appeared first on CryptoSlate.
+            title: NAKA shares plunge 54% in a day, reinforcing investor exhaustion
+              toward Bitcoin treasury companies
+          - link: https://cryptoslate.com/japanese-tradfi-giant-credit-saison-launches-50m-blockchain-fund-to-bridge-us-startups-with-asia/
+            published: Mon, 15 Sep 2025 23:30:28 +0000
+            source: CryptoSlate
+            summary: Credit Saison, Japan’s third-largest credit card company, said
+              Monday it is creating a new venture fund to back early-stage blockchain
+              firms working in the real-world asset sector, according to local media
+              reports. The vehicle, known as Onigiri Capital, has raised $35 million
+              so far from Credit Saison and other backers and, according to a company
+              […] The post Japanese TradFi giant Credit Saison launches $50M blockchain
+              fund to bridge US startups with Asia appeared first on CryptoSlate.
+            title: Japanese TradFi giant Credit Saison launches $50M blockchain fund
+              to bridge US startups with Asia
+          - link: https://cryptoslate.com/ethereum-positioned-to-replace-wall-street-infrastructure-yet-remains-undervalued-by-investors/
+            published: Mon, 15 Sep 2025 22:45:45 +0000
+            source: CryptoSlate
+            summary: Investors have not priced in Ethereum’s (ETH) potential to replace
+              Wall Street’s outdated settlement infrastructure, according to SharpLink
+              CEO Joseph Chalom and EigenLayer founder Sreeram Kannan. During a Sept.
+              15 Milk Road podcast discussion, Chalom, who previously led BlackRock’s
+              digital asset initiatives, outlined the fundamental friction plaguing
+              traditional finance. Current systems require day-long settlement periods,
+              […] The post Ethereum positioned to replace Wall Street infrastructure,
+              yet remains undervalued by investors appeared first on CryptoSlate.
+            title: Ethereum positioned to replace Wall Street infrastructure, yet
+              remains undervalued by investors
+          - link: https://cryptoslate.com/bitcoin-faces-107000-or-125000-move-as-fomc-meeting-determines-market-direction/
+            published: Mon, 15 Sep 2025 22:00:40 +0000
+            source: CryptoSlate
+            summary: Bitcoin (BTC) trades at the upper edge of its $108,000-$116,000
+              air gap range ahead of the Federal Reserve meeting on Sept. 17, and
+              relies on the policy messaging. BTC traded at $115,046.29 as of press
+              time, down by 0.2% in the past 24 hours. According to the Bitfinex Alpha
+              report, Bitcoin needs a sustained break […] The post Bitcoin faces $107,000
+              or $125,000 move as FOMC meeting determines market direction appeared
+              first on CryptoSlate.
+            title: Bitcoin faces $107,000 or $125,000 move as FOMC meeting determines
+              market direction
+    description: Direct tool call with keyword='bitcoin' and limit=2
+    status: success

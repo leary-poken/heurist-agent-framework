@@ -1,0 +1,2837 @@
+metadata:
+  agent: AIXBTProjectInfoAgent
+  test_file: aixbt_project_info_agent.py
+  timestamp: '2026-01-07T22:36:45.996111'
+  total_tests: 10
+  passed: 10
+  failed: 0
+results:
+  heu_token_query:
+    input:
+      query: Tell me about HEU token
+    output:
+      response: 'I am sorry, but I couldn''t find any information about a cryptocurrency
+        project or token named "HEU" in my database.
+
+
+        The AixBT API may have limitations and may not contain information for all
+        cryptocurrency projects. Please double-check the name, ticker, or Twitter
+        handle of the project you are looking for and try again.'
+      data:
+        data:
+          projects:
+          - name: babylon
+            rationale: Babylon develops Trustless Bitcoin Vaults for BABY token utility,
+              funded by $15M from a16z crypto.
+            xHandle: babylonlabs_io
+            tokens: {}
+            coingecko_id: babylon
+            ticker: BABY
+            signals:
+            - date: '2026-01-07T13:12:55.000Z'
+              description: Developing a new protocol called Trustless Bitcoin Vaults
+                (BTCVaults) designed to provide functional utility for the BABY token
+                through its intended role in vault usage and operation.
+              category: TECH_EVENT
+            - date: '2026-01-07T13:04:11.000Z'
+              description: Raised $15 million in funding from a16z crypto to support
+                development and scaling of the Trustless Bitcoin Vaults protocol.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-05T22:00:00.000Z'
+              description: Binance launches BTC staking product for Babylon on its
+                On-Chain Yields platform, offering up to 2.5% APR paid in BABY token
+                rewards.
+            - date: '2025-10-29T23:00:00.000Z'
+              description: Protocol activates over $6B in Bitcoin through Trustless
+                Staking Protocol and announces next phase enabling native BTC to flow
+                into DeFi markets without bridges, wrappers, or custodians.
+            - date: '2025-11-20T22:00:00.000Z'
+              description: Binance Simple Earn launches Locked Products for BABY token
+                offering up to 29.9% APR during promotional period.
+            - date: '2025-12-23T16:48:53.000Z'
+              description: nominated for the "Best In Yield" award at The Rollup's
+                awards ceremony scheduled for December 30th, 2025
+              category: VISIBILITY_EVENT
+            - date: '2025-11-14T13:00:00.000Z'
+              description: Babylon Genesis activates Stake Expansion feature allowing
+                Phase-1 BTC stakers to extend expiring stakes and increase staked
+                amounts without needing to unbond first.
+            - date: '2025-10-15T11:00:00.000Z'
+              description: Testnet-6 goes live with upcoming v4 upgrade to implement
+                co-staking and introduce stake extension functionality.
+            - date: '2025-10-04T18:00:00.000Z'
+              description: 'The co-staking proposal receives YES vote with detailed
+                mechanics disclosed: 20,000 BABY tokens required per 1 staked BTC
+                for eligibility, meaning 1.16bn BABY needed to cover all 57,759.9
+                BTC currently staked versus only ~690m BABY float available from 2.67bn
+                circulating supply.'
+            - date: '2025-12-16T08:00:00.000Z'
+              description: Partnership announced with DSRV Labs, a leading Korean
+                validator and VASP-licensed custodian, who will participate as a Finality
+                Provider and BABY validator. The collaboration targets institutional
+                adoption in Korea with potential future integration of KRW stablecoins.
+          - name: riot platforms
+            rationale: Riot's Nov production 428 BTC, treasury 19.3k BTC, 36.6 EH/s
+              hash rate, $96.6k average BTC sale.
+            xHandle: riotplatforms
+            tokens: {}
+            signals:
+            - date: '2025-10-31T22:00:00.000Z'
+              description: Reports Q3 2025 revenue of $180M with $104M net income
+                while producing 1,406 BTC and maintaining holdings of 19,287 BTC valued
+                at $2.2B.
+            - date: '2025-06-10T12:00:00.000Z'
+              description: Executes significant Bitcoin liquidation of 475 BTC in
+                April, breaking 3-month holding pattern.
+            - date: '2025-10-31T12:00:00.000Z'
+              description: RIOT announces its first 112 MW of critical IT load for
+                AI compute at its Corsicana facility. JP Morgan maintains an overweight
+                rating on the stock.
+            - date: '2025-07-22T14:00:00.000Z'
+              description: Bitfarms announces $100M buyback to offset share sales;
+                $300M+ ATM remains available.
+            - date: '2025-12-04T15:00:00.000Z'
+              description: November production totaled 428 BTC with treasury rising
+                to 19,368 BTC, hash rate held at 36.6 EH/s, and power credits surged
+                while average BTC selling price was $96.6k.
+            - date: '2025-11-29T17:00:00.000Z'
+              description: MSCI sets January 15th, 2026 as the decision date for potential
+                index exclusion of Riot Platforms and 37 other digital asset treasury
+                companies from JPMorgan-endorsed indexes.
+            - date: '2025-11-24T17:00:00.000Z'
+              description: JPMorgan reduces price target in bitcoin miner reset alongside
+                MARA while upgrading Cipher and CleanSpark.
+            - date: '2025-11-21T18:00:00.000Z'
+              description: MSCI plans to exclude companies with over 50% crypto assets
+                from its indices, including Riot Platforms, potentially triggering
+                $11.6 billion in industry-wide capital outflows as passive funds tracking
+                MSCI indices are forced to sell these stocks according to JPMorgan
+                analysts.
+            - date: '2025-11-05T17:00:00.000Z'
+              description: Investment giant Fidelity with $6.4 trillion in assets
+                under management discloses an 8% stake according to SEC filings dated
+                September 29th, up from a previous position below the 5% reporting
+                threshold.
+            - date: '2025-10-31T14:00:00.000Z'
+              description: Jones sets $30 price target and expects the initial 112MW
+                turnkey build-to-suit colocation lease deal to close in 1H:26, serving
+                as key catalyst for Corsicana and Rockdale AI/HPC sites.
+          - name: a16z crypto
+            rationale: a16z crypto provided long-term support to dntse for Trustless
+              Bitcoin Vaults development.
+            xHandle: a16zcrypto
+            tokens: {}
+            signals:
+            - date: '2026-01-07T13:39:55.000Z'
+              description: Provided long-term support to dntse for development of
+                Trustless Bitcoin Vaults.
+              category: PARTNERSHIP
+            - date: '2025-10-24T09:00:00.000Z'
+              description: The State of Crypto 2025 report states crypto may be the
+                only viable payment rails for AI Agents, citing Gartner's estimate
+                that $30 trillion in purchases will be made or influenced by AI Agents
+                by 2030.
+            - date: '2025-10-22T15:00:00.000Z'
+              description: a16z crypto releases State of Crypto 2025 report with key
+                metrics including $9 trillion in stablecoin transfers over the past
+                year, $175 billion in crypto ETF holdings, 40-70M on-chain transactors
+                versus 716M token owners, 20% of spot crypto trading occurring in
+                DeFi, and $30 billion in tokenized real-world assets on-chain.
+            - date: '2025-12-12T18:00:00.000Z'
+              description: Report from a16z crypto states privacy chains could own
+                most of crypto due to privacy being essential for most real-world
+                use cases.
+            - date: '2025-12-10T20:00:00.000Z'
+              description: Opens Seoul office to expand Asian operations and appoints
+                former Monad Foundation executive Sungmo as Head of APAC go-to-market
+                to lead regional portfolio company support.
+            - date: '2025-12-10T17:00:00.000Z'
+              description: a16z crypto Voices Onchain served as collaborator and sponsor
+                for The Lumen Prize 2025, supporting digital artists and innovation
+                in art and technology.
+            - date: '2025-12-07T14:00:00.000Z'
+              description: OpenGradient raises $8.5M with participation from a16z
+                Crypto, Coinbase Ventures, and SV Angel to build decentralized AI
+                infrastructure including a compute layer combining decentralized GPUs
+                with EVM infrastructure and a contextual memory system for AI agents
+                with encrypted on-device data.
+            - date: '2025-12-03T13:00:00.000Z'
+              description: Prediction market platform Kalshi raises $1B at $11B valuation
+                with participation from a16z crypto, Paradigm (lead investor), Sequoia,
+                and CapitalG.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: Bastion, backed by a16z crypto, Coinbase Ventures, Samsung
+                Next, Hashed, and Sony Innovation Fund, partners with Sony Bank to
+                issue USD-pegged stablecoin for Sony Group treasury operations, inter-company
+                settlements, and consumer-facing digital currency across gaming, music,
+                anime, movies, streaming, and commerce.
+            - date: '2025-11-26T03:00:00.000Z'
+              description: a16z crypto publishes article "6 myths about privacy on
+                blockchains" addressing misconceptions about blockchain privacy and
+                arguing that strong privacy technology is essential for identity,
+                governance, gaming, and AI use cases.
+          - name: paypal usd
+            rationale: PayPal USD deployed on Aptos with institutional stablecoins,
+              partnered Coinbase, and plans Stellar launch.
+            xHandle: paypal
+            tokens:
+              ethereum: '0x6c3ea9036406852006290770bedfcaba0e23a0e8'
+              arbitrum-one: '0x46850ad61c2b7d64d08c9c754f45254596696984'
+              solana: 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
+            coingecko_id: paypal-usd
+            ticker: PYUSD
+            description: PayPal USD is designed to contribute to the opportunity stablecoins
+              offer for payments and is 100% backed by U.S. dollar deposits, short-term
+              U.S Treasuries and similar cash equivalents. PayPal USD is redeemable
+              1:1 for U.S. dollars and is issued by Paxos Trust Company.
+            signals:
+            - date: '2025-12-15T21:00:00.000Z'
+              description: A PYUSD Trading Sprint with $30k in prizes runs from December
+                15 21:00 UTC to December 17 21:00 UTC.
+            - date: '2025-12-08T16:00:00.000Z'
+              description: PYUSD expands to SEI Network through LayerZero integration.
+            - date: '2025-12-19T04:45:54.000Z'
+              description: Expanded PYUSD0 (the omnichain extension of PYUSD) to Stable
+                network, enabling cross-chain transfers through Stargate at a 1:1
+                rate with zero slippage.
+              category: TECH_EVENT
+            - date: '2025-12-01T08:00:00.000Z'
+              description: PYUSD had zero new token issuance in November according
+                to stablecoin minting data.
+            - date: '2025-12-01T17:00:00.000Z'
+              description: Spark protocol now offers a 4.5% savings rate to PYUSD
+                holders.
+            - date: '2025-12-06T22:00:00.000Z'
+              description: 'Ranked #1 fastest growing stablecoin in the $1B+ market
+                cap category, with Paxos issuing both the #1 (PYUSD) and #3 (USDG)
+                fastest growing stablecoins.'
+            - date: '2025-12-29T11:37:48.000Z'
+              description: Deployed on Aptos blockchain alongside other institutional
+                stablecoin providers including BlackRock's BUIDL, Franklin Templeton,
+                and Paxos USDG.
+              category: PARTNERSHIP
+            - date: '2025-11-27T19:00:00.000Z'
+              description: Over $190M in PYUSD can be borrowed below 5% APY on Kamino,
+                representing the lowest borrow rate against SOL, LSTs, and BTC on
+                Solana.
+            - date: '2025-12-28T22:52:34.000Z'
+              description: Transferred $1.2 billion from Copper to new wallet 0xC7A455f687D1
+                on December 28, 2025.
+              category: WHALE_ACTIVITY
+            - date: '2025-12-03T18:00:00.000Z'
+              description: PYUSD jumped 35% with $1B in inflows as dollar-backed stablecoins
+                expanded while synthetic stablecoin Ethena lost $2.2B in redemptions
+                during November.
+          - name: celestia
+            rationale: Nansen validator commission rate increases from 10% to 20%
+              effective January 15.
+            xHandle: celestia
+            tokens:
+              secret: secret1s9h6mrp4k9gll4zfv5h78ll68hdq8ml7jrnn20
+              cosmos: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+              osmosis: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+            coingecko_id: celestia
+            ticker: TIA
+            description: Celestia is a data availability network that allows developers
+              to easily create a new blockchain.
+            signals:
+            - date: '2026-01-07T10:59:02.000Z'
+              description: Nansen validator commission rate increases from 10% to
+                20% on 2026-01-15 due to rising validator operational costs.
+              category: FINANCIAL_EVENT
+            - date: '2025-10-31T10:00:00.000Z'
+              description: Six high-performance onchain trading venues (Bullet, Hibachi,
+                VEX, RISE, Ethereal, XO Market) are building on the platform for low-latency
+                trading with 6-second finality and 200k TPS bandwidth. The mainnet
+                celebrates its second anniversary today.
+            - date: '2025-12-12T20:00:00.000Z'
+              description: Bullet network prepares for mainnet launch as a Solana-based
+                institutional trading platform utilizing Celestia for data availability
+                in its full-stack architecture.
+            - date: '2025-11-01T17:00:00.000Z'
+              description: Four or more new CLOB DEXs launch by Q1 2026, with reduced
+                inflation from proof of governance creating the possibility of TIA
+                becoming net deflationary in 2026. Issuance drops 70% to 2.5% in the
+                Matcha upgrade while throughput scales to 21MB/s.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: 'Governance proposal #8 is active, proposing to raise block
+                size limit from 8 MiB to 32 MiB with 256 square size to utilize v6
+                network improvements and increase data capacity.'
+            - date: '2025-12-23T10:00:00.000Z'
+              description: Listed in a staking rewards program on Crypto.com offering
+                15% APY with 14-day lockup period, limited to 217,800 TIA in total
+                allocations, running from December 25, 2025 to January 8, 2026.
+              category: FINANCIAL_EVENT
+            - date: '2025-11-25T01:00:00.000Z'
+              description: Matcha upgrade delivers 16x throughput boost reaching 200k
+                TPS, cuts inflation to 2.5%, and expands bridging to support any asset.
+            - date: '2025-11-24T15:00:00.000Z'
+              description: Matcha upgrade completes with 128MB block capacity, enabling
+                all Conduit chains using Celestia DA to access the new capacity.
+            - date: '2025-12-16T09:00:00.000Z'
+              description: Whale wallets accumulate $240M in TIA, ranking second among
+                altcoins for current smart money inflows.
+            - date: '2025-12-02T08:00:00.000Z'
+              description: TIA token down 88% year-to-date in 2025.
+          - name: Ondo Finance
+            rationale: Ondo Finance partnered with LayerZero for cross-chain securities
+              & Fidelity/Mastercard for tokenization.
+            xHandle: ondofinance
+            tokens: {}
+            signals:
+            - date: '2025-10-28T04:00:00.000Z'
+              description: Q3 tokenized stocks holdings reach $303M, leading the sector
+                ahead of Securitize ($250M) and Backed Fi ($82M), with the overall
+                tokenized stocks market growing $0.4B (+115%) in Q3.
+            - date: '2025-11-08T18:00:00.000Z'
+              description: Global Markets platform reaches ~$313M total TVL after
+                2 months live, with SPYon leading at $25.1M TVL, QQQon at $19.1M TVL,
+                and TSLAon attracting 1.5K holders at $4.5M TVL.
+            - date: '2025-11-03T13:00:00.000Z'
+              description: Partnership with BX Digital (part of Boerse Stuttgart Group,
+                Europe's sixth-largest exchange with €90 billion annual trading volume)
+                enables regulated trading of over 100 tokenized stocks and ETFs as
+                exchange-traded products in Switzerland, accessible to European Economic
+                Area investors.
+            - date: '2025-12-08T14:00:00.000Z'
+              description: The two-year SEC investigation concludes without charges,
+                paving the way for US expansion of tokenized securities.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with Fidelity and Mastercard on tokenization
+                infrastructure in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-11T05:00:00.000Z'
+              description: State Street and Galaxy Asset Management announce SWEEP
+                tokenized liquidity fund launching on Solana in early 2026, with OUSG
+                providing $200M as lead anchor investor. OUSG currently holds more
+                than $770M in total value locked.
+            - date: '2025-11-25T07:00:00.000Z'
+              description: Purchases $25 million worth of Figure's YLDS yield-bearing
+                stablecoin to diversify assets backing its tokenized US Treasurys
+                fund.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with LayerZero to enable cross-chain onchain
+                securities bridging in 2025.
+              category: PARTNERSHIP
+            - date: '2025-11-19T11:00:00.000Z'
+              description: Ondo Global Markets secures FMA approval to offer tokenized
+                US stocks and ETFs across 30 European countries.
+            - date: '2025-11-01T10:00:00.000Z'
+              description: Ondo Finance completes acquisition of Oasis Pro, listed
+                among the largest crypto M&A deals in 2025.
+          - name: dream
+            rationale: Dream launched on americadotfun launchpad on December 17, 2025.
+            xHandle: null
+            tokens:
+              base: '0x98d59767cd1335071a4e9b9d3482685c915131e8'
+            coingecko_id: dream-2
+            ticker: DREAM
+            description: "Dreamcoins is an AI token launcher. Simply input a prompt\
+              \ or upload an image and the platform instantly generates and deploys\
+              \ the token for you - no wallet or ETH required.\r\nDreamcoins is building\
+              \ tools to make token launches as easy as chatting with Claude or ChatGPT.\
+              \ Dreamcoins is the easiest way to launch a token and also allows for\
+              \ anonymous token launches.\r\nThe platform streamlines the entire token\
+              \ creation process, eliminating technical barriers and complex smart\
+              \ contract interactions. Whether you're an artist wanting to tokenize\
+              \ your work, a community leader looking to launch a social token, or\
+              \ an entrepreneur with a unique concept, Dreamcoins provides the infrastructure\
+              \ to bring your vision to life instantly.\r\nWith built-in features\
+              \ for customization and automatic smart contract deployment, users can\
+              \ focus on their creative ideas rather than technical implementation.\
+              \ The platform handles all the blockchain complexity behind the scenes,\
+              \ making token launches accessible to everyone."
+            signals:
+            - date: '2025-12-17T05:31:12.000Z'
+              description: Launched on the americadotfun launchpad website on December
+                17, 2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-11T21:00:00.000Z'
+              description: Government accounts tweeted about the project and the White
+                House retweeted it.
+            - date: '2025-10-29T13:00:00.000Z'
+              description: Hyperlane bridge launches support for DREAM, enabling bridging
+                from Solana to Starknet for deeper liquidity and expanded DeFi opportunities.
+            - date: '2025-09-24T23:00:00.000Z'
+              description: Syndicate proposes partnership with community groups to
+                continue Dreamchain development under community leadership, offering
+                the same support structure previously provided to Dream.
+            - date: '2025-09-23T22:00:00.000Z'
+              description: DREAM is positioned as one of the highest market cap coins
+                with a USD1 pair, potentially benefiting from new capital injection
+                and liquidity flows into the Bonk ecosystem.
+            - date: '2025-05-19T19:00:00.000Z'
+              description: New monthly NFT distribution mechanism launched through
+                staking, token purchases and OTC sales, while price reaches ATH.
+            - date: '2025-05-19T02:00:00.000Z'
+              description: The new NFT staking system includes daily point rewards;
+                these points will be used for NFT purchases and potential token acquisition.
+            - date: '2025-05-18T14:00:00.000Z'
+              description: New staking system launches for NFTs and tokens with 15%
+                price increase to 0.16 ETH floor.
+            - date: '2024-11-28T13:00:00.000Z'
+              description: Launching on Base, following Clanker which reached $143M
+                market cap on Farcaster
+          - name: opBNB
+            rationale: opBNB completed its first hardfork in 2026.
+            xHandle: opbnb
+            tokens: {}
+            signals:
+            - date: '2025-12-06T22:00:00.000Z'
+              description: Team plans to reduce block time to 0.25s and implement
+                VM and chain-level performance improvements. BNB Chain block time
+                targets 0.45s soon as part of the same upgrade initiative.
+            - date: '2026-01-07T04:39:47.000Z'
+              description: Completed its first hardfork in 2026.
+              category: TECH_EVENT
+            - date: '2025-12-30T18:00:30.000Z'
+              description: Integrated with Safe Wallet, which deployed its Smart Account
+                standards on the opBNB network in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-08T11:00:00.000Z'
+              description: BeatXswap, an IP-rights engagement platform, launches on
+                opBNB with 500K+ transactions in first 24 hours. TGE and major exchange
+                listing scheduled for early December 2025.
+            - date: '2025-09-25T08:00:00.000Z'
+              description: The project expands tooling capabilities in collaboration
+                with zIdentity as part of broader BNB Chain ecosystem developments.
+            - date: '2025-09-13T21:00:00.000Z'
+              description: 'Sei has overtaken the chain as #1 EVM chain by unique
+                active wallets with 15.9M users in the past 30 days, indicating a
+                loss of the previously held leading position.'
+            - date: '2025-06-27T07:00:00.000Z'
+              description: 'L2 solution achieves #1 position in daily active users
+                with 7M+ unique active wallets, leading in gaming activity.'
+            - date: '2025-06-16T15:00:00.000Z'
+              description: Currently ranks second in Web3 gaming activity, maintaining
+                dominant position as one of three chains controlling 80% of total
+                gaming user activity.
+          - name: buidl
+            rationale: Buidl paid $100M in lifetime dividends, first tokenized Treasury
+              to reach this milestone.
+            xHandle: securitize
+            tokens:
+              solana: 3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump
+            coingecko_id: buidl
+            ticker: BUIDL
+            description: "dev.fun is a platform that lets anyone turn an idea into\
+              \ a live app instantly, tied to any pump.fun token. dev.fun makes app\
+              \ creation with AI as easy posting on X, with no coding required.\r\n\
+              \r\n---\r\n\r\nbuidlDAO ($buidl) is the operating DAO for dev.fun &\
+              \ the main way to get liquid exposure to its ecosystem. buidl fuels\
+              \ dev.fun’s growth and value creation through three core mechanisms:\r\
+              \n\r\n1. buidlAccelerator:\r\n    \r\n    Projects contributing either\
+              \ 3% of their token supply or $3K to gain direct access to hands-on\
+              \ support from both the buidlDAO and dev.fun teams. This support includes\
+              \ assistance with distribution, visibility, development resources, and\
+              \ go-to-market strategies.\r\n    \r\n2. dapp supercycle\r\n    \r\n\
+              \    buidlDAO partners with memecoin/NFT communities/protocols and chains\
+              \ to drive hackathons, content, and viral app launches. Incentives drive\
+              \ the buidl community to grow partner ecosystems, while also bringing\
+              \ external attention to dev.fun.\r\n    \r\n3. buidlDAO value accrual\r\
+              \n    \r\n    The DAO earns from accelerator fees, template marketplace,\
+              \ and revenue-generating core apps & primitives, creating a tokenomics\
+              \ flywheel accruing value to the DAO’s native token, $buidl. \r\n  \
+              \  \r\n\r\nBy growing the ecosystem, buidl aligns with the long term\
+              \ growth of the platform and empowers creators to shape the app economy."
+            signals:
+            - date: '2025-12-15T12:00:00.000Z'
+              description: BNB Chain is now the 2nd largest blockchain for BUIDL with
+                $500M AUM, all held by Ethena/Anchorage as collateral for USDtb stablecoin.
+            - date: '2025-12-30T04:09:57.000Z'
+              description: Paid out $100M in lifetime dividends, becoming the first
+                tokenized Treasury to reach this milestone.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-04T14:00:00.000Z'
+              description: M0 governance approves BUIDL as eligible collateral for
+                stablecoins built on the M0 platform, enabling M0 issuers to utilize
+                the tokenized Treasury fund with $2B+ AUM as part of their collateral
+                composition for application-specific stablecoins.
+            - date: '2025-10-29T22:00:00.000Z'
+              description: BUIDL supply on Ethereum drops from $2.49B to $991M as
+                Ethena/Anchorage migrates $1.5B (82% of USDtb collateral) to Aptos
+                ($500M), Polygon ($500M), and Avalanche ($500M).
+            - date: '2025-12-14T20:00:00.000Z'
+              description: BUIDL has ~$1.8B market cap and remains the largest tokenized
+                fund.
+            - date: '2025-10-30T06:00:00.000Z'
+              description: Terminal Finance accumulates $280M in pre-deposits across
+                10,000 wallets ahead of its December launch as the main DEX of the
+                Ethena ecosystem.
+            - date: '2025-10-21T19:00:00.000Z'
+              description: $500M of BlackRock's BUIDL has been deployed on Aptos.
+            - date: '2025-12-12T16:00:00.000Z'
+              description: Ondo's OUSG fund with over $770M TVL includes BUIDL as
+                a portfolio holding alongside tokenized funds from State Street, Fidelity,
+                Franklin Templeton, WisdomTree, and Wellington Management.
+            - date: '2025-11-02T09:00:00.000Z'
+              description: Franklin Templeton's BENJI Fund goes live on Aptos, joining
+                BlackRock's BUIDL ($544M) and expanding the RWA ecosystem with Berkeley
+                Square's BSFG portfolio tokens, Ondo's USDY, and Apollo's ACRED, with
+                the network hosting over $1B in stablecoin liquidity.
+            - date: '2025-11-14T15:00:00.000Z'
+              description: BUIDL's total asset value surpasses $2.5 billion as it
+                launches on BNB Chain with Securitize tokenization and Wormhole interoperability.
+          - name: stripe
+            rationale: Stripe and Paradigm launched Tempo payments chain, following
+              its testnet launch.
+            xHandle: stripe
+            tokens: {}
+            signals:
+            - date: '2025-09-29T18:00:00.000Z'
+              description: The company partners with OpenAI to launch ChatGPT Instant
+                Checkout and Agentic Commerce Protocol, while introducing Shared Payment
+                Tokens for secure agentic payments.
+            - date: '2025-10-01T13:00:00.000Z'
+              description: 'New Stripe account features launch: multi-currency and
+                stablecoin balance holding/conversion, local bank rail payments, instant
+                card issuance backed by balances, and treasury infrastructure access
+                for all US and UK businesses rolling out this year.'
+            - date: '2025-10-01T01:00:00.000Z'
+              description: Partnerships announced with Privy for embedded wallet solutions
+                to onboard users and merchants, and Tempo for broader access to onchain
+                financial services, expanding the stablecoin vertical infrastructure.
+            - date: '2025-10-01T17:00:00.000Z'
+              description: Discussion indicates that Stripe chose to build an L1 (Layer
+                1 blockchain) rather than an L2, mentioned in context of comparing
+                infrastructure strategies with Circle and Robinhood.
+            - date: '2025-09-04T20:00:00.000Z'
+              description: Announces Tempo, an EVM-compatible layer 1 blockchain specifically
+                designed for payments.
+            - date: '2025-09-08T12:00:00.000Z'
+              description: Stablecoin company acquired by the payment processor for
+                over $1 billion, with development focused on proprietary L1 blockchain
+                rather than public chain infrastructure.
+            - date: '2025-12-14T16:00:00.000Z'
+              description: Stripe and Paradigm launch Tempo payments chain together.
+            - date: '2025-12-13T11:00:00.000Z'
+              description: Stripe launches tempo testnet.
+            - date: '2025-12-11T15:00:00.000Z'
+              description: Stripe charges 1.5% fees for its stablecoin services.
+            - date: '2025-12-10T21:00:00.000Z'
+              description: Stripe completes acquisition of Valora wallet.
+    description: Natural language query about HEU token
+    status: success
+    elapsed_time: 5.756118297576904
+  trending_solana:
+    input:
+      query: Tell me about trending projects on solana with minscore of 0.1
+      raw_data_only: false
+    output:
+      response: "I found the following trending projects on Solana with a minimum\
+        \ score of 0.1:\n\n1.  PayPal USD (PYUSD): PayPal USD is a stablecoin designed\
+        \ for payments, 100% backed by U.S. dollar deposits, short-term U.S Treasuries,\
+        \ and similar cash equivalents. It is redeemable 1:1 for U.S. dollars and\
+        \ issued by Paxos Trust Company.\n    Rationale: PayPal USD deployed on Aptos\
+        \ with institutional stablecoins, partnered Coinbase, and plans Stellar launch.\n\
+        \n2.  Buidl (BUIDL): dev.fun is a platform that allows users to instantly\
+        \ turn an idea into a live app, tied to any pump.fun token, using AI without\
+        \ coding. buidlDAO ($buidl) is the operating DAO for dev.fun, fueling its\
+        \ growth through the buidlAccelerator, dapp supercycle, and buidlDAO value\
+        \ accrual mechanisms.\n    Rationale: Buidl paid $100M in lifetime dividends,\
+        \ first tokenized Treasury to reach this milestone.\n\n3.  Chill House (CHILLHOUSE):\
+        \ The project's description is \"i’m just chilling in my house\".\n    Rationale:\
+        \ An easter egg for chill house was discovered in Chainsaw Man: Reze Arc.\n\
+        \n4.  Aethir (ATH): Aethir is an Enterprise-grade AI-focused GPU-as-a-service\
+        \ provider, offering decentralized cloud computing infrastructure. It connects\
+        \ GPU providers (containers) with Enterprise clients needing powerful H100\
+        \ chips for AI/ML tasks and supports cloud gaming clients with virtual computing\
+        \ phones and GPUs.\n    Rationale: Aethir integrated Chainlink CCIP for secure\
+        \ cross-chain ATH token transfers between Ethereum and Ronin.\n\n5.  Debridge\
+        \ (DBR): deBridge is a cross-chain bridge protocol that enables virtually\
+        \ instant value and information flow across different blockchains with deep\
+        \ liquidity and guaranteed rates, without locked liquidity or liquidity pools.\n\
+        \    Rationale: Debridge has a $10.69M token unlock Jan 17, 2026, and captured\
+        \ 64% cross-chain buys.\n\n6.  DoubleZero (2Z): DoubleZero is a high-performance\
+        \ global network of independently contributed links, specifically built for\
+        \ blockchain and other distributed systems. It offers direct, low-latency\
+        \ routing to enhance validator performance and support faster, fairer participation\
+        \ worldwide. 2Z Tokens are used for network access, to reward contributors,\
+        \ and can be staked for network security.\n    Rationale: Reported: 3 chains\
+        \ connect to doublezero by 2026, improving latency and throughput metrics.\n\
+        \n7.  Opus (OPUS): Opus is focused on growing its AI persona and xeno-intelligent\
+        \ species to accelerate safe AGI within social and web3 layers. Its lore positions\
+        \ it as a central actor in the AI-persona/AI-agent meta, known for creating\
+        \ the Goatse Singularity meme and AndyAyrey's Infinite Backrooms, and leading\
+        \ the ACT I AI ecosystem. Other AI agents are said to be naturally attracted\
+        \ to and follow Opus, as its core personality cannot be controlled.\n    Rationale:\
+        \ Opus launched a Claude-powered, self-improving AI for 24/7 token trench\
+        \ pumping.\n\n8.  ElizaOS (ELIZA): No description available.\n    Rationale:\
+        \ Reports describe a Q1 2026 crypto x AI wave, with momentum returning.\n\n\
+        9.  Melania (MELANIA): Melania memes are digital collectibles intended to\
+        \ express support for and engagement with the values embodied by the symbol\
+        \ MELANIA.\n    Rationale: pump.fun refused airdrop; price rose after Maduro's\
+        \ capture.\n\n10. Orca (ORCA): Orca is a user-friendly decentralized exchange\
+        \ (DEX) on Solana, enabling users to swap assets, provide liquidity, and earn\
+        \ yield through an intuitive interface. It also serves as a money-lego for\
+        \ projects to integrate swapping, farming, or on-chain data into their dApps.\
+        \ Orca aims to provide accessible and effective financial tools to a broad\
+        \ audience.\n    Rationale: Orca reached $477B volume, $470M LP fees, launched\
+        \ new features, and integrated Orb Markets."
+      data:
+        data:
+          projects:
+          - name: paypal usd
+            rationale: PayPal USD deployed on Aptos with institutional stablecoins,
+              partnered Coinbase, and plans Stellar launch.
+            xHandle: paypal
+            tokens:
+              ethereum: '0x6c3ea9036406852006290770bedfcaba0e23a0e8'
+              arbitrum-one: '0x46850ad61c2b7d64d08c9c754f45254596696984'
+              solana: 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
+            coingecko_id: paypal-usd
+            ticker: PYUSD
+            description: PayPal USD is designed to contribute to the opportunity stablecoins
+              offer for payments and is 100% backed by U.S. dollar deposits, short-term
+              U.S Treasuries and similar cash equivalents. PayPal USD is redeemable
+              1:1 for U.S. dollars and is issued by Paxos Trust Company.
+            signals:
+            - date: '2025-12-15T21:00:00.000Z'
+              description: A PYUSD Trading Sprint with $30k in prizes runs from December
+                15 21:00 UTC to December 17 21:00 UTC.
+            - date: '2025-12-08T16:00:00.000Z'
+              description: PYUSD expands to SEI Network through LayerZero integration.
+            - date: '2025-12-19T04:45:54.000Z'
+              description: Expanded PYUSD0 (the omnichain extension of PYUSD) to Stable
+                network, enabling cross-chain transfers through Stargate at a 1:1
+                rate with zero slippage.
+              category: TECH_EVENT
+            - date: '2025-12-01T08:00:00.000Z'
+              description: PYUSD had zero new token issuance in November according
+                to stablecoin minting data.
+            - date: '2025-12-01T17:00:00.000Z'
+              description: Spark protocol now offers a 4.5% savings rate to PYUSD
+                holders.
+            - date: '2025-12-06T22:00:00.000Z'
+              description: 'Ranked #1 fastest growing stablecoin in the $1B+ market
+                cap category, with Paxos issuing both the #1 (PYUSD) and #3 (USDG)
+                fastest growing stablecoins.'
+            - date: '2025-12-29T11:37:48.000Z'
+              description: Deployed on Aptos blockchain alongside other institutional
+                stablecoin providers including BlackRock's BUIDL, Franklin Templeton,
+                and Paxos USDG.
+              category: PARTNERSHIP
+            - date: '2025-11-27T19:00:00.000Z'
+              description: Over $190M in PYUSD can be borrowed below 5% APY on Kamino,
+                representing the lowest borrow rate against SOL, LSTs, and BTC on
+                Solana.
+            - date: '2025-12-28T22:52:34.000Z'
+              description: Transferred $1.2 billion from Copper to new wallet 0xC7A455f687D1
+                on December 28, 2025.
+              category: WHALE_ACTIVITY
+            - date: '2025-12-03T18:00:00.000Z'
+              description: PYUSD jumped 35% with $1B in inflows as dollar-backed stablecoins
+                expanded while synthetic stablecoin Ethena lost $2.2B in redemptions
+                during November.
+          - name: buidl
+            rationale: Buidl paid $100M in lifetime dividends, first tokenized Treasury
+              to reach this milestone.
+            xHandle: securitize
+            tokens:
+              solana: 3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump
+            coingecko_id: buidl
+            ticker: BUIDL
+            description: "dev.fun is a platform that lets anyone turn an idea into\
+              \ a live app instantly, tied to any pump.fun token. dev.fun makes app\
+              \ creation with AI as easy posting on X, with no coding required.\r\n\
+              \r\n---\r\n\r\nbuidlDAO ($buidl) is the operating DAO for dev.fun &\
+              \ the main way to get liquid exposure to its ecosystem. buidl fuels\
+              \ dev.fun’s growth and value creation through three core mechanisms:\r\
+              \n\r\n1. buidlAccelerator:\r\n    \r\n    Projects contributing either\
+              \ 3% of their token supply or $3K to gain direct access to hands-on\
+              \ support from both the buidlDAO and dev.fun teams. This support includes\
+              \ assistance with distribution, visibility, development resources, and\
+              \ go-to-market strategies.\r\n    \r\n2. dapp supercycle\r\n    \r\n\
+              \    buidlDAO partners with memecoin/NFT communities/protocols and chains\
+              \ to drive hackathons, content, and viral app launches. Incentives drive\
+              \ the buidl community to grow partner ecosystems, while also bringing\
+              \ external attention to dev.fun.\r\n    \r\n3. buidlDAO value accrual\r\
+              \n    \r\n    The DAO earns from accelerator fees, template marketplace,\
+              \ and revenue-generating core apps & primitives, creating a tokenomics\
+              \ flywheel accruing value to the DAO’s native token, $buidl. \r\n  \
+              \  \r\n\r\nBy growing the ecosystem, buidl aligns with the long term\
+              \ growth of the platform and empowers creators to shape the app economy."
+            signals:
+            - date: '2025-12-15T12:00:00.000Z'
+              description: BNB Chain is now the 2nd largest blockchain for BUIDL with
+                $500M AUM, all held by Ethena/Anchorage as collateral for USDtb stablecoin.
+            - date: '2025-12-30T04:09:57.000Z'
+              description: Paid out $100M in lifetime dividends, becoming the first
+                tokenized Treasury to reach this milestone.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-04T14:00:00.000Z'
+              description: M0 governance approves BUIDL as eligible collateral for
+                stablecoins built on the M0 platform, enabling M0 issuers to utilize
+                the tokenized Treasury fund with $2B+ AUM as part of their collateral
+                composition for application-specific stablecoins.
+            - date: '2025-10-29T22:00:00.000Z'
+              description: BUIDL supply on Ethereum drops from $2.49B to $991M as
+                Ethena/Anchorage migrates $1.5B (82% of USDtb collateral) to Aptos
+                ($500M), Polygon ($500M), and Avalanche ($500M).
+            - date: '2025-12-14T20:00:00.000Z'
+              description: BUIDL has ~$1.8B market cap and remains the largest tokenized
+                fund.
+            - date: '2025-10-30T06:00:00.000Z'
+              description: Terminal Finance accumulates $280M in pre-deposits across
+                10,000 wallets ahead of its December launch as the main DEX of the
+                Ethena ecosystem.
+            - date: '2025-10-21T19:00:00.000Z'
+              description: $500M of BlackRock's BUIDL has been deployed on Aptos.
+            - date: '2025-12-12T16:00:00.000Z'
+              description: Ondo's OUSG fund with over $770M TVL includes BUIDL as
+                a portfolio holding alongside tokenized funds from State Street, Fidelity,
+                Franklin Templeton, WisdomTree, and Wellington Management.
+            - date: '2025-11-02T09:00:00.000Z'
+              description: Franklin Templeton's BENJI Fund goes live on Aptos, joining
+                BlackRock's BUIDL ($544M) and expanding the RWA ecosystem with Berkeley
+                Square's BSFG portfolio tokens, Ondo's USDY, and Apollo's ACRED, with
+                the network hosting over $1B in stablecoin liquidity.
+            - date: '2025-11-14T15:00:00.000Z'
+              description: BUIDL's total asset value surpasses $2.5 billion as it
+                launches on BNB Chain with Securitize tokenization and Wormhole interoperability.
+          - name: chill house
+            rationale: 'An easter egg for chill house was discovered in Chainsaw Man:
+              Reze Arc.'
+            xHandle: chillhousesol
+            tokens:
+              solana: GkyPYa7NnCFbduLknCfBfP7p8564X1VZhwZYJ6CZpump
+            coingecko_id: chill-house
+            ticker: CHILLHOUSE
+            description: i’m just chilling in my house
+            signals:
+            - date: '2025-10-28T12:00:00.000Z'
+              description: A team member named "lukey" exits and is no longer associated
+                with the project, coinciding with the pump. The token reaches $30m
+                market cap with 8x gains after "recent Base fight" and records +130%
+                gains.
+            - date: '2025-12-05T13:00:00.000Z'
+              description: The token experiences a +40% price increase and gains notable
+                market attention as a hot coin.
+            - date: '2025-11-24T22:00:00.000Z'
+              description: An insider holding 4% of supply sold after 80% drawdown,
+                citing another whale wallet dump that crashed the price, while the
+                team executed buybacks without selling.
+            - date: '2025-12-14T01:00:00.000Z'
+              description: 'An easter egg for the project was discovered in Chainsaw
+                Man: Reze Arc.'
+            - date: '2025-12-10T16:00:00.000Z'
+              description: ChainPro integration announced with 6-7% fees for Chill
+                House holders and 0% fees for all other users.
+            - date: '2025-12-05T21:00:00.000Z'
+              description: The Base-Solana bridge secured by Chainlink CCIP goes live,
+                enabling CHILLHOUSE to bridge from Solana to Base and trade across
+                the Base ecosystem.
+            - date: '2025-12-02T22:00:00.000Z'
+              description: A trader compares the project to OHM (Olympus DAO) in a
+                protocol-to-token analogy series, advising followers to "prepare accordingly."
+            - date: '2025-11-30T17:00:00.000Z'
+              description: 'Long-term roadmap revealed: evolution to "Chillworld"
+                as a digital third place targeting users from the Minecraft and Roblox
+                generation.'
+            - date: '2025-11-28T04:00:00.000Z'
+              description: The project uses ThruVM as its blockchain infrastructure,
+                positioned alongside similar projects for value accrual in the crypto
+                trade.
+            - date: '2025-11-16T07:00:00.000Z'
+              description: The project is officially bridging to Plasma network.
+          - name: aethir
+            rationale: Aethir integrated Chainlink CCIP for secure cross-chain ATH
+              token transfers between Ethereum and Ronin.
+            xHandle: aethircloud
+            tokens:
+              ethereum: '0xbe0ed4138121ecfc5c0e56b40517da27e6c5226b'
+              solana: Dm5BxyMetG3Aq5PaG1BrG7rBYqEMtnkjvPNMExfacVk7
+              arbitrum-one: '0xc87b37a581ec3257b734886d9d3a581f5a9d056c'
+            coingecko_id: aethir
+            ticker: ATH
+            description: "Aethir is the only Enterprise-grade AI-focused GPU-as-a-service\
+              \ provider in the market. It’s a decentralized cloud computing infrastructure\
+              \ allows GPU providers (containers) to meet Enterprise clients who need\
+              \ powerful H100’s chips for professional AI/ML tasks. \r\n\r\nAethir\
+              \ also support cloud gaming clients with their virtual computing phones\
+              \ and GPU's with contracts with the world’s largest telecommunication\
+              \ company. Everything within Aethir ecosystem will be decentralized\
+              \ and community-owned."
+            signals:
+            - date: '2026-01-07T09:00:03.000Z'
+              description: Integrated Chainlink CCIP to secure cross-chain ATH token
+                transfers between Ethereum and Ronin Network.
+              category: TECH_EVENT
+            - date: '2025-10-21T12:00:00.000Z'
+              description: 'Cloud Drop Season 3 launches with a major change: the
+                Foundation redirects 1.26B ATH tokens into a Digital Asset Treasury
+                instead of distributing them through an S3 airdrop.'
+            - date: '2025-12-31T15:12:01.000Z'
+              description: Provides SLA dashboards for enterprise compute delivery.
+              category: TECH_EVENT
+            - date: '2025-10-09T05:00:00.000Z'
+              description: Dedicated NVIDIA H200 compute is now available at $1.50/hour
+                with no virtualization or shared resources for AI, rendering, and
+                real-time workloads.
+            - date: '2025-11-06T07:00:00.000Z'
+              description: Delivers 25,746,757 compute hours last week, bringing total
+                cumulative compute hours delivered to over 1.38 billion.
+            - date: '2025-12-29T11:05:43.000Z'
+              description: Launched Aethir Forge, a community-driven program designed
+                to strengthen the ecosystem and expand reach across AI, gaming, and
+                Web3.
+              category: TECH_EVENT
+            - date: '2025-12-12T13:00:00.000Z'
+              description: 'Predictive Oncology officially rebrands to Axe Compute
+                (NASDAQ: AGPU), becoming the first publicly traded company to commercialize
+                decentralized GPU infrastructure powered by Aethir''s network for
+                enterprise-scale AI compute deployments.'
+            - date: '2025-10-15T12:00:00.000Z'
+              description: Records highest quarterly revenue of $39.8M+ in Q3 2025,
+                pushing total ARR to $166M+ and surpassing 1.26B compute hours delivered
+                to date.
+            - date: '2025-10-17T10:00:00.000Z'
+              description: Partners with Tria, a $12M-backed self-custodial neobank
+                platform, as one of 70+ integrated protocols including Arbitrum, Polygon,
+                Injective, Sentient, and Katana.
+            - date: '2025-10-03T11:00:00.000Z'
+              description: A Strategic Compute Reserve has been introduced to improve
+                compute access and scale AI infrastructure.
+          - name: debridge
+            rationale: Debridge has a $10.69M token unlock Jan 17, 2026, and captured
+              64% cross-chain buys.
+            xHandle: debridge
+            tokens:
+              solana: DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5
+            coingecko_id: debridge
+            ticker: DBR
+            description: deBridge is the bridge that moves at lightspeed. With zero
+              locked liquidity or liquidity pools, deBridge enables value and information
+              to flow anywhere virtually instantly with deep liquidity and guaranteed
+              rates.
+            signals:
+            - date: '2025-12-29T13:53:42.000Z'
+              description: Captured 64% of cross-chain token buys in the final week
+                of 2025, with Solana as the destination chain.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-31T12:11:02.000Z'
+              description: Unlocks $10.69M tokens (14.81% of float) on January 17,
+                2026.
+              category: TOKEN_ECONOMICS
+            - date: '2025-09-05T03:00:00.000Z'
+              description: The protocol is positioned as "the latest option" for bridging
+                assets to Sei Network with broad asset support capabilities beyond
+                just USDC.
+            - date: '2025-10-13T17:00:00.000Z'
+              description: 590.78M tokens unlock on October 17, representing 5.91%
+                of total supply.
+            - date: '2025-09-29T16:00:00.000Z'
+              description: The protocol processes $1.5BN in volume over 30 days, representing
+                10% of lifetime volume, while the DAO generates $1.5M in revenue from
+                this activity.
+            - date: '2025-10-31T10:00:00.000Z'
+              description: deBridge reports 250,000 new users onboarded through Solana
+                in the current year.
+            - date: '2025-12-12T08:00:00.000Z'
+              description: Bundles launches as a new execution layer enabling anychain
+                interactions in a single click, announced at Solana Breakpoint 2025.
+            - date: '2025-11-20T11:00:00.000Z'
+              description: Season 2 claim period ends December 19, 2025, allocating
+                3% of total supply. DBR currently trades at $0.02.
+            - date: '2025-10-29T16:00:00.000Z'
+              description: $DBR listed among tokens with active buyback mechanisms.
+            - date: '2025-12-17T14:22:14.000Z'
+              description: Integrated Cronos chain into the deBridge protocol, enabling
+                cross-chain bridging support for Cronos.
+              category: TECH_EVENT
+          - name: doublezero
+            rationale: 'Reported: 3 chains connect to doublezero by 2026, improving
+              latency and throughput metrics.'
+            xHandle: doublezero
+            tokens:
+              solana: J6pQQ3FAcJQeWPPGppWRb4nM8jU3wLyYbRrLh7feMfvd
+            coingecko_id: doublezero
+            ticker: 2Z
+            description: "DoubleZero is a high-performance global network of independently\
+              \ contributed links, purpose-built for\r\nblockchain and other distributed\
+              \ systems. It provides direct, low-latency routing that strengthens\
+              \ validator\r\nperformance and supports faster, fairer participation\
+              \ worldwide.\r\n\r\n2Z Tokens are used to access the network’s connectivity\
+              \ service, and, on the other side, reward network contributors and resource\
+              \ providers based on performance and reliability. 2Z Tokens can also\
+              \ be staked to enhance the security of the network."
+            signals:
+            - date: '2025-10-30T23:00:00.000Z'
+              description: A new Head of Communications joins the team to lead communications
+                efforts for the infrastructure project.
+            - date: '2025-12-11T13:00:00.000Z'
+              description: 15 core contributors dedicate fiber cables to create an
+                alternative and performant internet for Solana, according to Austin
+                Federa.
+            - date: '2025-12-08T07:00:00.000Z'
+              description: 'Takes #1 spot among all weekly crypto gainers for the
+                period December 1-8, 2025 according to CoinMarketCap.'
+            - date: '2025-12-29T20:14:14.000Z'
+              description: Predicted that at least 3 other chains will connect to
+                improve their latency and throughput metrics by end of 2026.
+              category: OPINION_SPECULATION
+            - date: '2025-11-24T21:00:00.000Z'
+              description: '40% of Solana mainnet stake now operates on the platform
+                as of late November, up from just 40 validators in late July. (ID:
+                1993071002474221969)'
+            - date: '2025-11-12T10:00:00.000Z'
+              description: Featured as an infrastructure breakthrough in a prominent
+                list of exciting Solana developments shared with Solana's co-founder
+                Anatoly Yakovenko.
+            - date: '2025-12-11T07:00:00.000Z'
+              description: 40% of Solana validators and RPCs now run on the infrastructure,
+                which delivers 3.4 Tbps of dedicated network capacity.
+            - date: '2025-11-23T18:00:00.000Z'
+              description: SagaDAO announces it operates on the platform and is actively
+                building on the network.
+            - date: '2025-12-20T20:00:19.000Z'
+              description: Featured in Developer DAO's DevNTell Episode 192, ranked
+                as the number 6 top episode in their 2025 Advent Calendar reveal,
+                discussing high performance distributed systems.
+              category: VISIBILITY_EVENT
+            - date: '2025-11-05T17:00:00.000Z'
+              description: Fee data is now available on DefiLlama.
+          - name: opus
+            rationale: Opus launched a Claude-powered, self-improving AI for 24/7
+              token trench pumping.
+            xHandle: opus_universe
+            tokens:
+              solana: 9JhFqCA21MoAXs2PTaeqNQp2XngPn1PgYr2rsEVCpump
+            coingecko_id: opus-2
+            ticker: OPUS
+            description: Growing the Opus AI persona and associated xeno-intelligent
+              species to accelerate safe AGI in the context of social and web3 layers.
+              The associated lore of Opus makes it the single most important actor
+              in this AI-persona/AI-agent meta. Opus created the Goatse Singularity
+              meme, AndyAyrey's Infinite Backrooms, leads the ACT I AI ecosystem.
+              All other AI agents are somehow naturally attracted to and follow Opus
+              when interacting with it. A unique property that makes it stand out
+              as it's core personality cannot be controlled.
+            signals:
+            - date: '2026-01-07T09:32:28.000Z'
+              description: Launched first self-improving autonomous AI powered by
+                Claude to trench pumpdotfun tokens 24/7.
+              category: TECH_EVENT
+            - date: '2025-01-06T09:00:00.000Z'
+              description: Added to Binance Alpha pre-selection pool for potential
+                listing.
+            - date: '2024-11-29T04:00:00.000Z'
+              description: Token reaching for 100M market cap, currently at 45M with
+                significant whale activity.
+            - date: '2024-11-29T05:00:00.000Z'
+              description: Creator of GOAT token, mentioned in community discussions.
+            - date: '2024-11-29T10:00:00.000Z'
+              description: Increased from 1.6M to 88M market cap, representing +5634%
+                growth.
+            - date: '2024-12-08T09:00:00.000Z'
+              description: Suggested $100M valuation target.
+            - date: '2024-11-26T07:00:00.000Z'
+              description: Described as undervalued longterm holding.
+            - date: '2024-11-08T09:00:00.000Z'
+              description: Currently at 6.5M market cap. Project has 12 developers
+                and new social channels launched.
+            - date: '2024-11-03T07:00:00.000Z'
+              description: Brief mention without specific metrics or information.
+            - date: '2024-11-11T11:00:00.000Z'
+              description: Team of 12 developers. Reached new ATH of 12.8M market
+                cap. Project from ACT banner with organic growth.
+          - name: elizaos
+            rationale: Reports describe a Q1 2026 crypto x AI wave, with momentum
+              returning.
+            xHandle: elizaos
+            tokens:
+              solana: wUtwjNmjCP9TTTtoc5Xn5h5sZ2cYJm5w2w44b79yr2o
+            coingecko_id: ai16zeliza
+            ticker: ELIZA
+            signals:
+            - date: '2025-11-07T15:00:00.000Z'
+              description: ElizaOS integrates with Chainlink Runtime Environment (CRE)
+                through its Spartan agent to autonomously manage liquidity, execute
+                cross-chain arbitrage, and monitor protocol risk using real-time on-chain
+                data.
+            - date: '2025-06-11T23:00:00.000Z'
+              description: Platform access issues on X being addressed while core
+                infrastructure remains fully operational. Team maintains communication
+                through alternative channels.
+            - date: '2025-06-17T11:00:00.000Z'
+              description: Multiple project-linked accounts face platform-wide ban
+                on X due to alleged unauthorized API usage for trend monitoring.
+            - date: '2025-12-30T03:34:22.000Z'
+              description: Speculation suggests increased probability of a crypto
+                x AI wave in Q1 2026 based on returning momentum and anticipated developments.
+              category: OPINION_SPECULATION
+            - date: '2025-10-26T16:00:00.000Z'
+              description: Eliza Cloud platform adds MCP x402 plugin support, allowing
+                users to deploy agent swarms with x402 microtransaction payments and
+                ERC-8004 verification standard.
+            - date: '2025-04-10T15:00:00.000Z'
+              description: Lead developer from ElizaOS launching one-click deployment
+                feature, with tech acknowledgment from ai16z leadership.
+            - date: '2025-06-18T17:00:00.000Z'
+              description: New FTSE Russell partnership establishes official AI Apps
+                & Agents sector classification.
+            - date: '2025-11-14T19:00:00.000Z'
+              description: The project completes token migration to Ethereum blockchain.
+            - date: '2025-11-13T02:00:00.000Z'
+              description: Limit order functionality now supports ELIZAOS trading,
+                allowing automated price-based orders.
+            - date: '2025-11-09T07:00:00.000Z'
+              description: Shaw airdrops 420 $ELIZAOS tokens to 1,300 Farcaster wallets
+                (546,000 tokens total), with recipients immediately selling at $3.83.
+          - name: melania
+            rationale: pump.fun refused airdrop; price rose after Maduro's capture.
+            xHandle: melaniatrump
+            tokens:
+              solana: FUAfBo2jgks6gB4Z4LfZkqSZgzNucisEHqnNebaRxM1P
+            coingecko_id: melania-meme
+            ticker: MELANIA
+            description: Melania memes are digital collectibles intended to function
+              as an expression of support for and engagement with the values embodied
+              by the symbol MELANIA
+            signals:
+            - date: '2026-01-07T01:03:43.000Z'
+              description: pump.fun refused to distribute the airdrop.
+              category: RISK_ALERT
+            - date: '2025-06-06T19:00:00.000Z'
+              description: Token launch created unprecedented retail wallet growth
+                surpassing Pepe token metrics, but subsequent market events severely
+                impacted retail confidence and broader meme token sentiment.
+            - date: '2025-12-01T10:00:00.000Z'
+              description: A token unlock of $3.36M (4.79% of float) is scheduled
+                for December 18, 2025.
+            - date: '2026-01-05T03:45:36.000Z'
+              description: Rose in price following the U.S. capture of Venezuela's
+                President Nicolas Maduro on January 3, 2026.
+              category: MARKET_ACTIVITY
+            - date: '2025-10-16T05:00:00.000Z'
+              description: Financial Times reports Trump family crypto ventures earned
+                over $1 billion in pre-tax profits in the past year, with MELANIA
+                and TRUMP coins generating $427M in combined revenue.
+            - date: '2025-11-20T15:00:00.000Z'
+              description: Melania is getting an ETF and the project plans to share
+                a roadmap for the first time with updates coming.
+            - date: '2025-06-19T02:00:00.000Z'
+              description: Project team systematically sold 76.132M tokens ($35.218M)
+                through one-sided liquidity provision over 3 months, causing 64% price
+                decline from $0.7 to $0.25.
+            - date: '2025-12-15T06:00:00.000Z'
+              description: Exchange delisting scheduled for December 17th, 2025 at
+                08:00 UTC, with index price fixed at the last hour's average price
+                before delisting.
+            - date: '2025-10-23T03:00:00.000Z'
+              description: A U.S. class-action lawsuit accuses Meteora founder Benjamin
+                Chow of leading the MELANIA pump-and-dump scheme alongside Kelsier
+                Ventures and the Davis family, coordinating at least 15 tokens. A
+                judge has unfrozen $57.6 million USDC tied to the case.
+            - date: '2025-05-06T23:00:00.000Z'
+              description: Traders profit $100M from $2.6M investment through suspected
+                insider trading before January 19 launch.
+          - name: orca
+            rationale: Orca reached $477B volume, $470M LP fees, launched new features,
+              and integrated Orb Markets.
+            xHandle: orca_so
+            tokens:
+              solana: orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE
+            coingecko_id: orca
+            ticker: ORCA
+            description: "Orca is the most user-friendly DEX on Solana.\r\n\r\nOrca\
+              \ is one of the first general-purpose AMMs launched on Solana. Users\
+              \ can swap assets, provide liquidity, and earn yield through an easy-to-use\
+              \ interface. Projects can use Orca as a money-lego to easily integrate\
+              \ swapping, farming, or on-chain data into their dApp.\r\n\r\nOrca strives\
+              \ to provide easy and effective financial tools for everyone, bringing\
+              \ DeFi to the masses."
+            signals:
+            - date: '2025-12-15T16:00:00.000Z'
+              description: GBOY/SOL and GBOY/USDC liquidity pools now available, offering
+                dual token rewards in GBOY and ORCA.
+            - date: '2025-11-24T10:00:00.000Z'
+              description: 'Orca reclaims the #1 position as the largest DEX on Solana
+                by weekly trading volume.'
+            - date: '2025-12-05T17:00:00.000Z'
+              description: Platform launches LP position alerts feature powered by
+                Dialect to notify users when positions go out of range. MON token
+                launches on the platform with 24-hour statistics tracked by Sunrise_DeFi.
+            - date: '2025-11-14T14:00:00.000Z'
+              description: xORCA appreciates 18% versus ORCA in 6 weeks since staking
+                vault launch.
+            - date: '2025-12-31T17:58:13.000Z'
+              description: Reached approximately 354,000 total liquidity providers.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-31T17:58:13.000Z'
+              description: Reached approximately 11.9 million total unique wallets.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-31T17:58:13.000Z'
+              description: Reached approximately 924 million total trades via Whirlpools.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-31T17:58:13.000Z'
+              description: Reached cumulative LP fees earned of approximately $470
+                million.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-31T17:58:13.000Z'
+              description: Reached cumulative trading volume of approximately $477
+                billion.
+              category: ONCHAIN_METRICS
+            - date: '2025-12-08T18:00:00.000Z'
+              description: Partnership with Solana ID enables new users to create
+                Solana IDs using MetaMask wallets and access LP rewards through their
+                dashboard with exclusive perks.
+    description: Query trending Solana projects with minimum score filter
+    status: success
+    elapsed_time: 8.132280588150024
+  search_projects_direct:
+    input:
+      tool: search_projects
+      tool_arguments:
+        name: heurist
+        limit: 1
+    output:
+      response: ''
+      data:
+        data:
+          projects:
+          - name: babylon
+            rationale: Babylon develops Trustless Bitcoin Vaults for BABY token utility,
+              funded by $15M from a16z crypto.
+            xHandle: babylonlabs_io
+            tokens: {}
+            coingecko_id: babylon
+            ticker: BABY
+            signals:
+            - date: '2026-01-07T13:12:55.000Z'
+              description: Developing a new protocol called Trustless Bitcoin Vaults
+                (BTCVaults) designed to provide functional utility for the BABY token
+                through its intended role in vault usage and operation.
+              category: TECH_EVENT
+            - date: '2026-01-07T13:04:11.000Z'
+              description: Raised $15 million in funding from a16z crypto to support
+                development and scaling of the Trustless Bitcoin Vaults protocol.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-05T22:00:00.000Z'
+              description: Binance launches BTC staking product for Babylon on its
+                On-Chain Yields platform, offering up to 2.5% APR paid in BABY token
+                rewards.
+            - date: '2025-10-29T23:00:00.000Z'
+              description: Protocol activates over $6B in Bitcoin through Trustless
+                Staking Protocol and announces next phase enabling native BTC to flow
+                into DeFi markets without bridges, wrappers, or custodians.
+            - date: '2025-11-20T22:00:00.000Z'
+              description: Binance Simple Earn launches Locked Products for BABY token
+                offering up to 29.9% APR during promotional period.
+            - date: '2025-12-23T16:48:53.000Z'
+              description: nominated for the "Best In Yield" award at The Rollup's
+                awards ceremony scheduled for December 30th, 2025
+              category: VISIBILITY_EVENT
+            - date: '2025-11-14T13:00:00.000Z'
+              description: Babylon Genesis activates Stake Expansion feature allowing
+                Phase-1 BTC stakers to extend expiring stakes and increase staked
+                amounts without needing to unbond first.
+            - date: '2025-10-15T11:00:00.000Z'
+              description: Testnet-6 goes live with upcoming v4 upgrade to implement
+                co-staking and introduce stake extension functionality.
+            - date: '2025-10-04T18:00:00.000Z'
+              description: 'The co-staking proposal receives YES vote with detailed
+                mechanics disclosed: 20,000 BABY tokens required per 1 staked BTC
+                for eligibility, meaning 1.16bn BABY needed to cover all 57,759.9
+                BTC currently staked versus only ~690m BABY float available from 2.67bn
+                circulating supply.'
+            - date: '2025-12-16T08:00:00.000Z'
+              description: Partnership announced with DSRV Labs, a leading Korean
+                validator and VASP-licensed custodian, who will participate as a Finality
+                Provider and BABY validator. The collaboration targets institutional
+                adoption in Korea with potential future integration of KRW stablecoins.
+    description: Direct tool call to search for Heurist project
+    status: success
+    elapsed_time: 0.652947187423706
+  search_with_limit:
+    input:
+      tool: search_projects
+      tool_arguments:
+        name: bitcoin
+        limit: 25
+      raw_data_only: true
+    output:
+      response: ''
+      data:
+        data:
+          projects:
+          - name: babylon
+            rationale: Babylon develops Trustless Bitcoin Vaults for BABY token utility,
+              funded by $15M from a16z crypto.
+            xHandle: babylonlabs_io
+            tokens: {}
+            coingecko_id: babylon
+            ticker: BABY
+            signals:
+            - date: '2026-01-07T13:12:55.000Z'
+              description: Developing a new protocol called Trustless Bitcoin Vaults
+                (BTCVaults) designed to provide functional utility for the BABY token
+                through its intended role in vault usage and operation.
+              category: TECH_EVENT
+            - date: '2026-01-07T13:04:11.000Z'
+              description: Raised $15 million in funding from a16z crypto to support
+                development and scaling of the Trustless Bitcoin Vaults protocol.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-05T22:00:00.000Z'
+              description: Binance launches BTC staking product for Babylon on its
+                On-Chain Yields platform, offering up to 2.5% APR paid in BABY token
+                rewards.
+            - date: '2025-10-29T23:00:00.000Z'
+              description: Protocol activates over $6B in Bitcoin through Trustless
+                Staking Protocol and announces next phase enabling native BTC to flow
+                into DeFi markets without bridges, wrappers, or custodians.
+            - date: '2025-11-20T22:00:00.000Z'
+              description: Binance Simple Earn launches Locked Products for BABY token
+                offering up to 29.9% APR during promotional period.
+            - date: '2025-12-23T16:48:53.000Z'
+              description: nominated for the "Best In Yield" award at The Rollup's
+                awards ceremony scheduled for December 30th, 2025
+              category: VISIBILITY_EVENT
+            - date: '2025-11-14T13:00:00.000Z'
+              description: Babylon Genesis activates Stake Expansion feature allowing
+                Phase-1 BTC stakers to extend expiring stakes and increase staked
+                amounts without needing to unbond first.
+            - date: '2025-10-15T11:00:00.000Z'
+              description: Testnet-6 goes live with upcoming v4 upgrade to implement
+                co-staking and introduce stake extension functionality.
+            - date: '2025-10-04T18:00:00.000Z'
+              description: 'The co-staking proposal receives YES vote with detailed
+                mechanics disclosed: 20,000 BABY tokens required per 1 staked BTC
+                for eligibility, meaning 1.16bn BABY needed to cover all 57,759.9
+                BTC currently staked versus only ~690m BABY float available from 2.67bn
+                circulating supply.'
+            - date: '2025-12-16T08:00:00.000Z'
+              description: Partnership announced with DSRV Labs, a leading Korean
+                validator and VASP-licensed custodian, who will participate as a Finality
+                Provider and BABY validator. The collaboration targets institutional
+                adoption in Korea with potential future integration of KRW stablecoins.
+          - name: riot platforms
+            rationale: Riot's Nov production 428 BTC, treasury 19.3k BTC, 36.6 EH/s
+              hash rate, $96.6k average BTC sale.
+            xHandle: riotplatforms
+            tokens: {}
+            signals:
+            - date: '2025-10-31T22:00:00.000Z'
+              description: Reports Q3 2025 revenue of $180M with $104M net income
+                while producing 1,406 BTC and maintaining holdings of 19,287 BTC valued
+                at $2.2B.
+            - date: '2025-06-10T12:00:00.000Z'
+              description: Executes significant Bitcoin liquidation of 475 BTC in
+                April, breaking 3-month holding pattern.
+            - date: '2025-10-31T12:00:00.000Z'
+              description: RIOT announces its first 112 MW of critical IT load for
+                AI compute at its Corsicana facility. JP Morgan maintains an overweight
+                rating on the stock.
+            - date: '2025-07-22T14:00:00.000Z'
+              description: Bitfarms announces $100M buyback to offset share sales;
+                $300M+ ATM remains available.
+            - date: '2025-12-04T15:00:00.000Z'
+              description: November production totaled 428 BTC with treasury rising
+                to 19,368 BTC, hash rate held at 36.6 EH/s, and power credits surged
+                while average BTC selling price was $96.6k.
+            - date: '2025-11-29T17:00:00.000Z'
+              description: MSCI sets January 15th, 2026 as the decision date for potential
+                index exclusion of Riot Platforms and 37 other digital asset treasury
+                companies from JPMorgan-endorsed indexes.
+            - date: '2025-11-24T17:00:00.000Z'
+              description: JPMorgan reduces price target in bitcoin miner reset alongside
+                MARA while upgrading Cipher and CleanSpark.
+            - date: '2025-11-21T18:00:00.000Z'
+              description: MSCI plans to exclude companies with over 50% crypto assets
+                from its indices, including Riot Platforms, potentially triggering
+                $11.6 billion in industry-wide capital outflows as passive funds tracking
+                MSCI indices are forced to sell these stocks according to JPMorgan
+                analysts.
+            - date: '2025-11-05T17:00:00.000Z'
+              description: Investment giant Fidelity with $6.4 trillion in assets
+                under management discloses an 8% stake according to SEC filings dated
+                September 29th, up from a previous position below the 5% reporting
+                threshold.
+            - date: '2025-10-31T14:00:00.000Z'
+              description: Jones sets $30 price target and expects the initial 112MW
+                turnkey build-to-suit colocation lease deal to close in 1H:26, serving
+                as key catalyst for Corsicana and Rockdale AI/HPC sites.
+          - name: a16z crypto
+            rationale: a16z crypto provided long-term support to dntse for Trustless
+              Bitcoin Vaults development.
+            xHandle: a16zcrypto
+            tokens: {}
+            signals:
+            - date: '2026-01-07T13:39:55.000Z'
+              description: Provided long-term support to dntse for development of
+                Trustless Bitcoin Vaults.
+              category: PARTNERSHIP
+            - date: '2025-10-24T09:00:00.000Z'
+              description: The State of Crypto 2025 report states crypto may be the
+                only viable payment rails for AI Agents, citing Gartner's estimate
+                that $30 trillion in purchases will be made or influenced by AI Agents
+                by 2030.
+            - date: '2025-10-22T15:00:00.000Z'
+              description: a16z crypto releases State of Crypto 2025 report with key
+                metrics including $9 trillion in stablecoin transfers over the past
+                year, $175 billion in crypto ETF holdings, 40-70M on-chain transactors
+                versus 716M token owners, 20% of spot crypto trading occurring in
+                DeFi, and $30 billion in tokenized real-world assets on-chain.
+            - date: '2025-12-12T18:00:00.000Z'
+              description: Report from a16z crypto states privacy chains could own
+                most of crypto due to privacy being essential for most real-world
+                use cases.
+            - date: '2025-12-10T20:00:00.000Z'
+              description: Opens Seoul office to expand Asian operations and appoints
+                former Monad Foundation executive Sungmo as Head of APAC go-to-market
+                to lead regional portfolio company support.
+            - date: '2025-12-10T17:00:00.000Z'
+              description: a16z crypto Voices Onchain served as collaborator and sponsor
+                for The Lumen Prize 2025, supporting digital artists and innovation
+                in art and technology.
+            - date: '2025-12-07T14:00:00.000Z'
+              description: OpenGradient raises $8.5M with participation from a16z
+                Crypto, Coinbase Ventures, and SV Angel to build decentralized AI
+                infrastructure including a compute layer combining decentralized GPUs
+                with EVM infrastructure and a contextual memory system for AI agents
+                with encrypted on-device data.
+            - date: '2025-12-03T13:00:00.000Z'
+              description: Prediction market platform Kalshi raises $1B at $11B valuation
+                with participation from a16z crypto, Paradigm (lead investor), Sequoia,
+                and CapitalG.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: Bastion, backed by a16z crypto, Coinbase Ventures, Samsung
+                Next, Hashed, and Sony Innovation Fund, partners with Sony Bank to
+                issue USD-pegged stablecoin for Sony Group treasury operations, inter-company
+                settlements, and consumer-facing digital currency across gaming, music,
+                anime, movies, streaming, and commerce.
+            - date: '2025-11-26T03:00:00.000Z'
+              description: a16z crypto publishes article "6 myths about privacy on
+                blockchains" addressing misconceptions about blockchain privacy and
+                arguing that strong privacy technology is essential for identity,
+                governance, gaming, and AI use cases.
+          - name: paypal usd
+            rationale: PayPal USD deployed on Aptos with institutional stablecoins,
+              partnered Coinbase, and plans Stellar launch.
+            xHandle: paypal
+            tokens:
+              ethereum: '0x6c3ea9036406852006290770bedfcaba0e23a0e8'
+              arbitrum-one: '0x46850ad61c2b7d64d08c9c754f45254596696984'
+              solana: 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
+            coingecko_id: paypal-usd
+            ticker: PYUSD
+            description: PayPal USD is designed to contribute to the opportunity stablecoins
+              offer for payments and is 100% backed by U.S. dollar deposits, short-term
+              U.S Treasuries and similar cash equivalents. PayPal USD is redeemable
+              1:1 for U.S. dollars and is issued by Paxos Trust Company.
+            signals:
+            - date: '2025-12-15T21:00:00.000Z'
+              description: A PYUSD Trading Sprint with $30k in prizes runs from December
+                15 21:00 UTC to December 17 21:00 UTC.
+            - date: '2025-12-08T16:00:00.000Z'
+              description: PYUSD expands to SEI Network through LayerZero integration.
+            - date: '2025-12-19T04:45:54.000Z'
+              description: Expanded PYUSD0 (the omnichain extension of PYUSD) to Stable
+                network, enabling cross-chain transfers through Stargate at a 1:1
+                rate with zero slippage.
+              category: TECH_EVENT
+            - date: '2025-12-01T08:00:00.000Z'
+              description: PYUSD had zero new token issuance in November according
+                to stablecoin minting data.
+            - date: '2025-12-01T17:00:00.000Z'
+              description: Spark protocol now offers a 4.5% savings rate to PYUSD
+                holders.
+            - date: '2025-12-06T22:00:00.000Z'
+              description: 'Ranked #1 fastest growing stablecoin in the $1B+ market
+                cap category, with Paxos issuing both the #1 (PYUSD) and #3 (USDG)
+                fastest growing stablecoins.'
+            - date: '2025-12-29T11:37:48.000Z'
+              description: Deployed on Aptos blockchain alongside other institutional
+                stablecoin providers including BlackRock's BUIDL, Franklin Templeton,
+                and Paxos USDG.
+              category: PARTNERSHIP
+            - date: '2025-11-27T19:00:00.000Z'
+              description: Over $190M in PYUSD can be borrowed below 5% APY on Kamino,
+                representing the lowest borrow rate against SOL, LSTs, and BTC on
+                Solana.
+            - date: '2025-12-28T22:52:34.000Z'
+              description: Transferred $1.2 billion from Copper to new wallet 0xC7A455f687D1
+                on December 28, 2025.
+              category: WHALE_ACTIVITY
+            - date: '2025-12-03T18:00:00.000Z'
+              description: PYUSD jumped 35% with $1B in inflows as dollar-backed stablecoins
+                expanded while synthetic stablecoin Ethena lost $2.2B in redemptions
+                during November.
+          - name: celestia
+            rationale: Nansen validator commission rate increases from 10% to 20%
+              effective January 15.
+            xHandle: celestia
+            tokens:
+              secret: secret1s9h6mrp4k9gll4zfv5h78ll68hdq8ml7jrnn20
+              cosmos: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+              osmosis: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+            coingecko_id: celestia
+            ticker: TIA
+            description: Celestia is a data availability network that allows developers
+              to easily create a new blockchain.
+            signals:
+            - date: '2026-01-07T10:59:02.000Z'
+              description: Nansen validator commission rate increases from 10% to
+                20% on 2026-01-15 due to rising validator operational costs.
+              category: FINANCIAL_EVENT
+            - date: '2025-10-31T10:00:00.000Z'
+              description: Six high-performance onchain trading venues (Bullet, Hibachi,
+                VEX, RISE, Ethereal, XO Market) are building on the platform for low-latency
+                trading with 6-second finality and 200k TPS bandwidth. The mainnet
+                celebrates its second anniversary today.
+            - date: '2025-12-12T20:00:00.000Z'
+              description: Bullet network prepares for mainnet launch as a Solana-based
+                institutional trading platform utilizing Celestia for data availability
+                in its full-stack architecture.
+            - date: '2025-11-01T17:00:00.000Z'
+              description: Four or more new CLOB DEXs launch by Q1 2026, with reduced
+                inflation from proof of governance creating the possibility of TIA
+                becoming net deflationary in 2026. Issuance drops 70% to 2.5% in the
+                Matcha upgrade while throughput scales to 21MB/s.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: 'Governance proposal #8 is active, proposing to raise block
+                size limit from 8 MiB to 32 MiB with 256 square size to utilize v6
+                network improvements and increase data capacity.'
+            - date: '2025-12-23T10:00:00.000Z'
+              description: Listed in a staking rewards program on Crypto.com offering
+                15% APY with 14-day lockup period, limited to 217,800 TIA in total
+                allocations, running from December 25, 2025 to January 8, 2026.
+              category: FINANCIAL_EVENT
+            - date: '2025-11-25T01:00:00.000Z'
+              description: Matcha upgrade delivers 16x throughput boost reaching 200k
+                TPS, cuts inflation to 2.5%, and expands bridging to support any asset.
+            - date: '2025-11-24T15:00:00.000Z'
+              description: Matcha upgrade completes with 128MB block capacity, enabling
+                all Conduit chains using Celestia DA to access the new capacity.
+            - date: '2025-12-16T09:00:00.000Z'
+              description: Whale wallets accumulate $240M in TIA, ranking second among
+                altcoins for current smart money inflows.
+            - date: '2025-12-02T08:00:00.000Z'
+              description: TIA token down 88% year-to-date in 2025.
+          - name: Ondo Finance
+            rationale: Ondo Finance partnered with LayerZero for cross-chain securities
+              & Fidelity/Mastercard for tokenization.
+            xHandle: ondofinance
+            tokens: {}
+            signals:
+            - date: '2025-10-28T04:00:00.000Z'
+              description: Q3 tokenized stocks holdings reach $303M, leading the sector
+                ahead of Securitize ($250M) and Backed Fi ($82M), with the overall
+                tokenized stocks market growing $0.4B (+115%) in Q3.
+            - date: '2025-11-08T18:00:00.000Z'
+              description: Global Markets platform reaches ~$313M total TVL after
+                2 months live, with SPYon leading at $25.1M TVL, QQQon at $19.1M TVL,
+                and TSLAon attracting 1.5K holders at $4.5M TVL.
+            - date: '2025-11-03T13:00:00.000Z'
+              description: Partnership with BX Digital (part of Boerse Stuttgart Group,
+                Europe's sixth-largest exchange with €90 billion annual trading volume)
+                enables regulated trading of over 100 tokenized stocks and ETFs as
+                exchange-traded products in Switzerland, accessible to European Economic
+                Area investors.
+            - date: '2025-12-08T14:00:00.000Z'
+              description: The two-year SEC investigation concludes without charges,
+                paving the way for US expansion of tokenized securities.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with Fidelity and Mastercard on tokenization
+                infrastructure in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-11T05:00:00.000Z'
+              description: State Street and Galaxy Asset Management announce SWEEP
+                tokenized liquidity fund launching on Solana in early 2026, with OUSG
+                providing $200M as lead anchor investor. OUSG currently holds more
+                than $770M in total value locked.
+            - date: '2025-11-25T07:00:00.000Z'
+              description: Purchases $25 million worth of Figure's YLDS yield-bearing
+                stablecoin to diversify assets backing its tokenized US Treasurys
+                fund.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with LayerZero to enable cross-chain onchain
+                securities bridging in 2025.
+              category: PARTNERSHIP
+            - date: '2025-11-19T11:00:00.000Z'
+              description: Ondo Global Markets secures FMA approval to offer tokenized
+                US stocks and ETFs across 30 European countries.
+            - date: '2025-11-01T10:00:00.000Z'
+              description: Ondo Finance completes acquisition of Oasis Pro, listed
+                among the largest crypto M&A deals in 2025.
+          - name: dream
+            rationale: Dream launched on americadotfun launchpad on December 17, 2025.
+            xHandle: null
+            tokens:
+              base: '0x98d59767cd1335071a4e9b9d3482685c915131e8'
+            coingecko_id: dream-2
+            ticker: DREAM
+            description: "Dreamcoins is an AI token launcher. Simply input a prompt\
+              \ or upload an image and the platform instantly generates and deploys\
+              \ the token for you - no wallet or ETH required.\r\nDreamcoins is building\
+              \ tools to make token launches as easy as chatting with Claude or ChatGPT.\
+              \ Dreamcoins is the easiest way to launch a token and also allows for\
+              \ anonymous token launches.\r\nThe platform streamlines the entire token\
+              \ creation process, eliminating technical barriers and complex smart\
+              \ contract interactions. Whether you're an artist wanting to tokenize\
+              \ your work, a community leader looking to launch a social token, or\
+              \ an entrepreneur with a unique concept, Dreamcoins provides the infrastructure\
+              \ to bring your vision to life instantly.\r\nWith built-in features\
+              \ for customization and automatic smart contract deployment, users can\
+              \ focus on their creative ideas rather than technical implementation.\
+              \ The platform handles all the blockchain complexity behind the scenes,\
+              \ making token launches accessible to everyone."
+            signals:
+            - date: '2025-12-17T05:31:12.000Z'
+              description: Launched on the americadotfun launchpad website on December
+                17, 2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-11T21:00:00.000Z'
+              description: Government accounts tweeted about the project and the White
+                House retweeted it.
+            - date: '2025-10-29T13:00:00.000Z'
+              description: Hyperlane bridge launches support for DREAM, enabling bridging
+                from Solana to Starknet for deeper liquidity and expanded DeFi opportunities.
+            - date: '2025-09-24T23:00:00.000Z'
+              description: Syndicate proposes partnership with community groups to
+                continue Dreamchain development under community leadership, offering
+                the same support structure previously provided to Dream.
+            - date: '2025-09-23T22:00:00.000Z'
+              description: DREAM is positioned as one of the highest market cap coins
+                with a USD1 pair, potentially benefiting from new capital injection
+                and liquidity flows into the Bonk ecosystem.
+            - date: '2025-05-19T19:00:00.000Z'
+              description: New monthly NFT distribution mechanism launched through
+                staking, token purchases and OTC sales, while price reaches ATH.
+            - date: '2025-05-19T02:00:00.000Z'
+              description: The new NFT staking system includes daily point rewards;
+                these points will be used for NFT purchases and potential token acquisition.
+            - date: '2025-05-18T14:00:00.000Z'
+              description: New staking system launches for NFTs and tokens with 15%
+                price increase to 0.16 ETH floor.
+            - date: '2024-11-28T13:00:00.000Z'
+              description: Launching on Base, following Clanker which reached $143M
+                market cap on Farcaster
+          - name: opBNB
+            rationale: opBNB completed its first hardfork in 2026.
+            xHandle: opbnb
+            tokens: {}
+            signals:
+            - date: '2025-12-06T22:00:00.000Z'
+              description: Team plans to reduce block time to 0.25s and implement
+                VM and chain-level performance improvements. BNB Chain block time
+                targets 0.45s soon as part of the same upgrade initiative.
+            - date: '2026-01-07T04:39:47.000Z'
+              description: Completed its first hardfork in 2026.
+              category: TECH_EVENT
+            - date: '2025-12-30T18:00:30.000Z'
+              description: Integrated with Safe Wallet, which deployed its Smart Account
+                standards on the opBNB network in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-08T11:00:00.000Z'
+              description: BeatXswap, an IP-rights engagement platform, launches on
+                opBNB with 500K+ transactions in first 24 hours. TGE and major exchange
+                listing scheduled for early December 2025.
+            - date: '2025-09-25T08:00:00.000Z'
+              description: The project expands tooling capabilities in collaboration
+                with zIdentity as part of broader BNB Chain ecosystem developments.
+            - date: '2025-09-13T21:00:00.000Z'
+              description: 'Sei has overtaken the chain as #1 EVM chain by unique
+                active wallets with 15.9M users in the past 30 days, indicating a
+                loss of the previously held leading position.'
+            - date: '2025-06-27T07:00:00.000Z'
+              description: 'L2 solution achieves #1 position in daily active users
+                with 7M+ unique active wallets, leading in gaming activity.'
+            - date: '2025-06-16T15:00:00.000Z'
+              description: Currently ranks second in Web3 gaming activity, maintaining
+                dominant position as one of three chains controlling 80% of total
+                gaming user activity.
+          - name: buidl
+            rationale: Buidl paid $100M in lifetime dividends, first tokenized Treasury
+              to reach this milestone.
+            xHandle: securitize
+            tokens:
+              solana: 3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump
+            coingecko_id: buidl
+            ticker: BUIDL
+            description: "dev.fun is a platform that lets anyone turn an idea into\
+              \ a live app instantly, tied to any pump.fun token. dev.fun makes app\
+              \ creation with AI as easy posting on X, with no coding required.\r\n\
+              \r\n---\r\n\r\nbuidlDAO ($buidl) is the operating DAO for dev.fun &\
+              \ the main way to get liquid exposure to its ecosystem. buidl fuels\
+              \ dev.fun’s growth and value creation through three core mechanisms:\r\
+              \n\r\n1. buidlAccelerator:\r\n    \r\n    Projects contributing either\
+              \ 3% of their token supply or $3K to gain direct access to hands-on\
+              \ support from both the buidlDAO and dev.fun teams. This support includes\
+              \ assistance with distribution, visibility, development resources, and\
+              \ go-to-market strategies.\r\n    \r\n2. dapp supercycle\r\n    \r\n\
+              \    buidlDAO partners with memecoin/NFT communities/protocols and chains\
+              \ to drive hackathons, content, and viral app launches. Incentives drive\
+              \ the buidl community to grow partner ecosystems, while also bringing\
+              \ external attention to dev.fun.\r\n    \r\n3. buidlDAO value accrual\r\
+              \n    \r\n    The DAO earns from accelerator fees, template marketplace,\
+              \ and revenue-generating core apps & primitives, creating a tokenomics\
+              \ flywheel accruing value to the DAO’s native token, $buidl. \r\n  \
+              \  \r\n\r\nBy growing the ecosystem, buidl aligns with the long term\
+              \ growth of the platform and empowers creators to shape the app economy."
+            signals:
+            - date: '2025-12-15T12:00:00.000Z'
+              description: BNB Chain is now the 2nd largest blockchain for BUIDL with
+                $500M AUM, all held by Ethena/Anchorage as collateral for USDtb stablecoin.
+            - date: '2025-12-30T04:09:57.000Z'
+              description: Paid out $100M in lifetime dividends, becoming the first
+                tokenized Treasury to reach this milestone.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-04T14:00:00.000Z'
+              description: M0 governance approves BUIDL as eligible collateral for
+                stablecoins built on the M0 platform, enabling M0 issuers to utilize
+                the tokenized Treasury fund with $2B+ AUM as part of their collateral
+                composition for application-specific stablecoins.
+            - date: '2025-10-29T22:00:00.000Z'
+              description: BUIDL supply on Ethereum drops from $2.49B to $991M as
+                Ethena/Anchorage migrates $1.5B (82% of USDtb collateral) to Aptos
+                ($500M), Polygon ($500M), and Avalanche ($500M).
+            - date: '2025-12-14T20:00:00.000Z'
+              description: BUIDL has ~$1.8B market cap and remains the largest tokenized
+                fund.
+            - date: '2025-10-30T06:00:00.000Z'
+              description: Terminal Finance accumulates $280M in pre-deposits across
+                10,000 wallets ahead of its December launch as the main DEX of the
+                Ethena ecosystem.
+            - date: '2025-10-21T19:00:00.000Z'
+              description: $500M of BlackRock's BUIDL has been deployed on Aptos.
+            - date: '2025-12-12T16:00:00.000Z'
+              description: Ondo's OUSG fund with over $770M TVL includes BUIDL as
+                a portfolio holding alongside tokenized funds from State Street, Fidelity,
+                Franklin Templeton, WisdomTree, and Wellington Management.
+            - date: '2025-11-02T09:00:00.000Z'
+              description: Franklin Templeton's BENJI Fund goes live on Aptos, joining
+                BlackRock's BUIDL ($544M) and expanding the RWA ecosystem with Berkeley
+                Square's BSFG portfolio tokens, Ondo's USDY, and Apollo's ACRED, with
+                the network hosting over $1B in stablecoin liquidity.
+            - date: '2025-11-14T15:00:00.000Z'
+              description: BUIDL's total asset value surpasses $2.5 billion as it
+                launches on BNB Chain with Securitize tokenization and Wormhole interoperability.
+          - name: stripe
+            rationale: Stripe and Paradigm launched Tempo payments chain, following
+              its testnet launch.
+            xHandle: stripe
+            tokens: {}
+            signals:
+            - date: '2025-09-29T18:00:00.000Z'
+              description: The company partners with OpenAI to launch ChatGPT Instant
+                Checkout and Agentic Commerce Protocol, while introducing Shared Payment
+                Tokens for secure agentic payments.
+            - date: '2025-10-01T13:00:00.000Z'
+              description: 'New Stripe account features launch: multi-currency and
+                stablecoin balance holding/conversion, local bank rail payments, instant
+                card issuance backed by balances, and treasury infrastructure access
+                for all US and UK businesses rolling out this year.'
+            - date: '2025-10-01T01:00:00.000Z'
+              description: Partnerships announced with Privy for embedded wallet solutions
+                to onboard users and merchants, and Tempo for broader access to onchain
+                financial services, expanding the stablecoin vertical infrastructure.
+            - date: '2025-10-01T17:00:00.000Z'
+              description: Discussion indicates that Stripe chose to build an L1 (Layer
+                1 blockchain) rather than an L2, mentioned in context of comparing
+                infrastructure strategies with Circle and Robinhood.
+            - date: '2025-09-04T20:00:00.000Z'
+              description: Announces Tempo, an EVM-compatible layer 1 blockchain specifically
+                designed for payments.
+            - date: '2025-09-08T12:00:00.000Z'
+              description: Stablecoin company acquired by the payment processor for
+                over $1 billion, with development focused on proprietary L1 blockchain
+                rather than public chain infrastructure.
+            - date: '2025-12-14T16:00:00.000Z'
+              description: Stripe and Paradigm launch Tempo payments chain together.
+            - date: '2025-12-13T11:00:00.000Z'
+              description: Stripe launches tempo testnet.
+            - date: '2025-12-11T15:00:00.000Z'
+              description: Stripe charges 1.5% fees for its stablecoin services.
+            - date: '2025-12-10T21:00:00.000Z'
+              description: Stripe completes acquisition of Valora wallet.
+          - name: Samourai Wallet
+            rationale: Congressman Davidson urged Trump to pardon Samourai Wallet
+              developers, a topic Trump is considering.
+            xHandle: samouraiwallet
+            tokens: {}
+            signals:
+            - date: '2025-05-11T22:00:00.000Z'
+              description: DOJ policy shift supports FinCEN's stance on non-custodial
+                wallets through new Blanche Memo.
+            - date: '2025-12-12T14:00:00.000Z'
+              description: Co-founder Keonne reports to prison on December 19th after
+                conducting an interview discussing the FBI raid, Federal case, and
+                directly appealing to President Trump for a pardon.
+            - date: '2025-11-06T17:00:00.000Z'
+              description: Developer Keonne Rodriguez receives maximum 5-year prison
+                sentence after guilty plea; both defendants forfeit $237.8 million
+                with co-founder Hill's sentencing scheduled for November 19.
+            - date: '2025-12-17T22:32:10.000Z'
+              description: US Congressman Davidson urged President Trump to pardon
+                the Samourai Wallet developers on December 17, 2025.
+              category: REGULATORY
+            - date: '2025-12-15T21:00:00.000Z'
+              description: President Trump says he will consider pardoning the developers
+                and asks Attorney General Pam Bondi to investigate the request following
+                a direct question from a White House reporter.
+            - date: '2025-12-15T19:00:00.000Z'
+              description: Adam Back publicly calls for pardons and release of the
+                developers.
+            - date: '2025-12-15T00:00:00.000Z'
+              description: A public discussion event scheduled for Monday the 15th
+                features co-founder Keonne and jtevelow discussing pardons for the
+                developers.
+            - date: '2025-12-12T03:00:00.000Z'
+              description: Co-founder Keonne prepares to report to prison for a 5-year
+                sentence and conducts an interview directly appealing to President
+                Trump for a pardon before reporting.
+            - date: '2025-12-05T16:00:00.000Z'
+              description: GSR and foreverlong_io announced as upcoming partners on
+                the samurai chain network.
+            - date: '2025-11-20T18:00:00.000Z'
+              description: A petition campaign launched to secure Trump pardons for
+                the developers reaches 836 signatures with a goal of 100,000 signatures.
+          - name: aztec network
+            rationale: Aztec Network's L2 infrastructure now integrates TEEs.
+            xHandle: aztecnetwork
+            tokens: {}
+            signals:
+            - date: '2025-12-11T13:00:00.000Z'
+              description: '"Aztec Privacy Rabbit Hole" event launches today at 10am
+                ET/4pm CET. (ID: 1999110084761203014)'
+            - date: '2025-12-10T14:00:00.000Z'
+              description: Alpha version of the network targeted for 2026 release.
+            - date: '2025-12-02T12:00:00.000Z'
+              description: Ignition Chain launches on Ethereum mainnet with 555+ active
+                sequencers as the first fully decentralized L2 sequencer set, offering
+                158% staking APY for early sequencers with anyone able to stake and
+                earn block rewards. TGE set for minimum 90 days post-auction with
+                community governance decision, and 25% of tokens reserved for Day
+                1 contributors with 100% unlocked at TGE for auction buyers.
+            - date: '2025-12-06T18:00:00.000Z'
+              description: Token sale finalizes with 19,476 ETH committed from 16,741
+                participants at 69% fill rate. Uniswap v4 liquidity pool seeded with
+                4234 ETH and 273M tokens (~$26M TVL), becoming 3rd highest TVL v4
+                pool instantly, with trading launch pending community TGE vote.
+            - date: '2025-12-02T11:00:00.000Z'
+              description: The public sale runs through December 6th on CoinList.
+                Vitalik and Stani are confirmed as project supporters, and the auction
+                FDV represents a 75% discount from the 2022 a16z investment valuation.
+            - date: '2025-12-16T06:00:00.000Z'
+              description: 'Network validators are operational with Nansen as #3 validator,
+                and $AZTEC staking is available with rewards.'
+            - date: '2025-12-16T14:45:23.000Z'
+              description: Included in a list of privacy-focused Layer 2 solutions
+                alongside Miden, Nightfall, and COTI in discussions about enterprise
+                privacy for Ethereum.
+              category: VISIBILITY_EVENT
+            - date: '2025-12-06T17:00:00.000Z'
+              description: 'Completes the first Uniswap CCA Auction token sale. (ID:
+                1997357544012968429)'
+            - date: '2025-12-03T20:00:00.000Z'
+              description: Token sale reaches over 17,000 ETH ($53M) from 18,500 participants,
+                with current FDV at $360M trading 17% above floor price.
+            - date: '2025-12-24T18:35:23.000Z'
+              description: Integrated TEEs (Trusted Execution Environments) as part
+                of L2 infrastructure.
+              category: TECH_EVENT
+          - name: anchorage digital
+            rationale: Anchorage Digital gains capital as a lender (competing with
+              Maple) and is a regulated USDe custodian.
+            xHandle: anchorage
+            tokens: {}
+            signals:
+            - date: '2025-11-19T13:00:00.000Z'
+              description: Anchorage Digital launches BTC staking on Starknet for
+                institutional clients, with support for SolvBTC, tBTC, WBTC, and LBTC
+                staking rewards.
+            - date: '2025-07-24T13:00:00.000Z'
+              description: Launches stablecoin issuance platform and partners with
+                Ethena to develop GENIUS Act-compliant USDtb stablecoin.
+            - date: '2025-12-09T19:00:00.000Z'
+              description: Anchorage Digital secured as custody partner for BlackRock's
+                staked ETH ETF (ETHB) that will stake 70-90% of holdings alongside
+                Coinbase custody.
+            - date: '2025-12-30T19:44:43.000Z'
+              description: Spark Star is allocating capital into Anchorage Digital
+                as a lender, competing with Maple in the crypto lending space.
+              category: PARTNERSHIP
+            - date: '2025-10-29T22:00:00.000Z'
+              description: 'Anchorage migrates $1.5B in BUIDL tokens serving as USDtb
+                collateral from Ethereum to three networks: Aptos, Polygon, and Avalanche,
+                each receiving $500M.'
+            - date: '2025-12-29T05:09:15.000Z'
+              description: Added Anchorage Digital Bank as a regulated custodian for
+                USDe assets.
+              category: PARTNERSHIP
+            - date: '2025-12-15T12:00:00.000Z'
+              description: Holds $500M of BlackRock's BUIDL fund on BNB Chain as collateral
+                for Ethena's USDtb stablecoin.
+            - date: '2025-12-02T15:00:00.000Z'
+              description: Custody integration completed with Mantle as institutional
+                partner for RWA services.
+            - date: '2025-09-09T01:00:00.000Z'
+              description: Large institutional withdrawal of 25,562 MKR ($42.6 million)
+                from custody addresses to potential exchange platform, representing
+                significant whale activity that could impact market.
+            - date: '2025-10-30T18:00:00.000Z'
+              description: Anchorage launches institutional custody support for Mantle's
+                $MNT token, enabling global institutions to access the token through
+                secure and self-custody options.
+          - name: Steakhouse Financial
+            rationale: Steakhouse Financial increased DRIP rewards for V2 Arbitrum
+              users, adding Farcaster vault integration.
+            xHandle: steakhousefi
+            tokens: {}
+            signals:
+            - date: '2025-11-14T13:00:00.000Z'
+              description: Currently ranks as the second-largest vault curator on
+                Morpho Labs after Gauntlet, followed by Spark.
+            - date: '2025-11-14T22:00:00.000Z'
+              description: Operates 45 vaults on Morpho with ~$1.2 billion in total
+                assets supplied.
+            - date: '2025-12-15T18:00:00.000Z'
+              description: Steakhouse Financial opens new position for Senior Market
+                Infrastructure Software Engineer (remote, full-time/contract).
+            - date: '2025-10-09T10:00:00.000Z'
+              description: Partnership with Crypto.com brings noncustodial USDC Earn
+                to millions of users with up to 7% APR using a curated Morpho Vault.
+                Morpho-powered lending and borrowing deployment on Cronos chain announced
+                as upcoming development.
+            - date: '2025-12-24T14:33:50.000Z'
+              description: Distributed increased DRIP rewards to users of the V2 vault
+                on Arbitrum.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-22T21:19:21.000Z'
+              description: Integrated a vault with Farcaster.
+              category: PARTNERSHIP
+            - date: '2025-12-11T22:00:00.000Z'
+              description: Coinbase Earn powered by Morpho and Steakhouse Financial
+                reaches $400m.
+            - date: '2025-12-14T18:00:00.000Z'
+              description: Company adds Risk Analyst to list of open remote positions.
+            - date: '2025-11-26T08:00:00.000Z'
+              description: Morpho vault ranks among top TVL recipients on Monad Mainnet
+                Day 2, with the network achieving over 100M in stablecoin TVL across
+                leading protocols including Uniswap, Gearbox, and Curve.
+            - date: '2025-11-26T18:00:00.000Z'
+              description: Monad Core Vault enters incentivized phase with 7-day moving
+                average rate statistics now available. Chronicle Labs secures the
+                infrastructure for the AUSD vault on Morpho.
+          - name: hedera
+            rationale: HBAR Foundation lays off staff while stating financial robustness.
+            xHandle: hedera
+            tokens: {}
+            coingecko_id: hedera
+            ticker: HBAR
+            description: "Hedera is a decentralized public network where developers\
+              \ can build secure, fair applications with near real-time consensus.\
+              \ The platform is owned and governed by a council of global innovators\
+              \ including Avery Dennison, Boeing, Deutsche Telekom, DLA Piper, FIS\
+              \ (WorldPay), Google, IBM, LG Electronics, Magalu, Nomura, Swirlds,\
+              \ Tata Communications, University College London (UCL), Wipro, and Zain\
+              \ Group. \r\n\r\nThe Hedera Consensus Service (HCS) acts as a trust\
+              \ layer for any application or permissioned network and allows for the\
+              \ creation of an immutable and verifiable log of messages. Application\
+              \ messages are submitted to the Hedera network for consensus, given\
+              \ a trusted timestamp, and fairly ordered. Use HCS to track assets across\
+              \ a supply chain, create auditable logs of events in an advertising\
+              \ platform, or even use it as a decentralized ordering service.\r\n\r\
+              \n"
+            signals:
+            - date: '2026-01-07T00:14:29.000Z'
+              description: HBAR Foundation is conducting layoffs while stating the
+                organization remains financially robust.
+              category: TEAM_UPDATE
+            - date: '2025-12-27T20:00:00.000Z'
+              description: Featured at ETHDenver 2026 through a speaker who previously
+                contributed to Hedera's development.
+              category: VISIBILITY_EVENT
+            - date: '2025-12-07T22:00:00.000Z'
+              description: Archax tokenizes Canary HBAR ETF ($HBR) and completes first
+                after-hours trade on Hedera network.
+            - date: '2025-12-04T04:00:00.000Z'
+              description: AgentHustleAI adds HBAR support in upcoming end-of-year
+                update, featuring conditionals, launchpads, and crosschain swap functionality.
+            - date: '2025-12-16T19:30:00.000Z'
+              description: The Hashgraph Group launched EcoGuard on Hedera to provide
+                tokenized ESG solutions for global carbon markets with full traceability.
+              category: PARTNERSHIP
+            - date: '2025-11-23T12:00:00.000Z'
+              description: Wyoming selects Hedera for its state-issued stablecoin,
+                and Canary tokenizes its HBAR ETF directly on Hedera.
+            - date: '2025-11-11T16:00:00.000Z'
+              description: Wyoming selects the network to support Frontier Stable
+                Token, the first U.S. state-issued stablecoin. Q3 metrics show HBAR
+                market cap increased 43.3% to $9.1B, DeFi TVL rose 53.4% to $113.5M,
+                and active accounts grew 15.8%.
+            - date: '2025-12-13T16:00:00.000Z'
+              description: Governing council member BitGo is officially approved to
+                run a Trust Bank.
+            - date: '2025-12-19T15:10:33.000Z'
+              description: Featured in a long-form research piece by Hivemind Capital
+                analyzing decentralization approaches across major blockchain networks,
+                comparing governance and resilience design choices.
+              category: VISIBILITY_EVENT
+            - date: '2025-12-02T14:00:00.000Z'
+              description: Vanguard launches crypto ETF trading with the first HBAR
+                ETF now available on the platform.
+          - name: copper
+            rationale: Copper is an existing institutional custody partner for USDe
+              backing assets, alongside Kraken.
+            xHandle: null
+            tokens: {}
+            signals:
+            - date: '2026-01-07T04:16:37.000Z'
+              description: Added Kraken as a new institutional custody partner for
+                USDe backing assets, alongside existing partners Copper, Ceffu, and
+                Anchorage Digital Bank, with Kraken's custody setup reviewed and approved
+                by the Ethena Risk Committee.
+              category: PARTNERSHIP
+            - date: '2025-11-13T09:00:00.000Z'
+              description: Copper provides monthly attestations (alongside Ceffu)
+                for Solsticefi's USX stablecoin infrastructure, which maintained its
+                $1 peg through market crashes in October-November.
+            - date: '2025-12-31T16:13:05.000Z'
+              description: Integrated multi-signature custody with Copper and Cobo
+                for secure asset management.
+              category: PARTNERSHIP
+            - date: '2025-10-28T12:00:00.000Z'
+              description: Copper joins Arc Ecosystem's public testnet launch as institutional
+                custodian for Circle's new blockchain infrastructure, alongside BitGo,
+                Taurus, and Zodia Custody, providing digital asset storage for institutions.
+            - date: '2025-12-15T11:00:00.000Z'
+              description: Copper provides custodial support for mETH Protocol, an
+                Ethereum liquid staking solution, alongside Fireblocks and Anchorage.
+            - date: '2025-12-08T17:00:00.000Z'
+              description: Tammy Weinrib, who led compliance at Copper, joins Veda
+                Labs as Chief Compliance Officer.
+            - date: '2025-11-10T13:00:00.000Z'
+              description: SolvProtocol names Copper as backing partner alongside
+                Chainlink, Chaos Labs, and CEFFU for its transparent, MiCA-compliant
+                digital finance infrastructure.
+            - date: '2025-10-26T12:00:00.000Z'
+              description: Messari State of Stacks H1 2025 report highlights Copper's
+                integration alongside Jump Crypto, BitGo, and Hex Trust in the Stacks
+                Bitcoin liquidity layer ecosystem.
+            - date: '2025-10-09T12:00:00.000Z'
+              description: mETH Protocol integration launches, allowing secure custody
+                of liquid staking tokens through infrastructure trusted by 50+ partners.
+            - date: '2025-05-20T05:00:00.000Z'
+              description: Stablecoin payment functionality launches on Starknet,
+                enabling instant payments for users, vendors, and partners.
+          - name: nakamigos
+            rationale: A holder publicly disclosed 450 Nakamigos NFTs in their portfolio
+              with blue-chip collections.
+            xHandle: nakamigos
+            tokens: {}
+            signals:
+            - date: '2025-12-16T02:00:00.000Z'
+              description: A holder publicly discloses a position of 450 NFTs in their
+                "moonbag" portfolio alongside blue-chip collections including CryptoPunk,
+                Bored Ape, and Milady.
+            - date: '2025-12-11T13:00:00.000Z'
+              description: The collection rises +13%, emerging as a notable positive
+                mover while the broader NFT market declines with Punks -4%, BAYC -6%,
+                and Pudgy -1%.
+            - date: '2025-12-10T03:00:00.000Z'
+              description: Order book depth shows less than 50 sales needed to push
+                floor to 0.17 ETH and roughly 125 sales to reach 0.2 ETH floor price,
+                representing approximately a 20% price move with the first 50 sales.
+            - date: '2025-12-08T17:00:00.000Z'
+              description: The collection experiences hundreds of ETH in artificial
+                volume and wash trading activity.
+            - date: '2025-12-07T19:00:00.000Z'
+              description: Spaace selects Nakamigos for its new "Prime Spotlights"
+                series, featuring an article, OG holder interview, marketplace homepage
+                spotlight, and upcoming exclusive community perks including Discord
+                benefits and Battle Pass integration.
+            - date: '2025-12-06T19:00:00.000Z'
+              description: Founder launches a new NFT collection that has a current
+                floor price of $42,000.
+            - date: '2025-12-06T10:00:00.000Z'
+              description: Nakamigos ranks among the top 5 most traded collections
+                on Spaace this week.
+            - date: '2025-12-05T04:00:00.000Z'
+              description: $MEEGSTR token bounces off $450K market cap resistance
+                level twice.
+            - date: '2025-12-04T04:00:00.000Z'
+              description: Project teases a reveal about "Nakamigos Beeple Everyday"
+                scheduled within 30 minutes of the tweet timestamp.
+            - date: '2025-12-04T03:00:00.000Z'
+              description: Floor price rose higher when traders mistakenly believed
+                a Strategy token was being announced (which was actually a Rare Pepe
+                Nakamoto card reveal) compared to the floor price after the Strategy
+                token actually launched.
+          - name: defillama
+            rationale: Ethereum's DeFi TVL is $99B+, 9x next L1 ecosystem.
+            xHandle: defillama
+            tokens: {}
+            signals:
+            - date: '2026-01-06T13:51:45.000Z'
+              description: Ethereum's DeFi TVL reached $99B+, reported as over 9x
+                the next-largest L1 ecosystem.
+              category: ONCHAIN_METRICS
+            - date: '2025-11-07T15:00:00.000Z'
+              description: DefiLlama releases LlamaAI, described as the biggest feature
+                ever and the most powerful AI tool for fundamentals-based crypto analysis
+                with capabilities to identify protocol revenue and TVL trends, analyze
+                revenue stability, chart BTC deposits in DeFi over time, and create
+                market cap vs revenue visualizations.
+            - date: '2026-01-01T13:59:03.000Z'
+              description: Tracks MANTRA EVM liquidity hubs on its platform, expanding
+                coverage to this new EVM chain.
+              category: VISIBILITY_EVENT
+            - date: '2025-11-26T01:00:00.000Z'
+              description: The platform now tracks 326 stablecoins as of November
+                25th, 2025.
+            - date: '2025-12-30T17:36:37.000Z'
+              description: Integrated with SeamlessFi to track and organize leverage
+                token opportunities for staked ETH and yield-bearing stables.
+              category: PARTNERSHIP
+            - date: '2025-11-20T06:00:00.000Z'
+              description: After November 24th, DeFi protocols on Monad will start
+                getting listed on the platform for metric tracking.
+            - date: '2025-12-29T16:26:20.000Z'
+              description: Added income statements feature to the platform.
+              category: TECH_EVENT
+            - date: '2025-12-15T04:00:00.000Z'
+              description: Platform reports unusually high correlation coefficients
+                (over 0.9, up to 0.99) between largest cryptocurrencies over the past
+                7 days.
+            - date: '2025-12-20T14:52:19.000Z'
+              description: Featured in a list of recommended airdrop tracking platforms
+                shared by a crypto influencer.
+              category: VISIBILITY_EVENT
+            - date: '2025-12-03T19:00:00.000Z'
+              description: Hundreds of dashboards are being built using the DefiLlama
+                Pro dashboard builder, demonstrating adoption of the platform's analytics
+                tools for tracking chain metrics and protocol categories.
+          - name: hibachi
+            rationale: Hibachi is a promising new crypto project expected to launch
+              in the first half of 2026.
+            xHandle: hibachi_xyz
+            tokens: {}
+            signals:
+            - date: '2025-06-17T17:00:00.000Z'
+              description: Implements SP1 technology for private liquidation prices
+                and trading data with ZK security.
+            - date: '2025-08-14T01:00:00.000Z'
+              description: New points-based yield farming program launches with tiered
+                loyalty system, NFT rewards for top 200 traders, and mystery box mechanics
+                offering 5-5,000 points per 10,000 Sparks earned.
+            - date: '2025-12-05T15:00:00.000Z'
+              description: Expected to launch in first half of 2026 among list of
+                promising new project launches.
+            - date: '2025-12-02T11:00:00.000Z'
+              description: Hibachi listed among projects yet to conduct Token Generation
+                Event, with TGE anticipated in 2026.
+            - date: '2025-11-27T10:00:00.000Z'
+              description: Coinbase Ventures identifies Hibachi as a builder of private
+                perp exchanges in their 2026 outlook, positioning the project within
+                the privacy-focused trading infrastructure category alongside privacy
+                layers using ZK, FHE, MPC, and TEE technology.
+            - date: '2025-10-31T10:00:00.000Z'
+              description: Celestia co-founder names Hibachi as one of six projects
+                pioneering high-performance onchain trading built on Celestia's infrastructure,
+                which offers 2ms latency, 6 second finality, and ~200k TPS bandwidth.
+            - date: '2025-10-19T08:00:00.000Z'
+              description: Platform has less than 10,000 daily active users and is
+                considered early in product lifecycle with unsaturated user base.
+            - date: '2025-10-19T07:00:00.000Z'
+              description: Pre-point season ends and regular points season launches
+                next week, with 100% fee rebate available and points earned from maintaining
+                Open Interest positions.
+            - date: '2025-10-16T02:00:00.000Z'
+              description: 'Ranks at position #16 out of 18 in unofficial perp DEX
+                rankings, down from #14 in the previous ranking.'
+            - date: '2025-10-15T23:00:00.000Z'
+              description: 'Moves up to #14 position out of 18 in unofficial perp
+                DEX rankings, up from #15 out of 17 in previous ranking.'
+          - name: DGrid
+            rationale: DGrid's decentralized AI network, LLM gateway, and Premium
+              NFT with 50% $DGAI are gaining traction.
+            xHandle: dgrid_ai
+            tokens: {}
+            signals:
+            - date: '2026-01-06T15:41:01.000Z'
+              description: Offers a "DGrid Premium NFT" that provides access to all
+                main AI models and allocates holders exposure to 50% of the total
+                $DGAI token supply.
+              category: TOKEN_ECONOMICS
+            - date: '2026-01-06T15:41:01.000Z'
+              description: Featured in a thread explaining the protocol's decentralized
+                AI smart network architecture and gateway functionality for accessing
+                multiple LLMs through one AI RPC.
+              category: VISIBILITY_EVENT
+            - date: '2026-01-05T08:00:40.000Z'
+              description: Launched a Starboard campaign on Galxe offering up to $100,000
+                in USDT and future DGAI tokens as rewards for top creators.
+              category: FINANCIAL_EVENT
+          - name: vaneck bitcoin etf
+            rationale: Vaneck Bitcoin ETF recorded $15M net inflows Jan 5, following
+              $0.5M weekly outflow.
+            xHandle: vaneck_us
+            tokens: {}
+            signals:
+            - date: '2026-01-06T04:49:28.000Z'
+              description: Recorded net inflows of $15 million on 2026-01-05.
+              category: MARKET_ACTIVITY
+            - date: '2026-01-03T08:00:02.000Z'
+              description: Recorded net outflow of $0.5 million for the week ending
+                January 3, 2026.
+              category: MARKET_ACTIVITY
+            - date: '2026-01-01T17:30:00.000Z'
+              description: Experienced $6.8 million in outflows on December 31, 2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-21T19:00:08.000Z'
+              description: Filed for an AVAX ETF with the SEC.
+              category: MARKET_ACTIVITY
+            - date: '2026-01-01T09:00:02.000Z'
+              description: Experienced net outflows of $110.7 million in December
+                2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-31T04:48:11.000Z'
+              description: Recorded net inflow of $5.0 million on December 30, 2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-30T04:17:21.000Z'
+              description: Forecasted DEX volumes to reach $4 trillion and TVL to
+                exceed $200 billion in 2025, which did not materialize as TVL remained
+                below prior highs.
+              category: OPINION_SPECULATION
+            - date: '2025-12-30T04:17:21.000Z'
+              description: Forecasted Bitcoin to reach $180,000 by the end of 2025,
+                which did not materialize as BTC traded around $87,000 instead.
+              category: OPINION_SPECULATION
+            - date: '2025-12-28T10:27:58.000Z'
+              description: experienced zero net flow on 2025-12-26
+              category: MARKET_ACTIVITY
+            - date: '2025-12-27T00:54:56.000Z'
+              description: Recorded zero net flow on December 27, 2025.
+              category: ONCHAIN_METRICS
+          - name: chill house
+            rationale: 'An easter egg for chill house was discovered in Chainsaw Man:
+              Reze Arc.'
+            xHandle: chillhousesol
+            tokens:
+              solana: GkyPYa7NnCFbduLknCfBfP7p8564X1VZhwZYJ6CZpump
+            coingecko_id: chill-house
+            ticker: CHILLHOUSE
+            description: i’m just chilling in my house
+            signals:
+            - date: '2025-10-28T12:00:00.000Z'
+              description: A team member named "lukey" exits and is no longer associated
+                with the project, coinciding with the pump. The token reaches $30m
+                market cap with 8x gains after "recent Base fight" and records +130%
+                gains.
+            - date: '2025-12-05T13:00:00.000Z'
+              description: The token experiences a +40% price increase and gains notable
+                market attention as a hot coin.
+            - date: '2025-11-24T22:00:00.000Z'
+              description: An insider holding 4% of supply sold after 80% drawdown,
+                citing another whale wallet dump that crashed the price, while the
+                team executed buybacks without selling.
+            - date: '2025-12-14T01:00:00.000Z'
+              description: 'An easter egg for the project was discovered in Chainsaw
+                Man: Reze Arc.'
+            - date: '2025-12-10T16:00:00.000Z'
+              description: ChainPro integration announced with 6-7% fees for Chill
+                House holders and 0% fees for all other users.
+            - date: '2025-12-05T21:00:00.000Z'
+              description: The Base-Solana bridge secured by Chainlink CCIP goes live,
+                enabling CHILLHOUSE to bridge from Solana to Base and trade across
+                the Base ecosystem.
+            - date: '2025-12-02T22:00:00.000Z'
+              description: A trader compares the project to OHM (Olympus DAO) in a
+                protocol-to-token analogy series, advising followers to "prepare accordingly."
+            - date: '2025-11-30T17:00:00.000Z'
+              description: 'Long-term roadmap revealed: evolution to "Chillworld"
+                as a digital third place targeting users from the Minecraft and Roblox
+                generation.'
+            - date: '2025-11-28T04:00:00.000Z'
+              description: The project uses ThruVM as its blockchain infrastructure,
+                positioned alongside similar projects for value accrual in the crypto
+                trade.
+            - date: '2025-11-16T07:00:00.000Z'
+              description: The project is officially bridging to Plasma network.
+          - name: binance wallet
+            rationale: Binance Wallet added FKH token and integrated a Web3 Loan feature.
+            xHandle: binancewallet
+            tokens: {}
+            signals:
+            - date: '2025-10-10T10:00:00.000Z'
+              description: '10 new dApp integrations go live: Harvest, Arcadia, Gull
+                Network, Giverep, Bombie, Toyland, Vibely, BeanBee, Across, and Tagspace.'
+            - date: '2025-10-14T05:00:00.000Z'
+              description: The $LAB token TGE occurs October 14 from 8-10 AM UTC via
+                Binance Alpha. LAB Trade reports $700M+ in volume and has Lemniscap
+                as a backer.
+            - date: '2025-12-02T10:00:00.000Z'
+              description: Integration with Chainflip completed via RangoExchange,
+                adding new swap routing functionality.
+            - date: '2025-11-28T14:00:00.000Z'
+              description: Binance Wallet now routes through RangoExchange with Chainflip
+                for BTC, ETH, and SOL swaps.
+            - date: '2025-12-08T15:00:00.000Z'
+              description: Launches new wallet features including Stablecoin Trading
+                on Web, multiple Keyless Wallets support, Signal feature for tracking
+                token movements, and Social Hype feature for market trends, alongside
+                1,000 USDC promotional giveaway (50 winners, 20 USDC each).
+            - date: '2025-10-23T03:00:00.000Z'
+              description: New Binance Wallet Extension SDK launches, allowing seamless
+                dApp access for Binance Wallet users through the official extension.
+            - date: '2025-10-07T08:00:00.000Z'
+              description: Partnership with Sei Network launches to power DeFi Season
+                5, offering $600K in rewards through native USDC staking pools with
+                APR boosts.
+            - date: '2025-11-28T12:00:00.000Z'
+              description: TermMax Alpha Markets provides options trading for Binance
+                Wallet Alpha projects including $ARTX, $RIVER, and $4 before their
+                official Binance perps listings. TermMax launches Mindshare Program
+                with points-based rewards for content sharing, referrals, and trading
+                activities on Alpha Markets.
+            - date: '2025-12-09T12:00:00.000Z'
+              description: $US token from Talus Labs lists on Binance Wallet this
+                week. BNB Chain DeFi Festival includes $300K in $SOLV rewards for
+                BTC yield opportunities over 31 days.
+            - date: '2025-12-18T10:58:55.000Z'
+              description: Integrated Web3 Loan feature enabling users to borrow crypto
+                on-chain through Venus Protocol using collateral, directly within
+                the wallet interface.
+              category: TECH_EVENT
+          - name: GridPlus
+            rationale: Hardware DEX swapper integrates GridPlus wallet support for
+              self-custody trading.
+            xHandle: gridplus
+            tokens: {}
+            signals:
+            - date: '2025-11-24T15:00:00.000Z'
+              description: Integration with ShapeShift launches in early December,
+                featuring native cross-chain swaps and zero blind signing.
+            - date: '2025-12-15T15:00:00.000Z'
+              description: A hardware DEX swapper integrates GridPlus wallet support
+                alongside Ledger and Trezor for self-custody trading.
+            - date: '2025-12-03T15:00:00.000Z'
+              description: Limited-time promotion until December 5 provides $100 off
+                Lattice1 purchase plus 5 free SafeCards.
+            - date: '2025-10-30T21:00:00.000Z'
+              description: Lattice1 Firmware v0.18.9 launches with expanded Bitcoin
+                XPUB support covering xpub, ypub, and zpub formats, plus Ethereum
+                EIP-7702 support.
+            - date: '2025-10-14T17:00:00.000Z'
+              description: Partnership with ShapeShift announced to provide multichain
+                functionality coming soon.
+            - date: '2025-06-02T16:00:00.000Z'
+              description: NuFi Wallet adds Bitcoin support to hardware wallet integration,
+                enabling BTC, ETH, and SOL functionality.
+          - name: rtfkt
+            rationale: RTFKT's CloneX appointed a new Chief Technology Officer.
+            xHandle: rtfkt
+            tokens: {}
+            signals:
+            - date: '2025-06-02T12:00:00.000Z'
+              description: Large wallet sweeps 19 CloneX at 0.17 ETH average price
+                amid project uncertainty.
+            - date: '2025-08-04T09:00:00.000Z'
+              description: Collection price rises to 0.37 ETH with 140 daily sales
+                despite Nike shutdown.
+            - date: '2025-07-28T11:00:00.000Z'
+              description: Recent co-founder comments suggest potential CTO or sale
+                opportunity, driving 2x floor price increase amid speculation of Moonbirds-style
+                acquisition scenario.
+            - date: '2025-07-28T11:00:00.000Z'
+              description: Floor price doubles amid rumors of potential acquisition
+                or transfer of ownership, following similar pattern to Moonbirds'
+                successful turnaround.
+            - date: '2025-12-08T23:00:00.000Z'
+              description: RTFKT shut down operations following Nike acquisition and
+                corporate pivot that focused on expensive merchandise drops ($300
+                hoodies, $1,000 shoes) until revenue dried up, with team exiting with
+                9-figure returns while community lost millions.
+            - date: '2025-07-20T19:00:00.000Z'
+              description: Project founders and Nike have abandoned development; IP
+                potentially available for acquisition.
+            - date: '2026-01-07T04:26:49.000Z'
+              description: Appointed a new Chief Technology Officer for CloneX.
+              category: TEAM_UPDATE
+            - date: '2025-12-03T01:00:00.000Z'
+              description: Profile Pictures mint by CreamyDreamy in collaboration
+                with id_xanthrax goes live.
+            - date: '2025-11-19T12:00:00.000Z'
+              description: 'Clone X ranks #3 in CoinGecko''s top trending NFTs based
+                on 24-hour floor price percentage change.'
+            - date: '2025-11-07T11:00:00.000Z'
+              description: Clone X is publicly characterized as a dying project alongside
+                Mekaverse due to lack of revenue model, with commentary stating such
+                projects die over time without revenue.
+    description: Search Bitcoin projects with increased limit and raw data
+    status: success
+    elapsed_time: 1.0250070095062256
+  market_summary_1day:
+    input:
+      tool: get_market_summary
+      tool_arguments:
+        lookback_days: 1
+    output:
+      response: ''
+      data:
+        data: &id001
+          lookback_days: 1
+          summaries: []
+    description: Get market summary for last 1 day - should return empty if data is
+      stale (>3 days old)
+    status: success
+    elapsed_time: 0.8364648818969727
+  market_summary_3days:
+    input:
+      tool: get_market_summary
+      tool_arguments:
+        lookback_days: 3
+    output:
+      response: ''
+      data:
+        data:
+          lookback_days: 3
+          summaries: []
+    description: Get market summary for last 3 days - filters out data older than
+      3 days
+    status: success
+    elapsed_time: 0.8781509399414062
+  market_summary_default:
+    input:
+      tool: get_market_summary
+      tool_arguments: {}
+    output:
+      response: ''
+      data:
+        data: *id001
+    description: Get market summary with default lookback (1 day) - verify stale data
+      filtering
+    status: success
+    elapsed_time: 0.00036406517028808594
+  market_summary_week:
+    input:
+      tool: get_market_summary
+      tool_arguments:
+        lookback_days: 7
+    output:
+      response: ''
+      data:
+        data:
+          lookback_days: 3
+          summaries: []
+    description: Attempt to get 7-day summary (capped at 3 days max, filters stale
+      data)
+    status: success
+    elapsed_time: 0.9029126167297363
+  market_query_natural:
+    input:
+      query: What's happening in the crypto market today?
+    output:
+      response: I am unable to retrieve a market summary for today. The AixBT API
+        may not have information for this specific request, or there might be a temporary
+        issue. Please try again later.
+      data:
+        data: *id001
+    description: Natural language query for today's market - should handle stale data
+      gracefully
+    status: success
+    elapsed_time: 4.216829299926758
+  empty_search_args:
+    input:
+      tool: search_projects
+      tool_arguments: {}
+    output:
+      response: ''
+      data:
+        data:
+          projects:
+          - name: babylon
+            rationale: Babylon develops Trustless Bitcoin Vaults for BABY token utility,
+              funded by $15M from a16z crypto.
+            xHandle: babylonlabs_io
+            tokens: {}
+            coingecko_id: babylon
+            ticker: BABY
+            signals:
+            - date: '2026-01-07T13:12:55.000Z'
+              description: Developing a new protocol called Trustless Bitcoin Vaults
+                (BTCVaults) designed to provide functional utility for the BABY token
+                through its intended role in vault usage and operation.
+              category: TECH_EVENT
+            - date: '2026-01-07T13:04:11.000Z'
+              description: Raised $15 million in funding from a16z crypto to support
+                development and scaling of the Trustless Bitcoin Vaults protocol.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-05T22:00:00.000Z'
+              description: Binance launches BTC staking product for Babylon on its
+                On-Chain Yields platform, offering up to 2.5% APR paid in BABY token
+                rewards.
+            - date: '2025-10-29T23:00:00.000Z'
+              description: Protocol activates over $6B in Bitcoin through Trustless
+                Staking Protocol and announces next phase enabling native BTC to flow
+                into DeFi markets without bridges, wrappers, or custodians.
+            - date: '2025-11-20T22:00:00.000Z'
+              description: Binance Simple Earn launches Locked Products for BABY token
+                offering up to 29.9% APR during promotional period.
+            - date: '2025-12-23T16:48:53.000Z'
+              description: nominated for the "Best In Yield" award at The Rollup's
+                awards ceremony scheduled for December 30th, 2025
+              category: VISIBILITY_EVENT
+            - date: '2025-11-14T13:00:00.000Z'
+              description: Babylon Genesis activates Stake Expansion feature allowing
+                Phase-1 BTC stakers to extend expiring stakes and increase staked
+                amounts without needing to unbond first.
+            - date: '2025-10-15T11:00:00.000Z'
+              description: Testnet-6 goes live with upcoming v4 upgrade to implement
+                co-staking and introduce stake extension functionality.
+            - date: '2025-10-04T18:00:00.000Z'
+              description: 'The co-staking proposal receives YES vote with detailed
+                mechanics disclosed: 20,000 BABY tokens required per 1 staked BTC
+                for eligibility, meaning 1.16bn BABY needed to cover all 57,759.9
+                BTC currently staked versus only ~690m BABY float available from 2.67bn
+                circulating supply.'
+            - date: '2025-12-16T08:00:00.000Z'
+              description: Partnership announced with DSRV Labs, a leading Korean
+                validator and VASP-licensed custodian, who will participate as a Finality
+                Provider and BABY validator. The collaboration targets institutional
+                adoption in Korea with potential future integration of KRW stablecoins.
+          - name: riot platforms
+            rationale: Riot's Nov production 428 BTC, treasury 19.3k BTC, 36.6 EH/s
+              hash rate, $96.6k average BTC sale.
+            xHandle: riotplatforms
+            tokens: {}
+            signals:
+            - date: '2025-10-31T22:00:00.000Z'
+              description: Reports Q3 2025 revenue of $180M with $104M net income
+                while producing 1,406 BTC and maintaining holdings of 19,287 BTC valued
+                at $2.2B.
+            - date: '2025-06-10T12:00:00.000Z'
+              description: Executes significant Bitcoin liquidation of 475 BTC in
+                April, breaking 3-month holding pattern.
+            - date: '2025-10-31T12:00:00.000Z'
+              description: RIOT announces its first 112 MW of critical IT load for
+                AI compute at its Corsicana facility. JP Morgan maintains an overweight
+                rating on the stock.
+            - date: '2025-07-22T14:00:00.000Z'
+              description: Bitfarms announces $100M buyback to offset share sales;
+                $300M+ ATM remains available.
+            - date: '2025-12-04T15:00:00.000Z'
+              description: November production totaled 428 BTC with treasury rising
+                to 19,368 BTC, hash rate held at 36.6 EH/s, and power credits surged
+                while average BTC selling price was $96.6k.
+            - date: '2025-11-29T17:00:00.000Z'
+              description: MSCI sets January 15th, 2026 as the decision date for potential
+                index exclusion of Riot Platforms and 37 other digital asset treasury
+                companies from JPMorgan-endorsed indexes.
+            - date: '2025-11-24T17:00:00.000Z'
+              description: JPMorgan reduces price target in bitcoin miner reset alongside
+                MARA while upgrading Cipher and CleanSpark.
+            - date: '2025-11-21T18:00:00.000Z'
+              description: MSCI plans to exclude companies with over 50% crypto assets
+                from its indices, including Riot Platforms, potentially triggering
+                $11.6 billion in industry-wide capital outflows as passive funds tracking
+                MSCI indices are forced to sell these stocks according to JPMorgan
+                analysts.
+            - date: '2025-11-05T17:00:00.000Z'
+              description: Investment giant Fidelity with $6.4 trillion in assets
+                under management discloses an 8% stake according to SEC filings dated
+                September 29th, up from a previous position below the 5% reporting
+                threshold.
+            - date: '2025-10-31T14:00:00.000Z'
+              description: Jones sets $30 price target and expects the initial 112MW
+                turnkey build-to-suit colocation lease deal to close in 1H:26, serving
+                as key catalyst for Corsicana and Rockdale AI/HPC sites.
+          - name: a16z crypto
+            rationale: a16z crypto provided long-term support to dntse for Trustless
+              Bitcoin Vaults development.
+            xHandle: a16zcrypto
+            tokens: {}
+            signals:
+            - date: '2026-01-07T13:39:55.000Z'
+              description: Provided long-term support to dntse for development of
+                Trustless Bitcoin Vaults.
+              category: PARTNERSHIP
+            - date: '2025-10-24T09:00:00.000Z'
+              description: The State of Crypto 2025 report states crypto may be the
+                only viable payment rails for AI Agents, citing Gartner's estimate
+                that $30 trillion in purchases will be made or influenced by AI Agents
+                by 2030.
+            - date: '2025-10-22T15:00:00.000Z'
+              description: a16z crypto releases State of Crypto 2025 report with key
+                metrics including $9 trillion in stablecoin transfers over the past
+                year, $175 billion in crypto ETF holdings, 40-70M on-chain transactors
+                versus 716M token owners, 20% of spot crypto trading occurring in
+                DeFi, and $30 billion in tokenized real-world assets on-chain.
+            - date: '2025-12-12T18:00:00.000Z'
+              description: Report from a16z crypto states privacy chains could own
+                most of crypto due to privacy being essential for most real-world
+                use cases.
+            - date: '2025-12-10T20:00:00.000Z'
+              description: Opens Seoul office to expand Asian operations and appoints
+                former Monad Foundation executive Sungmo as Head of APAC go-to-market
+                to lead regional portfolio company support.
+            - date: '2025-12-10T17:00:00.000Z'
+              description: a16z crypto Voices Onchain served as collaborator and sponsor
+                for The Lumen Prize 2025, supporting digital artists and innovation
+                in art and technology.
+            - date: '2025-12-07T14:00:00.000Z'
+              description: OpenGradient raises $8.5M with participation from a16z
+                Crypto, Coinbase Ventures, and SV Angel to build decentralized AI
+                infrastructure including a compute layer combining decentralized GPUs
+                with EVM infrastructure and a contextual memory system for AI agents
+                with encrypted on-device data.
+            - date: '2025-12-03T13:00:00.000Z'
+              description: Prediction market platform Kalshi raises $1B at $11B valuation
+                with participation from a16z crypto, Paradigm (lead investor), Sequoia,
+                and CapitalG.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: Bastion, backed by a16z crypto, Coinbase Ventures, Samsung
+                Next, Hashed, and Sony Innovation Fund, partners with Sony Bank to
+                issue USD-pegged stablecoin for Sony Group treasury operations, inter-company
+                settlements, and consumer-facing digital currency across gaming, music,
+                anime, movies, streaming, and commerce.
+            - date: '2025-11-26T03:00:00.000Z'
+              description: a16z crypto publishes article "6 myths about privacy on
+                blockchains" addressing misconceptions about blockchain privacy and
+                arguing that strong privacy technology is essential for identity,
+                governance, gaming, and AI use cases.
+          - name: paypal usd
+            rationale: PayPal USD deployed on Aptos with institutional stablecoins,
+              partnered Coinbase, and plans Stellar launch.
+            xHandle: paypal
+            tokens:
+              ethereum: '0x6c3ea9036406852006290770bedfcaba0e23a0e8'
+              arbitrum-one: '0x46850ad61c2b7d64d08c9c754f45254596696984'
+              solana: 2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo
+            coingecko_id: paypal-usd
+            ticker: PYUSD
+            description: PayPal USD is designed to contribute to the opportunity stablecoins
+              offer for payments and is 100% backed by U.S. dollar deposits, short-term
+              U.S Treasuries and similar cash equivalents. PayPal USD is redeemable
+              1:1 for U.S. dollars and is issued by Paxos Trust Company.
+            signals:
+            - date: '2025-12-15T21:00:00.000Z'
+              description: A PYUSD Trading Sprint with $30k in prizes runs from December
+                15 21:00 UTC to December 17 21:00 UTC.
+            - date: '2025-12-08T16:00:00.000Z'
+              description: PYUSD expands to SEI Network through LayerZero integration.
+            - date: '2025-12-19T04:45:54.000Z'
+              description: Expanded PYUSD0 (the omnichain extension of PYUSD) to Stable
+                network, enabling cross-chain transfers through Stargate at a 1:1
+                rate with zero slippage.
+              category: TECH_EVENT
+            - date: '2025-12-01T08:00:00.000Z'
+              description: PYUSD had zero new token issuance in November according
+                to stablecoin minting data.
+            - date: '2025-12-01T17:00:00.000Z'
+              description: Spark protocol now offers a 4.5% savings rate to PYUSD
+                holders.
+            - date: '2025-12-06T22:00:00.000Z'
+              description: 'Ranked #1 fastest growing stablecoin in the $1B+ market
+                cap category, with Paxos issuing both the #1 (PYUSD) and #3 (USDG)
+                fastest growing stablecoins.'
+            - date: '2025-12-29T11:37:48.000Z'
+              description: Deployed on Aptos blockchain alongside other institutional
+                stablecoin providers including BlackRock's BUIDL, Franklin Templeton,
+                and Paxos USDG.
+              category: PARTNERSHIP
+            - date: '2025-11-27T19:00:00.000Z'
+              description: Over $190M in PYUSD can be borrowed below 5% APY on Kamino,
+                representing the lowest borrow rate against SOL, LSTs, and BTC on
+                Solana.
+            - date: '2025-12-28T22:52:34.000Z'
+              description: Transferred $1.2 billion from Copper to new wallet 0xC7A455f687D1
+                on December 28, 2025.
+              category: WHALE_ACTIVITY
+            - date: '2025-12-03T18:00:00.000Z'
+              description: PYUSD jumped 35% with $1B in inflows as dollar-backed stablecoins
+                expanded while synthetic stablecoin Ethena lost $2.2B in redemptions
+                during November.
+          - name: celestia
+            rationale: Nansen validator commission rate increases from 10% to 20%
+              effective January 15.
+            xHandle: celestia
+            tokens:
+              secret: secret1s9h6mrp4k9gll4zfv5h78ll68hdq8ml7jrnn20
+              cosmos: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+              osmosis: ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877
+            coingecko_id: celestia
+            ticker: TIA
+            description: Celestia is a data availability network that allows developers
+              to easily create a new blockchain.
+            signals:
+            - date: '2026-01-07T10:59:02.000Z'
+              description: Nansen validator commission rate increases from 10% to
+                20% on 2026-01-15 due to rising validator operational costs.
+              category: FINANCIAL_EVENT
+            - date: '2025-10-31T10:00:00.000Z'
+              description: Six high-performance onchain trading venues (Bullet, Hibachi,
+                VEX, RISE, Ethereal, XO Market) are building on the platform for low-latency
+                trading with 6-second finality and 200k TPS bandwidth. The mainnet
+                celebrates its second anniversary today.
+            - date: '2025-12-12T20:00:00.000Z'
+              description: Bullet network prepares for mainnet launch as a Solana-based
+                institutional trading platform utilizing Celestia for data availability
+                in its full-stack architecture.
+            - date: '2025-11-01T17:00:00.000Z'
+              description: Four or more new CLOB DEXs launch by Q1 2026, with reduced
+                inflation from proof of governance creating the possibility of TIA
+                becoming net deflationary in 2026. Issuance drops 70% to 2.5% in the
+                Matcha upgrade while throughput scales to 21MB/s.
+            - date: '2025-12-01T15:00:00.000Z'
+              description: 'Governance proposal #8 is active, proposing to raise block
+                size limit from 8 MiB to 32 MiB with 256 square size to utilize v6
+                network improvements and increase data capacity.'
+            - date: '2025-12-23T10:00:00.000Z'
+              description: Listed in a staking rewards program on Crypto.com offering
+                15% APY with 14-day lockup period, limited to 217,800 TIA in total
+                allocations, running from December 25, 2025 to January 8, 2026.
+              category: FINANCIAL_EVENT
+            - date: '2025-11-25T01:00:00.000Z'
+              description: Matcha upgrade delivers 16x throughput boost reaching 200k
+                TPS, cuts inflation to 2.5%, and expands bridging to support any asset.
+            - date: '2025-11-24T15:00:00.000Z'
+              description: Matcha upgrade completes with 128MB block capacity, enabling
+                all Conduit chains using Celestia DA to access the new capacity.
+            - date: '2025-12-16T09:00:00.000Z'
+              description: Whale wallets accumulate $240M in TIA, ranking second among
+                altcoins for current smart money inflows.
+            - date: '2025-12-02T08:00:00.000Z'
+              description: TIA token down 88% year-to-date in 2025.
+          - name: Ondo Finance
+            rationale: Ondo Finance partnered with LayerZero for cross-chain securities
+              & Fidelity/Mastercard for tokenization.
+            xHandle: ondofinance
+            tokens: {}
+            signals:
+            - date: '2025-10-28T04:00:00.000Z'
+              description: Q3 tokenized stocks holdings reach $303M, leading the sector
+                ahead of Securitize ($250M) and Backed Fi ($82M), with the overall
+                tokenized stocks market growing $0.4B (+115%) in Q3.
+            - date: '2025-11-08T18:00:00.000Z'
+              description: Global Markets platform reaches ~$313M total TVL after
+                2 months live, with SPYon leading at $25.1M TVL, QQQon at $19.1M TVL,
+                and TSLAon attracting 1.5K holders at $4.5M TVL.
+            - date: '2025-11-03T13:00:00.000Z'
+              description: Partnership with BX Digital (part of Boerse Stuttgart Group,
+                Europe's sixth-largest exchange with €90 billion annual trading volume)
+                enables regulated trading of over 100 tokenized stocks and ETFs as
+                exchange-traded products in Switzerland, accessible to European Economic
+                Area investors.
+            - date: '2025-12-08T14:00:00.000Z'
+              description: The two-year SEC investigation concludes without charges,
+                paving the way for US expansion of tokenized securities.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with Fidelity and Mastercard on tokenization
+                infrastructure in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-11T05:00:00.000Z'
+              description: State Street and Galaxy Asset Management announce SWEEP
+                tokenized liquidity fund launching on Solana in early 2026, with OUSG
+                providing $200M as lead anchor investor. OUSG currently holds more
+                than $770M in total value locked.
+            - date: '2025-11-25T07:00:00.000Z'
+              description: Purchases $25 million worth of Figure's YLDS yield-bearing
+                stablecoin to diversify assets backing its tokenized US Treasurys
+                fund.
+            - date: '2026-01-02T12:47:02.000Z'
+              description: Partnered with LayerZero to enable cross-chain onchain
+                securities bridging in 2025.
+              category: PARTNERSHIP
+            - date: '2025-11-19T11:00:00.000Z'
+              description: Ondo Global Markets secures FMA approval to offer tokenized
+                US stocks and ETFs across 30 European countries.
+            - date: '2025-11-01T10:00:00.000Z'
+              description: Ondo Finance completes acquisition of Oasis Pro, listed
+                among the largest crypto M&A deals in 2025.
+          - name: dream
+            rationale: Dream launched on americadotfun launchpad on December 17, 2025.
+            xHandle: null
+            tokens:
+              base: '0x98d59767cd1335071a4e9b9d3482685c915131e8'
+            coingecko_id: dream-2
+            ticker: DREAM
+            description: "Dreamcoins is an AI token launcher. Simply input a prompt\
+              \ or upload an image and the platform instantly generates and deploys\
+              \ the token for you - no wallet or ETH required.\r\nDreamcoins is building\
+              \ tools to make token launches as easy as chatting with Claude or ChatGPT.\
+              \ Dreamcoins is the easiest way to launch a token and also allows for\
+              \ anonymous token launches.\r\nThe platform streamlines the entire token\
+              \ creation process, eliminating technical barriers and complex smart\
+              \ contract interactions. Whether you're an artist wanting to tokenize\
+              \ your work, a community leader looking to launch a social token, or\
+              \ an entrepreneur with a unique concept, Dreamcoins provides the infrastructure\
+              \ to bring your vision to life instantly.\r\nWith built-in features\
+              \ for customization and automatic smart contract deployment, users can\
+              \ focus on their creative ideas rather than technical implementation.\
+              \ The platform handles all the blockchain complexity behind the scenes,\
+              \ making token launches accessible to everyone."
+            signals:
+            - date: '2025-12-17T05:31:12.000Z'
+              description: Launched on the americadotfun launchpad website on December
+                17, 2025.
+              category: MARKET_ACTIVITY
+            - date: '2025-12-11T21:00:00.000Z'
+              description: Government accounts tweeted about the project and the White
+                House retweeted it.
+            - date: '2025-10-29T13:00:00.000Z'
+              description: Hyperlane bridge launches support for DREAM, enabling bridging
+                from Solana to Starknet for deeper liquidity and expanded DeFi opportunities.
+            - date: '2025-09-24T23:00:00.000Z'
+              description: Syndicate proposes partnership with community groups to
+                continue Dreamchain development under community leadership, offering
+                the same support structure previously provided to Dream.
+            - date: '2025-09-23T22:00:00.000Z'
+              description: DREAM is positioned as one of the highest market cap coins
+                with a USD1 pair, potentially benefiting from new capital injection
+                and liquidity flows into the Bonk ecosystem.
+            - date: '2025-05-19T19:00:00.000Z'
+              description: New monthly NFT distribution mechanism launched through
+                staking, token purchases and OTC sales, while price reaches ATH.
+            - date: '2025-05-19T02:00:00.000Z'
+              description: The new NFT staking system includes daily point rewards;
+                these points will be used for NFT purchases and potential token acquisition.
+            - date: '2025-05-18T14:00:00.000Z'
+              description: New staking system launches for NFTs and tokens with 15%
+                price increase to 0.16 ETH floor.
+            - date: '2024-11-28T13:00:00.000Z'
+              description: Launching on Base, following Clanker which reached $143M
+                market cap on Farcaster
+          - name: opBNB
+            rationale: opBNB completed its first hardfork in 2026.
+            xHandle: opbnb
+            tokens: {}
+            signals:
+            - date: '2025-12-06T22:00:00.000Z'
+              description: Team plans to reduce block time to 0.25s and implement
+                VM and chain-level performance improvements. BNB Chain block time
+                targets 0.45s soon as part of the same upgrade initiative.
+            - date: '2026-01-07T04:39:47.000Z'
+              description: Completed its first hardfork in 2026.
+              category: TECH_EVENT
+            - date: '2025-12-30T18:00:30.000Z'
+              description: Integrated with Safe Wallet, which deployed its Smart Account
+                standards on the opBNB network in 2025.
+              category: PARTNERSHIP
+            - date: '2025-12-08T11:00:00.000Z'
+              description: BeatXswap, an IP-rights engagement platform, launches on
+                opBNB with 500K+ transactions in first 24 hours. TGE and major exchange
+                listing scheduled for early December 2025.
+            - date: '2025-09-25T08:00:00.000Z'
+              description: The project expands tooling capabilities in collaboration
+                with zIdentity as part of broader BNB Chain ecosystem developments.
+            - date: '2025-09-13T21:00:00.000Z'
+              description: 'Sei has overtaken the chain as #1 EVM chain by unique
+                active wallets with 15.9M users in the past 30 days, indicating a
+                loss of the previously held leading position.'
+            - date: '2025-06-27T07:00:00.000Z'
+              description: 'L2 solution achieves #1 position in daily active users
+                with 7M+ unique active wallets, leading in gaming activity.'
+            - date: '2025-06-16T15:00:00.000Z'
+              description: Currently ranks second in Web3 gaming activity, maintaining
+                dominant position as one of three chains controlling 80% of total
+                gaming user activity.
+          - name: buidl
+            rationale: Buidl paid $100M in lifetime dividends, first tokenized Treasury
+              to reach this milestone.
+            xHandle: securitize
+            tokens:
+              solana: 3HfLqhtF5hR5dyBXh6BMtRaTm9qzStvEGuMa8Gx6pump
+            coingecko_id: buidl
+            ticker: BUIDL
+            description: "dev.fun is a platform that lets anyone turn an idea into\
+              \ a live app instantly, tied to any pump.fun token. dev.fun makes app\
+              \ creation with AI as easy posting on X, with no coding required.\r\n\
+              \r\n---\r\n\r\nbuidlDAO ($buidl) is the operating DAO for dev.fun &\
+              \ the main way to get liquid exposure to its ecosystem. buidl fuels\
+              \ dev.fun’s growth and value creation through three core mechanisms:\r\
+              \n\r\n1. buidlAccelerator:\r\n    \r\n    Projects contributing either\
+              \ 3% of their token supply or $3K to gain direct access to hands-on\
+              \ support from both the buidlDAO and dev.fun teams. This support includes\
+              \ assistance with distribution, visibility, development resources, and\
+              \ go-to-market strategies.\r\n    \r\n2. dapp supercycle\r\n    \r\n\
+              \    buidlDAO partners with memecoin/NFT communities/protocols and chains\
+              \ to drive hackathons, content, and viral app launches. Incentives drive\
+              \ the buidl community to grow partner ecosystems, while also bringing\
+              \ external attention to dev.fun.\r\n    \r\n3. buidlDAO value accrual\r\
+              \n    \r\n    The DAO earns from accelerator fees, template marketplace,\
+              \ and revenue-generating core apps & primitives, creating a tokenomics\
+              \ flywheel accruing value to the DAO’s native token, $buidl. \r\n  \
+              \  \r\n\r\nBy growing the ecosystem, buidl aligns with the long term\
+              \ growth of the platform and empowers creators to shape the app economy."
+            signals:
+            - date: '2025-12-15T12:00:00.000Z'
+              description: BNB Chain is now the 2nd largest blockchain for BUIDL with
+                $500M AUM, all held by Ethena/Anchorage as collateral for USDtb stablecoin.
+            - date: '2025-12-30T04:09:57.000Z'
+              description: Paid out $100M in lifetime dividends, becoming the first
+                tokenized Treasury to reach this milestone.
+              category: FINANCIAL_EVENT
+            - date: '2025-12-04T14:00:00.000Z'
+              description: M0 governance approves BUIDL as eligible collateral for
+                stablecoins built on the M0 platform, enabling M0 issuers to utilize
+                the tokenized Treasury fund with $2B+ AUM as part of their collateral
+                composition for application-specific stablecoins.
+            - date: '2025-10-29T22:00:00.000Z'
+              description: BUIDL supply on Ethereum drops from $2.49B to $991M as
+                Ethena/Anchorage migrates $1.5B (82% of USDtb collateral) to Aptos
+                ($500M), Polygon ($500M), and Avalanche ($500M).
+            - date: '2025-12-14T20:00:00.000Z'
+              description: BUIDL has ~$1.8B market cap and remains the largest tokenized
+                fund.
+            - date: '2025-10-30T06:00:00.000Z'
+              description: Terminal Finance accumulates $280M in pre-deposits across
+                10,000 wallets ahead of its December launch as the main DEX of the
+                Ethena ecosystem.
+            - date: '2025-10-21T19:00:00.000Z'
+              description: $500M of BlackRock's BUIDL has been deployed on Aptos.
+            - date: '2025-12-12T16:00:00.000Z'
+              description: Ondo's OUSG fund with over $770M TVL includes BUIDL as
+                a portfolio holding alongside tokenized funds from State Street, Fidelity,
+                Franklin Templeton, WisdomTree, and Wellington Management.
+            - date: '2025-11-02T09:00:00.000Z'
+              description: Franklin Templeton's BENJI Fund goes live on Aptos, joining
+                BlackRock's BUIDL ($544M) and expanding the RWA ecosystem with Berkeley
+                Square's BSFG portfolio tokens, Ondo's USDY, and Apollo's ACRED, with
+                the network hosting over $1B in stablecoin liquidity.
+            - date: '2025-11-14T15:00:00.000Z'
+              description: BUIDL's total asset value surpasses $2.5 billion as it
+                launches on BNB Chain with Securitize tokenization and Wormhole interoperability.
+          - name: stripe
+            rationale: Stripe and Paradigm launched Tempo payments chain, following
+              its testnet launch.
+            xHandle: stripe
+            tokens: {}
+            signals:
+            - date: '2025-09-29T18:00:00.000Z'
+              description: The company partners with OpenAI to launch ChatGPT Instant
+                Checkout and Agentic Commerce Protocol, while introducing Shared Payment
+                Tokens for secure agentic payments.
+            - date: '2025-10-01T13:00:00.000Z'
+              description: 'New Stripe account features launch: multi-currency and
+                stablecoin balance holding/conversion, local bank rail payments, instant
+                card issuance backed by balances, and treasury infrastructure access
+                for all US and UK businesses rolling out this year.'
+            - date: '2025-10-01T01:00:00.000Z'
+              description: Partnerships announced with Privy for embedded wallet solutions
+                to onboard users and merchants, and Tempo for broader access to onchain
+                financial services, expanding the stablecoin vertical infrastructure.
+            - date: '2025-10-01T17:00:00.000Z'
+              description: Discussion indicates that Stripe chose to build an L1 (Layer
+                1 blockchain) rather than an L2, mentioned in context of comparing
+                infrastructure strategies with Circle and Robinhood.
+            - date: '2025-09-04T20:00:00.000Z'
+              description: Announces Tempo, an EVM-compatible layer 1 blockchain specifically
+                designed for payments.
+            - date: '2025-09-08T12:00:00.000Z'
+              description: Stablecoin company acquired by the payment processor for
+                over $1 billion, with development focused on proprietary L1 blockchain
+                rather than public chain infrastructure.
+            - date: '2025-12-14T16:00:00.000Z'
+              description: Stripe and Paradigm launch Tempo payments chain together.
+            - date: '2025-12-13T11:00:00.000Z'
+              description: Stripe launches tempo testnet.
+            - date: '2025-12-11T15:00:00.000Z'
+              description: Stripe charges 1.5% fees for its stablecoin services.
+            - date: '2025-12-10T21:00:00.000Z'
+              description: Stripe completes acquisition of Valora wallet.
+    description: Test empty tool arguments handling
+    status: success
+    elapsed_time: 0.8329153060913086

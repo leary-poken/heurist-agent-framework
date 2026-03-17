@@ -1,0 +1,226 @@
+metadata:
+  agent: SpaceTimeAgent
+  test_file: space_and_time_agent.py
+  timestamp: '2025-09-16T17:17:05.021792'
+  total_tests: 5
+  passed: 5
+  failed: 0
+results:
+  ethereum_blocks_query:
+    input:
+      query: Get the number of blocks created on Ethereum per day over the last month
+      raw_data_only: false
+    output:
+      response: 'Over the past month (August 17, 2025, to September 16, 2025), the
+        Ethereum network consistently produced blocks daily.
+
+
+        **Key Observations:**
+
+
+        *   **Consistent Block Production:** The number of blocks created each day
+        remained remarkably stable, generally hovering around 7,160 to 7,170 blocks
+        per day.
+
+        *   **Minor Fluctuations:** There were minor daily fluctuations, with the
+        highest count being 7,176 blocks on August 19th and 30th, and the lowest full
+        day count being 7,122 blocks on September 10th.
+
+        *   **Partial Day Data:** The data for September 16th shows 2,746 blocks,
+        which is significantly lower than other days. This is expected as the query
+        likely captured data for only a portion of that day.
+
+
+        **Context:**
+
+
+        On Ethereum, a "block" is a collection of new transactions confirmed and added
+        to the blockchain. The consistent daily block count indicates a stable and
+        healthy network operation. The target block time for Ethereum is approximately
+        12 seconds, which translates to roughly 7,200 blocks per day (60 seconds/minute
+        * 60 minutes/hour * 24 hours/day / 12 seconds/block). The observed numbers
+        are very close to this theoretical target, demonstrating the network''s efficiency
+        and reliability.'
+      data:
+        status: success
+        nl_query: Get the number of blocks created on Ethereum per day over the last
+          month.
+        sql_query: "SELECT CAST(b.time_stamp AS DATE) AS day, COUNT(DISTINCT b.block_number)\
+          \ AS blocks_count\nFROM ETHEREUM.BLOCKS b\nWHERE b.time_stamp >= date_sub(CAST('2025-09-16'\
+          \ AS DATE), 30)\n  AND b.time_stamp < date_add(CAST('2025-09-16' AS DATE),\
+          \ 1)\nGROUP BY CAST(b.time_stamp AS DATE)\nORDER BY day ASC LIMIT 200;"
+        result:
+        - DAY: '2025-08-17'
+          BLOCKS_COUNT: 7175
+        - DAY: '2025-08-18'
+          BLOCKS_COUNT: 7169
+        - DAY: '2025-08-19'
+          BLOCKS_COUNT: 7176
+        - DAY: '2025-08-20'
+          BLOCKS_COUNT: 7169
+        - DAY: '2025-08-21'
+          BLOCKS_COUNT: 7157
+        - DAY: '2025-08-22'
+          BLOCKS_COUNT: 7171
+        - DAY: '2025-08-23'
+          BLOCKS_COUNT: 7158
+        - DAY: '2025-08-24'
+          BLOCKS_COUNT: 7174
+        - DAY: '2025-08-25'
+          BLOCKS_COUNT: 7168
+        - DAY: '2025-08-26'
+          BLOCKS_COUNT: 7167
+        - DAY: '2025-08-27'
+          BLOCKS_COUNT: 7165
+        - DAY: '2025-08-28'
+          BLOCKS_COUNT: 7160
+        - DAY: '2025-08-29'
+          BLOCKS_COUNT: 7170
+        - DAY: '2025-08-30'
+          BLOCKS_COUNT: 7176
+        - DAY: '2025-08-31'
+          BLOCKS_COUNT: 7164
+        - DAY: '2025-09-01'
+          BLOCKS_COUNT: 7165
+        - DAY: '2025-09-02'
+          BLOCKS_COUNT: 7128
+        - DAY: '2025-09-03'
+          BLOCKS_COUNT: 7167
+        - DAY: '2025-09-04'
+          BLOCKS_COUNT: 7159
+        - DAY: '2025-09-05'
+          BLOCKS_COUNT: 7162
+        - DAY: '2025-09-06'
+          BLOCKS_COUNT: 7146
+        - DAY: '2025-09-07'
+          BLOCKS_COUNT: 7161
+        - DAY: '2025-09-08'
+          BLOCKS_COUNT: 7159
+        - DAY: '2025-09-09'
+          BLOCKS_COUNT: 7169
+        - DAY: '2025-09-10'
+          BLOCKS_COUNT: 7122
+        - DAY: '2025-09-11'
+          BLOCKS_COUNT: 7156
+        - DAY: '2025-09-12'
+          BLOCKS_COUNT: 7165
+        - DAY: '2025-09-13'
+          BLOCKS_COUNT: 7167
+        - DAY: '2025-09-14'
+          BLOCKS_COUNT: 7171
+        - DAY: '2025-09-15'
+          BLOCKS_COUNT: 7153
+        - DAY: '2025-09-16'
+          BLOCKS_COUNT: 2746
+    description: Natural language query for Ethereum daily block creation in last
+      month
+    status: success
+  ethereum_transactions_direct:
+    input:
+      tool: generate_and_execute_sql
+      tool_arguments:
+        nl_query: What's the average transactions in past week for Ethereum
+      raw_data_only: true
+    output:
+      response: ''
+      data:
+        status: success
+        nl_query: What's the average transactions in past week for Ethereum
+        sql_query: 'SELECT CAST(COUNT(1) AS DECIMAL(38)) / 7 AS avg_transactions_per_day_last_7_days
+
+          FROM ETHEREUM.TRANSACTIONS t
+
+          WHERE t.time_stamp >= date_sub(CAST(''2025-09-16'' AS DATE), 7) LIMIT 200;'
+        result:
+        - AVG_TRANSACTIONS_PER_DAY_LAST_7_DAYS: '1764106.142857'
+    description: Direct tool call for Ethereum average transactions in past week
+    status: success
+  heurist_gpus_query:
+    input:
+      query: Tell me top 10 GPUs from HEURIST
+      raw_data_only: false
+    output:
+      response: 'I encountered an error when trying to fetch the top 10 GPUs from
+        HEURIST. The SQL query execution failed. This could be due to a few reasons:
+
+
+        *   **Temporary Network Issue:** There might have been a transient problem
+        connecting to the data source.
+
+        *   **Incorrect Table/Column Name:** The table or column names used in the
+        underlying query might be incorrect or have changed.
+
+        *   **Unavailable Data:** The HEURIST data might currently be unavailable
+        or experiencing issues.
+
+
+        Please let me know if you''d like me to try again or if you have any further
+        information about the data source.'
+      data:
+        error: 'Failed to execute SQL query: HTTP 400'
+    description: Natural language query for top 10 GPUs from HEURIST
+    status: success
+  ethereum_yesterday_transactions:
+    input:
+      query: How many transactions occurred on Ethereum yesterday?
+      raw_data_only: false
+    output:
+      response: Yesterday, on September 15, 2025, the Ethereum blockchain processed
+        **1.68 million transactions**.
+      data:
+        status: success
+        nl_query: Count the number of transactions on the Ethereum blockchain for
+          yesterday.
+        sql_query: "SELECT COUNT(*) AS tx_count\nFROM ETHEREUM.TRANSACTIONS t\nWHERE\
+          \ t.TIME_STAMP >= CAST('2025-09-15' AS DATE)\n  AND t.TIME_STAMP < CAST('2025-09-16'\
+          \ AS DATE) LIMIT 200;"
+        result:
+        - TX_COUNT: 1675477
+    description: Natural language query for Ethereum transactions count yesterday
+    status: success
+  ethereum_largest_transaction:
+    input:
+      query: What's the largest transaction value on Ethereum in the past 24 hours?
+      raw_data_only: false
+    output:
+      response: 'The largest transaction on the Ethereum blockchain in the past 24
+        hours (as of 2025-09-16 07:01:47 UTC) was:
+
+
+        *   **Transaction Hash:** `0xaa6f7ccf8efd268173503816a64e7428664f4482612643e791206d38a9c9c155`
+
+        *   **Value:** 26,889.68 ETH (approximately 26,889,677,479,050,000,000,000
+        in Wei)
+
+        *   **From Address:** `0x28c6c06298d514db089934071355e5743bf21d60`
+
+        *   **To Address:** `0x9696f59e4d72e237be84ffd425dcad154bf96976`
+
+        *   **Timestamp:** 2025-09-16 07:01:47 UTC
+
+
+        This transaction involved a significant transfer of nearly 27,000 ETH between
+        the specified addresses.'
+      data:
+        status: success
+        nl_query: Find the largest transaction value on the Ethereum blockchain in
+          the past 24 hours.
+        sql_query: 'SELECT t.transaction_hash, t.from_address, t.to_address, t.value_,
+          t.time_stamp
+
+          FROM ETHEREUM.TRANSACTIONS t
+
+          WHERE t.time_stamp >= date_sub(CAST(''2025-09-16'' AS DATE), 1)
+
+          ORDER BY t.value_ DESC
+
+          LIMIT 1;'
+        result:
+        - TRANSACTION_HASH: '0xaa6f7ccf8efd268173503816a64e7428664f4482612643e791206d38a9c9c155'
+          FROM_ADDRESS: '0x28c6c06298d514db089934071355e5743bf21d60'
+          TO_ADDRESS: '0x9696f59e4d72e237be84ffd425dcad154bf96976'
+          VALUE_: '26889677479050000000000'
+          TIME_STAMP: '2025-09-16 07:01:47'
+    description: Natural language query for largest Ethereum transaction value in
+      last 24 hours
+    status: success
